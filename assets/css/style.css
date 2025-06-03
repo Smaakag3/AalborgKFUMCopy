@@ -8,4 +8,10 @@
     --darkBlue: hsl(216, 53%, 42%);
     --lightBlue: hsl(186, 79%, 71%);
     --pink: hsl(328, 59%, 82%);
+
+    --xsSpacer: 0.625rem;
+    --sSpacer: 0.938rem;
+    --mSpacer: 1.563rem;
+    --lSpacer: 3.125rem;
+    --xlSpacer: 6.25rem;
 };
