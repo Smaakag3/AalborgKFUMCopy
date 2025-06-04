@@ -2,9 +2,9 @@
 
 *{
     font-family: "Noto Sans", sans-serif;
-};
+}
 
-:root{
+:root {
     --darkBlue: hsl(216, 53%, 42%);
     --lightBlue: hsl(186, 79%, 71%);
     --pink: hsl(328, 59%, 82%);
@@ -14,13 +14,27 @@
     --mSpacer: 1.563rem;
     --lSpacer: 3.125rem;
     --xlSpacer: 6.25rem;
-};
+}
 
 /* Nav css */
-nav {
+
+#nav{
+    display: flex;
+    
+}
+.topOfNav{
+display: flex;
+justify-content: space-between;
+background-color: var();
+}
+
+.topNav{
     display: flex;
 }
 
+.mainNav{
+    display: flex;
+}
 
 
 
