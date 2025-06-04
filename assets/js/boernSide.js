@@ -1,5 +1,5 @@
 const domain = "https://aalborgkfumfodbold.r-dalsgaard.dk/";
-const baseEndPoint = "wp-json/wp/v2/posts?acf_format=standard&per_page=40&categories=55";
+const baseEndPoint = "wp-json/wp/v2/posts?acf_format=standard&per_page=40&categories=29";
 const holdEl = document.querySelector(".holdSektion");
 const genderSelectorEl = document.querySelector("#genderSelector");
 const yearSelectorEl = document.querySelector("#yearSelector");
