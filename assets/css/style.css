@@ -2,6 +2,11 @@
 
 *{
     font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 :root {
@@ -18,14 +23,14 @@
 
 /* Nav css */
 
-#nav{
+nav{
     display: flex;
-    
+    background-color: var(--darkBlue);
 }
+
 .topOfNav{
 display: flex;
 justify-content: space-between;
-background-color: var();
 }
 
 .topNav{
