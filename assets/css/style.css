@@ -15,3 +15,13 @@
     --lSpacer: 3.125rem;
     --xlSpacer: 6.25rem;
 };
+
+/* Nav css */
+nav {
+    display: flex;
+}
+
+
+
+
+
