@@ -9,3 +9,8 @@ fetch(domain + endPoint + "&slug=" + slug)
 .then(res => res.json())
 .then(data => console.log(data))
 .catch(err => console.log(err))
+
+fetch(domain + endPoint + "post=96&per_page=40")
+.then(res => res.json())
+.then(data => console.log(data))
+.catch(err => console.log(err))
