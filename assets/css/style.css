@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-    --darkBlue: hsl(216, 53%, 42%);
+    --darkBlue: hsl(224, 68%, 29%);
     --lightBlue: hsl(186, 79%, 71%);
     --pink: hsl(328, 59%, 82%);
 
@@ -22,25 +22,177 @@ body {
 }
 
 /* Nav css */
-
-nav{
+.topNav {
+    background: var(--darkBlue);
+    height: 5rem;
     display: flex;
-    background-color: var(--darkBlue);
+    justify-content: flex-end;
+    gap: 2rem;
 }
 
-.topOfNav{
-display: flex;
-justify-content: space-between;
-}
-
-.topNav{
+.topNav a {
+    text-decoration: none;
+    color: white;
     display: flex;
+    flex-direction: column;
+    height: 4rem;
+    padding: 0.6rem;
 }
 
-.mainNav{
-    display: flex;
+.topNav a img {
+    color: white;
+    height: 2.5rem;  
+}
+
+.topNav p {
+    margin: 0;
+
+}
+
+.loginCapsule {
+    padding: 0.6rem;
+}
+
+.loginCapsule a  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: var(--lightBlue);
+    height: 4rem;
+    width: 10rem;
+    gap: 1.2rem;
+    border-radius: 50px;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EMILIAS CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Samantas CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Arnis CSS */
