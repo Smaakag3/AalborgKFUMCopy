@@ -23,46 +23,9 @@ body {
     --sText: 0.75rem;
 }
 
-/* Nav css */
+/* forside css */
 
-.topOfNav{
-display: flex;
-justify-content: space-between;
-background-color: var(--darkBlue);
-align-items: center;
-}
 
-.topNav { 
-    display: flex;
-}
-
-.topNav a {
-   margin: var(--xsSpacer); 
-}
-
-.topNav p{
-    margin: 0 0;
-    font-size: var(--sText);
-    color: white;
-}
-
-.topNav img{
-    margin: 0 var(--xsSpacer);
-}
-
-.logind{
-    display: flex;
-    background-color: var(--lightBlue);
-    padding: 0.3rem;
-    border: 0.2rem solid var(--lightBlue) ;
-    border-radius: 0.3rem;
-    text-decoration: none;
-}
-
-.logind p {
-    color: black;
-    
-}
 
 
 
