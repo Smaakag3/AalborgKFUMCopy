@@ -66,8 +66,22 @@ body {
     border-radius: 50px;
 }
 
+.kfumLogoCapsule {
+    position: fixed;
+    top: 2rem;
+    left: 50px;
+}
 
+.kfumLogoCapsule img {
+    height: 10rem;
+    width: auto;
+}
 
+.facebookLogoCapsule{
+    position: fixed;
+        top: 7rem;
+        left: 11.5rem;
+}
 
 
 
