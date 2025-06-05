@@ -2,9 +2,14 @@
 
 *{
     font-family: "Noto Sans", sans-serif;
-};
+    box-sizing: border-box;
+}
 
-:root{
+body {
+    margin: 0;
+}
+
+:root {
     --darkBlue: hsl(216, 53%, 42%);
     --lightBlue: hsl(186, 79%, 71%);
     --pink: hsl(328, 59%, 82%);
@@ -14,4 +19,28 @@
     --mSpacer: 1.563rem;
     --lSpacer: 3.125rem;
     --xlSpacer: 6.25rem;
-};
+}
+
+/* Nav css */
+
+nav{
+    display: flex;
+    background-color: var(--darkBlue);
+}
+
+.topOfNav{
+display: flex;
+justify-content: space-between;
+}
+
+.topNav{
+    display: flex;
+}
+
+.mainNav{
+    display: flex;
+}
+
+
+
+
