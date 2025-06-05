@@ -19,8 +19,8 @@ function renderTeam(data){
         const newTeamTitle = document.createElement("h1");
         newTeamTitle.textContent = teamInfo.acf.hold_navn;
 
-        const newTeamYear = document.createElement("h2");
-        newTeamYear.textContent = teamInfo.acf.aargang.name;
+            const newTeamYear = document.createElement("h2");
+            newTeamYear.textContent = teamInfo.acf.aargang.name;
 
         const newTeamDescription = document.createElement("p");
         newTeamDescription.textContent = teamInfo.acf.beskrivelse;
