@@ -208,11 +208,10 @@ body {
         color: black;
     }
     
-    .flerenyhederKort{
-        width: 25rem;
-        height: 20rem;
-        padding: 3rem;
-        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,255,255,1));
+    .flerenyhederKort {
+
+        padding: 7rem 3rem;
+        background-image: linear-gradient(to bottom, rgba(205,244,206,1), rgba(255,255,255,1));
         border: 0.1rem solid black;
         box-shadow: 0.5rem 0.5rem;
     }
@@ -223,6 +222,57 @@ body {
     }
 
     /*med paa holdet*/
+    .knap{
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 1rem ;
+        background-color: var(--lightBlue);
+        box-shadow: 0.3rem 0.3rem;
+        margin: 1.5rem 20rem;
+        text-align: center;
+        display: block;
+    }
+
+    /*nordjyskebank*/
+    .nordjyskeBankTak{
+        display: flex;
+        align-items: center;
+    }
+    .nordjyskeBankTak img{
+        margin: var(--sSpacer);
+    }
+
+    /*favbilleder*/
+
+    .favoritBillederForside{
+    background-color: #E1F5FA;
+    }
+
+   .favBilleder{
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: center;
+   }
+
+.favoritBillederForside img{
+    width: 75%;
+    max-height: 9rem;
+    object-fit:scale-down;
+}
+
+.favoritPile{
+    display: flex;
+    justify-content: center;
+}
+.favoritPile button{
+       background: none;
+        border: none; 
+        align-items: center;
+        margin: var(--xsSpacer);
+    }
+    .favoritPile img{
+        height: 2rem;
+    }
 
 
 @media only screen and (max-width: 780px){
@@ -265,15 +315,9 @@ body {
     height: 5rem;
 }
 /*tilmeld intro*/
-
-/*nordjyskebank*/
-    .nordjyskeBankTak{
-        display: flex;
-        align-items: center;
-    }
-    .nordjyskeBankTak img{
-        margin: var(--sSpacer);
-    }
+.knap{
+margin: 1.5rem 8rem;
+}
 /*favorit billeder*/
 .favoritBillederForside{
     background-color: #E1F5FA;
