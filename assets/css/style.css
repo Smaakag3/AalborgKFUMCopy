@@ -105,7 +105,24 @@ body {
 
 /* EMILIAS CSS */
 
+@media only screen and (max-width: 780px){
+    .desktop{
+        display: none;
+    }
 
+    #mobilHeader img{
+        width: 100%;
+    }
+
+    .nordjyskeBankTak{
+        display: flex;
+        align-items: center;
+    }
+    .nordjyskeBankTak img{
+        margin: var(--sSpacer);
+    }
+
+} 
 
 
 
