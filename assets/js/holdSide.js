@@ -14,8 +14,6 @@ fetch(domain + endPoint + "&slug=" + slug)
 
 function renderTeam(data){
     data.forEach(teamInfo => {
-        console.log(teamInfo);
-
         const newTeamTitle = document.createElement("h1");
         newTeamTitle.textContent = teamInfo.acf.hold_navn;
 
@@ -77,8 +75,6 @@ function renderTeam(data){
         teamSection.classList.add("holdSektion");
         teamSection.append(newTeamIntroBox, newTeamPicture, newTrainingTimes, newPriceSection);
 
-        teamInfo.acf.traenere.forEach(trainer => console.log(trainer.ID))
-
         const trainerSection = document.createElement("section");
         trainerSection.classList.add("traenerSektion");
         
@@ -90,7 +86,6 @@ function renderTeam(data){
         })
 
         function renderTrainer(data){
-            console.log(data);
             const trainerArticle = document.createElement("article");
             trainerArticle.classList.add("traener");
 
@@ -104,10 +99,13 @@ function renderTeam(data){
             const newTrainerName = document.createElement("p");
             newTrainerName.textContent = data.acf.fulde_navn;
 
+            const newTrainerMail = document.createElement("p");
+            newTrainerMail.textContent = data.acf.mail;
+
             const newTrainerNumber = document.createElement("p");
             newTrainerNumber.textContent = data.acf.telefonnummer;
 
-            trainerArticle.append(newTrainerPicture, newTrainerPosition, newTrainerName, newTrainerNumber);
+            trainerArticle.append(newTrainerPicture, newTrainerPosition, newTrainerName, newTrainerMail, newTrainerNumber);
             trainerSection.append(trainerArticle);
         }
 
