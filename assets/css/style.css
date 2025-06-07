@@ -82,17 +82,71 @@ body {
         left: 11.5rem;
 }
 
+/* Her kommer det underste af navigationsbaren */
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.capsule {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 0;
+    border-bottom-left-radius: 20px;
+    background: hsla(224, 68%, 29%, 0.5);
+    position: absolute;
+    right: 0;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .insideDropdown {
+    display: block;
+}
+
+.insideDropdown {
+    display: none;
+    position: absolute;
+    background: hsla(224, 68%, 29%, 0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.dropdown ul {
+    width: 18rem;
+    padding: 2rem;
+    transform: translate(-76px, 0px)
+}
 
 
+.insideDropdown ul {
+    position: relative;
+    width: 150px;
+    margin: 0;
+    padding:1rem;
+}
 
+.insideDropdownUnder {
+    display: none;
+    border-bottom-left-radius: 0px;
+    margin-block: 0.5rem;
+}
 
-
-
-
-
-
-
-
+.insideDropdown li:hover .insideDropdownUnder {
+    display: block;
+}
 
 
 
