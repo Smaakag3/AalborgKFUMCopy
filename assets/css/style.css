@@ -228,7 +228,7 @@ body {
         padding: 0.5rem 1rem ;
         background-color: var(--lightBlue);
         box-shadow: 0.3rem 0.3rem;
-        margin: 1.5rem 20rem;
+        margin: 1.5rem 30rem;
         text-align: center;
         display: block;
     }
@@ -244,36 +244,42 @@ body {
 
     /*favbilleder*/
 
-    .favoritBillederForside{
+.favoritBillederForside{
     background-color: #E1F5FA;
     }
 
-   .favBilleder{
-   display: flex;
-   flex-wrap: wrap; 
-   justify-content: center;
-   }
+.favBilleder{
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+    }
 
-.favoritBillederForside img{
-    width: 75%;
-    max-height: 9rem;
+.favBilleder img{
+    width: 65%;
+    max-height: 15rem;
     object-fit:scale-down;
 }
 
-.favoritPile{
-    display: flex;
-    justify-content: center;
-}
-.favoritPile button{
+.favDeskPil{
        background: none;
         border: none; 
         align-items: center;
         margin: var(--xsSpacer);
     }
-    .favoritPile img{
-        height: 2rem;
-    }
 
+.favDeskPil img{
+    width: 1.1rem;
+}
+
+/*kontkter*/
+.klubInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.klubInfo a{
+    color: black;
+}
 
 @media only screen and (max-width: 780px){
     .mobil{
@@ -312,23 +318,19 @@ body {
 }
 
 .flerenyhederKort{
-    height: 5rem;
+    width: 25rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
 /*tilmeld intro*/
 .knap{
 margin: 1.5rem 8rem;
 }
 /*favorit billeder*/
-.favoritBillederForside{
-    background-color: #E1F5FA;
-}
-.favBilleder{
-   display: flex;
-   flex-wrap: wrap; 
-   justify-content: center;
-}
+
 .favoritBillederForside img{
-    width: 75%;
+    width: 30%;
     max-height: 9rem;
     object-fit:scale-down;
 }
@@ -342,18 +344,7 @@ margin: 1.5rem 8rem;
         align-items: center;
         margin: var(--xsSpacer);
     }
-    .favoritPile img{
-        height: 2rem;
-    }
-/*kontaktIntro*/
-.klubInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.klubInfo a{
-    color: black;
-}
+
 }
 
 
