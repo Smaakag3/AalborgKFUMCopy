@@ -225,7 +225,52 @@ nav ul {
 
 /* Samantas CSS */
 
+/* Aktiviteter */
 
+.aktivitetsKnapper{
+    gap: 30px;
+    transition: 0.4s;
+}
+.aabenAktiviteter {
+    background-color: #D9D9D9;
+    border: none;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+
+}
+
+/*kalender*/
+
+.aktivitetKalender {
+    background-color: #E1F5FA;
+    padding-inline-end: 40px;
+    padding-bottom: 40px;
+    
+}
+.moened,.dage {
+    list-style-type: none;
+    width: 100%;
+    
+}
+.moened{
+    padding: 10px 20px;
+}
+.dage {
+    font-size: 0.7rem;
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(7, 5fr);
+}
+
+.dage li {
+    padding-bottom: 40%;
+        padding-left: 40%;
+        padding-right: 30%;
+    border: solid black 0.01rem;
+    background-color: white;
+    display: flex;
+}
 
 
 
