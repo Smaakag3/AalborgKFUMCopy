@@ -25,10 +25,11 @@ body {
 /* Nav css */
 .topNav {
     background: var(--darkBlue);
-    height: 5rem;
+    height: 4rem;
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 0.5rem;
+    padding: 0.4rem;
 }
 
 .topNav a {
@@ -36,22 +37,21 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 4rem;
-    padding: 0.6rem;
+    padding: 0.3rem;
 }
 
-.topNav a img {
+.topNav img {
     color: white;
-    height: 2.5rem;  
+    height: 1.4rem;  
 }
 
 .topNav p {
     margin: 0;
-
+    font-size: 0.8rem;
 }
 
 .loginCapsule {
-    padding: 0.6rem;
+    padding: 0.3rem;
 }
 
 .loginCapsule a  {
@@ -60,34 +60,38 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--lightBlue);
-    height: 4rem;
-    width: 10rem;
-    gap: 1.2rem;
+    height: 2rem;
+    width: 6rem;
+    gap: 0.4rem;
     border-radius: 50px;
 }
 
 .kfumLogoCapsule {
     position: fixed;
-    top: 2rem;
-    left: 50px;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+.kfumLogoCapsule a {
+    padding: 0;
 }
 
 .kfumLogoCapsule img {
-    height: 10rem;
+    height: 3rem;
     width: auto;
 }
 
 .facebookLogoCapsule{
     position: fixed;
-        top: 7rem;
-        left: 11.5rem;
+        top: 1.8rem;
+        left: 3.5rem;
 }
 
 /* Her kommer det underste af navigationsbaren */
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 0.4rem;
 }
 
 nav ul {
@@ -97,20 +101,27 @@ nav ul {
 .capsule {
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 0.6rem;
     margin: 0;
     border-bottom-left-radius: 20px;
     background: hsla(224, 68%, 29%, 0.5);
     position: absolute;
     right: 0;
-    padding-inline: 2rem;
-    padding-block: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.3rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+
+.dropdown ul {
+    width: 9rem;
+    padding: 1rem;
+    transform: translate(-45px, 0px)
 }
 
 .dropdown:hover .insideDropdown {
@@ -125,24 +136,26 @@ nav ul {
     z-index: 1;
 }
 
-.dropdown ul {
-    width: 18rem;
-    padding: 2rem;
-    transform: translate(-76px, 0px)
+.insideDropdown a {
+    font-size: 0.4rem;
 }
-
 
 .insideDropdown ul {
     position: relative;
-    width: 150px;
+    width: 7rem;
     margin: 0;
-    padding:1rem;
+    padding: 0rem;
+    transform: translate(0px, 0px)
 }
 
 .insideDropdownUnder {
     display: none;
     border-bottom-left-radius: 0px;
-    margin-block: 0.5rem;
+    background: hsla(224, 68%, 29%, 0.5);
+}
+
+.insideDropdownUnder li {
+    padding-left: 0.5rem;
 }
 
 .insideDropdown li:hover .insideDropdownUnder {
@@ -151,7 +164,144 @@ nav ul {
 
 
 
-
+@media screen and (min-width: 1100px) {
+    /* Nav css */
+        .topNav {
+            background: var(--darkBlue);
+            height: 5rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+    
+        .topNav a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+        }
+    
+        .topNav a img {
+            color: white;
+            height: 2.5rem;
+        }
+    
+        .topNav p {
+            margin: 0;
+        }
+    
+        .loginCapsule {
+            padding: 0.2rem;
+        }
+    
+        .loginCapsule a {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background: var(--lightBlue);
+            height: 4rem;
+            width: 10rem;
+            gap: 1.2rem;
+            border-radius: 50px;
+        }
+    
+        .kfumLogoCapsule {
+            position: fixed;
+            top: 1rem;
+            left: 50px;
+            height: 10rem;
+        }
+    
+        .topNav .kfumLogoCapsule img {
+            height: 10rem;
+            width: auto;
+        }
+    
+        .facebookLogoCapsule {
+            position: fixed;
+            top: 7rem;
+            left: 11.5rem;
+        }
+    
+        /* Her kommer det underste af navigationsbaren */
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1.1rem;
+        }
+    
+        nav ul {
+            list-style: none;
+        }
+    
+        .capsule {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.3rem;
+            margin: 0;
+            border-bottom-left-radius: 20px;
+            background: hsla(224, 68%, 29%, 0.5);
+            position: absolute;
+            right: 0;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+        }
+    
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown a {}
+    
+        .dropdown ul {
+            width: 20rem;
+            padding: 2rem;
+            transform: translate(-76px, 0px)
+        }
+    
+        .dropdown:hover .insideDropdown {
+            display: block;
+        }
+    
+        .insideDropdown {
+            display: none;
+            position: absolute;
+            background: hsla(224, 68%, 29%, 0.5);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+    
+        .insideDropdown a {
+            font-size: 1.1rem;
+        }
+    
+    
+        .insideDropdown ul {
+            position: relative;
+            width: 16rem;
+            margin: 0;
+            padding: 0rem;
+            transform: translate(0px, 0px)
+        }
+    
+        .insideDropdownUnder {
+            display: none;
+            border-bottom-left-radius: 0px;
+            background: hsla(224, 68%, 29%, 0.5);
+        }
+    
+        .insideDropdownUnder li {
+            padding-left: 1.5rem;
+        }
+    
+        .insideDropdown li:hover .insideDropdownUnder {
+            display: block;
+        }
+}
 
 
 
