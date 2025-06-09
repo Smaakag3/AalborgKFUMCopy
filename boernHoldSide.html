@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Børnehold | Aalborg KFUM Fodbold</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/boernSide.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <a href="/boernHoldSide.html">Børnehold</a>
+      <a href="/ungdomsholdSide.html">Ungdomshold</a>
+      <a href="/seniorholdSide.html">Seniorhold</a>
+      <h1>Oversigt over børnehold</h1>
+      <select name="year-selector" id="yearSelector">
+        <option value="" disabled selected="selected">Årgang</option>
+        <option value="37">Årgang 2013</option>
+        <option value="38">Årgang 2014</option>
+        <option value="39">Årgang 2015</option>
+        <option value="40">Årgang 2016</option>
+        <option value="41">Årgang 2017</option>
+        <option value="42">Årgang 2018</option>
+        <option value="43">Årgang 2019</option>
+        <option value="44">Årgang 20 - 25</option>
+      </select>
+      <select name="gender-selector" id="genderSelector">
+        <option value="" disabled selected="selected">Køn</option>
+        <option value="45">Drenge</option>
+        <option value="46">Piger</option>
+      </select>
+      <button id="removeFilter">Fjern filter</button>
+      <section class="holdSektion"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

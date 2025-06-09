@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seniorhold | Aalborg KFUM Fodbold</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/seniorholdSide.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <a href="/boernHoldSide.html">Børnehold</a>
+      <a href="/ungdomsholdSide.html">Ungdomshold</a>
+      <a href="/seniorholdSide.html">Seniorhold</a>
+      <h1>Oversigt over seniorhold</h1>
+      <select name="year-selector" id="yearSelector">
+        <option value="" disabled selected="selected">Alder</option>
+        <option value="48">17+år</option>
+        <option value="50">18+år</option>
+        <option value="49">19+år</option>
+        <option value="51">32+år</option>
+        <option value="52">40+år</option>
+        <option value="53">52+år</option>
+        <option value="54">60+år</option>
+      </select>
+      <select name="gender-selector" id="genderSelector">
+        <option value="" disabled selected="selected">Køn</option>
+        <option value="45">Drenge</option>
+        <option value="46">Piger</option>
+      </select>
+      <button id="removeFilter">Fjern filter</button>
+      <section class="holdSektion"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
