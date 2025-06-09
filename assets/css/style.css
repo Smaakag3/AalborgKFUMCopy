@@ -352,6 +352,8 @@ nav ul {
 .mission{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    margin: 0 var(--mSpacer);
 }
 
 .mission img{
@@ -361,6 +363,7 @@ nav ul {
 /*Maalsaetninger*/
 .allKortMaalsaetninger{
     display: flex;
+    justify-content: center;
 }
 .allKortMaalsaetninger img {
   width: 10rem;
@@ -473,6 +476,15 @@ nav ul {
 
 
 @media only screen and (max-width: 780px){
+.desktop{
+    display: none;
+}
+.mobil{
+    display: block;
+}
+.mission{
+    flex-direction: column;
+}
 .allKortMaalsaetninger{
     flex-direction: column;
     align-items: center;
