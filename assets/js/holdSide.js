@@ -72,7 +72,7 @@ function renderTeam(data){
         newPriceSection.append(newPrice, newPriceButton)
         
         const teamSection = document.createElement("section");
-        teamSection.classList.add("holdSektion");
+        teamSection.classList.add("introSektion");
         teamSection.append(newTeamIntroBox, newTeamPicture, newTrainingTimes, newPriceSection);
 
         const trainerSection = document.createElement("section");
@@ -102,10 +102,30 @@ function renderTeam(data){
             const newTrainerMail = document.createElement("p");
             newTrainerMail.textContent = data.acf.mail;
 
+            const newMailIcon = document.createElement("img");
+            newMailIcon.src = "./assets/pictures/envelope.svg";
+            newMailIcon.alt = "E-mail ikon"
+            newMailIcon.classList.add("kontaktIkon");
+
+            const newMailArticle = document.createElement("div");
+            newMailArticle.classList.add("mailSektion");
+
+            newMailArticle.append(newMailIcon ,newTrainerMail);
+
             const newTrainerNumber = document.createElement("p");
             newTrainerNumber.textContent = data.acf.telefonnummer;
 
-            trainerArticle.append(newTrainerPicture, newTrainerPosition, newTrainerName, newTrainerMail, newTrainerNumber);
+            const newPhoneIcon = document.createElement("img");
+            newPhoneIcon.src = "./assets/pictures/phone.svg";
+            newPhoneIcon.alt = "Telefon ikon";
+            newPhoneIcon.classList.add("kontaktIkon");
+
+            const newPhoneArticle = document.createElement("div");
+            newPhoneArticle.classList.add("telefonSektion");
+
+            newPhoneArticle.append(newPhoneIcon, newTrainerNumber);
+
+            trainerArticle.append(newTrainerPicture, newTrainerPosition, newTrainerName, newMailArticle, newPhoneArticle);
             trainerSection.append(trainerArticle);
         }
 
