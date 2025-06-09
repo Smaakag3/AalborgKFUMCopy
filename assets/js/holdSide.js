@@ -14,19 +14,23 @@ fetch(domain + endPoint + "&slug=" + slug)
 
 function renderTeam(data){
     data.forEach(teamInfo => {
-        console.log(teamInfo);
-
         const newTeamTitle = document.createElement("h1");
         newTeamTitle.textContent = teamInfo.acf.hold_navn;
 
         const newTeamYear = document.createElement("h2");
-        newTeamYear.textContent = teamInfo.acf.aargang.name;
+
+        if(teamInfo.acf.aargang){
+            newTeamYear.textContent = teamInfo.acf.aargang.name;
+        } else if(teamInfo.acf.alder) {
+            newTeamYear.textContent = teamInfo.acf.alder.name;
+        }
 
         const newTeamDescription = document.createElement("p");
         newTeamDescription.textContent = teamInfo.acf.beskrivelse;
 
         const newTeamIntroBox = document.createElement("article");
-        newTeamIntroBox.append(newTeamTitle, newTeamYear, newTeamDescription);
+
+        newTeamIntroBox.append(newTeamTitle, newTeamYear, newTeamDescription); 
         newTeamIntroBox.classList.add("holdIntroBox");
 
         const newTeamPicture = document.createElement("img");
@@ -68,9 +72,46 @@ function renderTeam(data){
         newPriceSection.append(newPrice, newPriceButton)
         
         const teamSection = document.createElement("section");
+        teamSection.classList.add("holdSektion");
         teamSection.append(newTeamIntroBox, newTeamPicture, newTrainingTimes, newPriceSection);
 
-        holdSideEl.append(teamSection);
+        const trainerSection = document.createElement("section");
+        trainerSection.classList.add("traenerSektion");
+        
+        teamInfo.acf.traenere.forEach(trainer => {
+            fetch(domain + `wp-json/wp/v2/posts/${trainer.ID}?acf_format=standard`)
+            .then(res => res.json())
+            .then(data => renderTrainer(data))
+            .catch(err => console.log(err))
+        })
+
+        function renderTrainer(data){
+            const trainerArticle = document.createElement("article");
+            trainerArticle.classList.add("traener");
+
+            const newTrainerPicture = document.createElement("img");
+            newTrainerPicture.src = data.acf.billede_af_personen.sizes.thumbnail;
+            newTrainerPicture.alt = "Billede af personen";
+
+            const newTrainerPosition = document.createElement("p");
+            newTrainerPosition.textContent = data.acf.stillingsbetegnelse;
+
+            const newTrainerName = document.createElement("p");
+            newTrainerName.textContent = data.acf.fulde_navn;
+
+            const newTrainerMail = document.createElement("p");
+            newTrainerMail.textContent = data.acf.mail;
+
+            const newTrainerNumber = document.createElement("p");
+            newTrainerNumber.textContent = data.acf.telefonnummer;
+
+            trainerArticle.append(newTrainerPicture, newTrainerPosition, newTrainerName, newTrainerMail, newTrainerNumber);
+            trainerSection.append(trainerArticle);
+        }
+
+
+
+        holdSideEl.append(teamSection, trainerSection);
 
     })
 }
