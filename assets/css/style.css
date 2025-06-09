@@ -113,6 +113,10 @@ body {
         max-width: 75ch;
     }  
 
+    h2{
+        margin-top: var(--lSpacer);
+    }
+
     .desktopHeader{
         width: 100%;
         height: 25rem;
@@ -237,6 +241,7 @@ body {
     .nordjyskeBankTak{
         display: flex;
         align-items: center;
+        margin-bottom: var(--mSpacer);
     }
     .nordjyskeBankTak img{
         margin: var(--sSpacer);
@@ -246,7 +251,12 @@ body {
 
 .favoritBillederForside{
     background-color: #E1F5FA;
+    padding: 0.5rem 0 2rem;
     }
+
+.favoritBillederForside h2{
+    margin-top: var(--sSpacer);
+}
 
 .favBilleder{
       display: flex;
@@ -279,6 +289,17 @@ body {
 }
 .klubInfo a{
     color: black;
+}
+@media only screen and (max-width: 1100px){
+/*tilmeld intro*/
+.knap{
+margin: 1.5rem 20rem;
+}
+/*nyhede*/
+.flerenyhederKort {
+
+        padding: 6rem 3rem;
+}
 }
 
 @media only screen and (max-width: 780px){
@@ -327,6 +348,7 @@ body {
 .knap{
 margin: 1.5rem 8rem;
 }
+
 /*favorit billeder*/
 
 .favoritBillederForside img{
