@@ -369,7 +369,48 @@ margin: 1.5rem 8rem;
 
 }
 
+/*Footer*/
+footer{
+    background-color: var(--darkBlue);
+    margin-top: var(--mSpacer);
+    padding-left: var(--mSpacer);
+    
+}
 
+.footerInfo{
+   display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.footerletter{
+    background-color: rgb(255, 255, 255);
+}
+
+footer a, footer p{
+    color: white;
+    
+}
+
+.footerNav a{
+    display: flex;
+    flex-direction: column;
+    padding: var(--xsSpacer) var(--mSpacer);
+}
+
+hr{
+    margin: var(--sSpacer) var(--mSpacer);
+}
+
+.copPri{
+    display: flex;
+    justify-content: center;
+}
+
+.politikFooter{
+    display: flex;
+    align-items: center;
+}
 
 
 
