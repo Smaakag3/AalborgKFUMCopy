@@ -325,19 +325,42 @@ nav ul {
 
 /*maalsaetninger*/
 
+.mobil{
+    display: none;
+}
+
 .breadcrumbs{
     display: flex;
+    margin: 0.2rem 0.2rem;
+    justify-content: flex-start;
 }
 .breadcrumbs a{
     color: black;
+}
+.breadcrumbs a, p{
+    margin: 0 0.2rem;
 }
 .sideDuPaa{
     font-weight: bolder;
 }
 
+/*misson intro*/
+.missionIntro p{
+    max-width: 75ch;
+}
+
+.mission{
+    display: flex;
+    align-items: center;
+}
+
+.mission img{
+    height: 5rem;
+}
+
 /*Maalsaetninger*/
 .allKortMaalsaetninger{
-    margin-bottom: 1rem;
+    display: flex;
 }
 .allKortMaalsaetninger img {
   width: 10rem;
@@ -376,30 +399,30 @@ nav ul {
   bottom: 1%;
   left: 2%;
 }
+.ordenlighedIndhold{
+    position: relative;
+}
+.faellesskabIndhold{
+    position: relative;
+}
+.udvikling{
+    position: relative;
+}
 
 /*maal indhold*/
 
 .popupCardMaal {
   display: none;
   position: absolute;
+  top: 145px;
 }
 
-.ordenlighedPopup{
-   top: 35%; 
+.udviklingPopup img{
+    object-position: 100% 20%;
 }
 
-.faellesskabPopup{
-    top: 96%;
-}
-
-.udviklingPopup{
-    top: 160%;
-}
-
-.popupCardMaal img{
-    width: 15rem;
-    height: 4rem;
-    object-fit: cover;
+.faellesskabPopup img{
+   object-position: 100% 10%; 
 }
 
 .maalIndehold {
@@ -407,22 +430,65 @@ nav ul {
   background-color: #e1f5fa;
   margin: var(--mSpacer);
   width: 20rem;
-  height: 22rem;
+  height: 24rem;
   position: relative;
   border: 0.1rem solid black;
   box-shadow: 0.5rem 0.5rem;
 }
 
 .faellesskabIndhold{
-    height: 23rem;
+    height: 25rem;
 }
 
-.maalIndehold h3 , p{
+.udviklingIndhold{
+    height: 26rem ;
+}
+
+.maalIndehold h3{
     margin: 0.5rem var(--xsSpacer);
 }
 
+.maalIndehold p{
+    margin: 0.5rem var(--xsSpacer);
+}
+
+.lukKnap{
+    background-color: var(--pink);
+    padding: 0.1rem 0.8rem;
+    font-size: small;
+    box-shadow: 0.1rem 0.1rem ;
+}
+
+.lukKnap:hover{
+    background-color:hsl(328, 77%, 88%) ;
+}
 
 
+@media only screen and (max-width: 1100px){
+    .popupCardMaal {
+    top: 150px;
+}
+
+}
+
+
+@media only screen and (max-width: 780px){
+.allKortMaalsaetninger{
+    flex-direction: column;
+    align-items: center;
+}
+.ordenlighedPopup{
+    top: 19rem;
+}
+
+.faellesskabPopup{
+    top: 41rem;
+}
+
+.udviklingPopup{
+    top: 64rem;
+}
+}
 
 
 
@@ -512,4 +578,4 @@ nav ul {
 
 
 
-/* Arnis CSS */
+/* Arnis CSS*/
