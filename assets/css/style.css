@@ -414,7 +414,7 @@ nav ul {
 
 /*maal indhold*/
 
-.popupCardMaal {
+.popupCardMaal { /*dette card kan ikke ses for man cliker paa det*/
   display: none;
   position: absolute;
   top: 145px;
