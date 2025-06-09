@@ -226,18 +226,22 @@ nav ul {
 /* Samantas CSS */
 
 /* Aktiviteter */
-
-.aktivitetsKnapper{
-    gap: 30px;
-    transition: 0.4s;
+.aktivitetsKnapper {
+    gap: 10%;
 }
+
 .aabenAktiviteter {
     background-color: #D9D9D9;
     border: none;
     padding: 20px;
     width: 40%;
     text-align: center;
+    transition: 0.4s;
+    gap: 10%;
 
+}
+.active, .aabenAktiviteter:hover {
+    background-color:#D9D9D9;
 }
 
 /*kalender*/
@@ -246,7 +250,6 @@ nav ul {
     background-color: #E1F5FA;
     padding-inline-end: 40px;
     padding-bottom: 40px;
-    
 }
 .moened,.dage {
     list-style-type: none;
@@ -271,8 +274,21 @@ nav ul {
     background-color: white;
     display: flex;
 }
+.moened {
+    display: flex;
+    gap: 5%;
+}
+#holdSelector, #activitySelector {
+    background-color: #D9D9D9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    align-items: center;
+    margin-left: 40px;
 
+}
 
+/* Medie queiries*/
 
 
 

@@ -6,12 +6,19 @@
     <title>Kalder og aktivitets side</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/aktiviteter.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header></header>
     <main>
-      <section class="aktivitetsKnapper">
-        <div class="aabenAktiviteter">Årshjul</div>
+      <section class="aktivitetsKalenderen">
+        <button class="aabenAktiviteter">Årshjul</button>
         <div class="aktivitetsIndhold">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -21,69 +28,73 @@
           </p>
         </div>
 
-        <div class="aabenAktiviteter">Kalender</div>
-        <div class="aktivitetKalender">
-          <ul class="moened">
-            <li>forrig</li>
-            <li>Juni</li>
-            <li>næste</li>
-          </ul>
-          <select name="hold-Selector" id="holdSelector">
-            <option value="" disabled selected="selected">Hold</option>
-            <option value="66">Børnehold</option>
-            <option value="283">Ungdomshold</option>
-            <option value="125">Seniorhold</option>
-            <option value="66, 283,125">Alle Hold</option>
-          </select>
-          <select name="activity-selector" id="activitySelector">
-            <option value="" disabled selected="selected">Trænings dage</option>
-            <option value="30">Mandag</option>
-            <option value="31">Tirsdag</option>
-            <option value="32">Onsdag</option>
-            <option value="33">Torsdag</option>
-            <option value="34">Fredag</option>
-          </select>
+        <button class="aabenAktiviteter">Kalender</button>
+        <div class="aktivitetsIndhold">
+          <div class="aktivitetKalender">
+            <ul class="moened">
+              <li><i class="fa-solid fa-arrow-left"></i></li>
+              <li>Juni</li>
+              <li><i class="fa-solid fa-arrow-right"></i></li>
+            </ul>
+            <select name="hold-Selector" id="holdSelector">
+              <option value="" disabled selected="selected">Hold</option>
+              <option value="66">Børnehold</option>
+              <option value="283">Ungdomshold</option>
+              <option value="125">Seniorhold</option>
+              <option value="66, 283,125">Alle Hold</option>
+            </select>
+            <select name="activity-selector" id="activitySelector">
+              <option value="" disabled selected="selected">
+                Trænings dage
+              </option>
+              <option value="30">Mandag</option>
+              <option value="31">Tirsdag</option>
+              <option value="32">Onsdag</option>
+              <option value="33">Torsdag</option>
+              <option value="34">Fredag</option>
+            </select>
 
-          <ul class="dage">
-            <li>Søn. 1</li>
-            <li>Man. 2</li>
-            <li>Tir. 3</li>
-            <li>Ons. 4</li>
-            <li>Tor. 5</li>
-            <li>Fre. 6</li>
-            <li>Lør. 7</li>
-            <li>Søn. 8</li>
-            <li>Man. 9</li>
-            <li>Tir. 10</li>
-            <li>Ons. 11</li>
-            <li>Tor. 12</li>
-            <li>Fre. 13</li>
-            <li>Lør. 14</li>
-            <li>Søn. 15</li>
-            <li>Man. 16</li>
-            <li>Tir. 17</li>
-            <li>Ons. 18</li>
-            <li>Tor. 19</li>
-            <li>Fre. 20</li>
-            <li>Lør. 21</li>
-            <li>Søn. 22</li>
-            <li>Man. 23</li>
-            <li>Tir. 24</li>
-            <li>Ons. 25</li>
-            <li>Tor. 26</li>
-            <li>Fre. 27</li>
-            <li>Lør. 28</li>
-            <li>Søn. 29</li>
-            <li>Man. 30</li>
-            <li>Tir. 1</li>
-            <li>Ons. 2</li>
-            <li>Tor. 3</li>
-            <li>Fre. 4</li>
-            <li>Lør. 5</li>
-          </ul>
+            <ul class="dage">
+              <li>Søn. 1</li>
+              <li>Man. 2</li>
+              <li>Tir. 3</li>
+              <li>Ons. 4</li>
+              <li>Tor. 5</li>
+              <li>Fre. 6</li>
+              <li>Lør. 7</li>
+              <li>Søn. 8</li>
+              <li>Man. 9</li>
+              <li>Tir. 10</li>
+              <li>Ons. 11</li>
+              <li>Tor. 12</li>
+              <li>Fre. 13</li>
+              <li>Lør. 14</li>
+              <li>Søn. 15</li>
+              <li>Man. 16</li>
+              <li>Tir. 17</li>
+              <li>Ons. 18</li>
+              <li>Tor. 19</li>
+              <li>Fre. 20</li>
+              <li>Lør. 21</li>
+              <li>Søn. 22</li>
+              <li>Man. 23</li>
+              <li>Tir. 24</li>
+              <li>Ons. 25</li>
+              <li>Tor. 26</li>
+              <li>Fre. 27</li>
+              <li>Lør. 28</li>
+              <li>Søn. 29</li>
+              <li>Man. 30</li>
+              <li>Tir. 1</li>
+              <li>Ons. 2</li>
+              <li>Tor. 3</li>
+              <li>Fre. 4</li>
+              <li>Lør. 5</li>
+            </ul>
+            <section class="aktivitetsKalender"></section>
+          </div>
         </div>
       </section>
-      <section class="aktivitetsKalender"></section>
     </main>
     <footer></footer>
   </body>

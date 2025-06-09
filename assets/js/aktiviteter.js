@@ -1,8 +1,25 @@
 const domain = "https://aalborgkfumfodbold.r-dalsgaard.dk/";
-const baseEndPoint = "wp-json/wp/v2/posts?acf_format=standard&per_page=40&categories=58";
+const baseEndPoint = "wp-json/wp/v2/posts?acf_format=standard&per_page=40&categories=29,58,55";
 const kalenderEl = document.querySelector(".aktivitetsKalender");
 const holdSelectorEl = document.querySelector("#holdSelector");
 const activitySelectorEl = document.querySelector("#activitySelector");
+
+const knapper = document.querySelectorAll(".aabenAktiviteter");
+knapper.forEach(function(knap) {
+    knap.addEventListener("click",function() {
+        knap.classList.toggle("active");
+        const aktivitetsIndhold = knap.nextElementSibling;
+        if(aktivitetsIndhold.style.display === "block"){
+            aktivitetsIndhold.style.display = "none";
+        }
+        else {
+            aktivitetsIndhold.style.display = "block"
+         }
+  });
+});
+
+
+
 
 
 function fetchData(){
@@ -33,20 +50,4 @@ holdSelectorEl.addEventListener("change", fetchData);
 activitySelectorEl.addEventListener("change", fetchData);
 
 
-function renderData(data){
-    
-    kalenderEl.innerHTML = "";
-    
-    data.forEach(team => {
-        console.log('team:', team)
-        kalenderEl.innerHTML += `
-        <article>
-        <a href="holdSide.html?slug=${team.slug}">
-        <h2>${team.acf.hold_navn}</h2>
-        <p>${team.acf.traeningsdage}</p>
-        <p>${team.acf.id}</p>
-        </a>
-        </article>
-        `
-    })
-}
+
