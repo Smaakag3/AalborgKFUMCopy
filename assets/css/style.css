@@ -412,21 +412,43 @@ font-size: 1rem;
     width: 80%;
     margin-left: 40px;
     margin-top: 40px;
+    line-height: 1.6rem;
     
 }
 .kontaktInfo {
+    padding-top: 10%;
     font-size: 0.8rem;
     text-align: center;
+    line-height: 1.6rem;
 }
-.kfumLogoCapsule h4 {
+.kontaktInfo h4 {
 text-decoration: none;
 }
-
-
-
-
-
-
+.kontaktInfo img{
+    width: 40%;
+}
+.stoetKlubben img{
+    width: 60%;
+    align-content: center;
+    
+}
+.stoetKlubben {
+    font-size: 0.9rem;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 40px;
+    line-height: 1.6rem;
+}
+.OKSponsor img{
+padding-bottom: 10%;
+}
+.alleSponsorer{
+    display: grid;
+    grid-template-rows: (3fr);
+}
+.alleSponsorer img {
+    width: 30%;
+}
 
 
 /* Arnis CSS */
