@@ -254,7 +254,9 @@ nav ul {
             display: inline-block;
         }
     
-        .dropdown a {}
+        .dropdown a {
+            font-size: 0.4rem;
+        }
     
         .dropdown ul {
             width: 20rem;
