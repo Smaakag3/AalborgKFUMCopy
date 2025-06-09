@@ -415,3 +415,78 @@ nav ul {
 
 
 /* Arnis CSS */
+
+.kontaktIkon{
+    height: 25px;
+    width: 25px;
+    margin: 0.5rem;
+}
+
+.mailSektion, .telefonSektion{
+    display: flex;
+    align-items: center;
+}
+
+.traener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 3;
+}
+
+.traener > img{
+    border-radius: 50%;
+}
+
+.traenerSektion{
+    display: grid;
+    margin: 0 100px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.introSektion{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    margin: 0 100px;
+}
+
+.holdBillede{
+    grid-column: -1 / span 4;
+}
+
+.TraeningsTider{
+    grid-column: -1/ span 4;
+    background-color: hsl(330, 85%, 67%);
+    padding: 1rem;
+}
+
+.TraeningsTider p, h4{
+    margin: 0;
+}
+
+.Kontigent{
+    grid-column: -1/ span 4;
+    background-color: #E1F5FA;
+    padding: 1rem;
+}
+
+.Kontigent p{
+    margin: 0;
+}
+
+.Kontigent a{
+    display: block;
+    text-decoration: none;
+    background-color: #6BCBE4;
+    color: black;
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.holdIntroBox{
+    grid-column: 1 / span 7;
+    grid-row: 1 / 4;
+}
