@@ -319,7 +319,6 @@ nav ul {
 
 
 
-
 /* EMILIAS CSS */
 
 
@@ -402,9 +401,24 @@ nav ul {
 
 
 
-
-
-
+/* Sponsor side*/
+.infoSponsorer h2 {
+font-size: 1rem;
+}
+.infoSponsorer {
+    font-size: 0.9rem;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 40px;
+    
+}
+.kontaktInfo {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.kfumLogoCapsule h4 {
+text-decoration: none;
+}
 
 
 
