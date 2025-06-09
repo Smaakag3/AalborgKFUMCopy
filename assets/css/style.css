@@ -323,6 +323,104 @@ nav ul {
 
 /* EMILIAS CSS */
 
+/*maalsaetninger*/
+
+.breadcrumbs{
+    display: flex;
+}
+.breadcrumbs a{
+    color: black;
+}
+.sideDuPaa{
+    font-weight: bolder;
+}
+
+/*Maalsaetninger*/
+.allKortMaalsaetninger{
+    margin-bottom: 1rem;
+}
+.allKortMaalsaetninger img {
+  width: 10rem;
+}
+.effekteMaal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+.cardMaal {
+  text-align: center;
+  margin: var(--mSpacer);
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  border: 0.1rem solid black;
+  box-shadow: 0.5rem 0.5rem;
+}
+.faellesskab{
+    margin-bottom: 2.5rem;
+}
+.cardMaal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardMaal p {
+  position: absolute;
+  font-size: 1.1rem;
+  bottom: 1%;
+  left: 2%;
+}
+
+/*maal indhold*/
+
+.popupCardMaal {
+  display: none;
+  position: absolute;
+}
+
+.ordenlighedPopup{
+   top: 35%; 
+}
+
+.faellesskabPopup{
+    top: 96%;
+}
+
+.udviklingPopup{
+    top: 160%;
+}
+
+.popupCardMaal img{
+    width: 15rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+.maalIndehold {
+  text-align: center;
+  background-color: #e1f5fa;
+  margin: var(--mSpacer);
+  width: 20rem;
+  height: 22rem;
+  position: relative;
+  border: 0.1rem solid black;
+  box-shadow: 0.5rem 0.5rem;
+}
+
+.faellesskabIndhold{
+    height: 23rem;
+}
+
+.maalIndehold h3 , p{
+    margin: 0.5rem var(--xsSpacer);
+}
+
 
 
 
