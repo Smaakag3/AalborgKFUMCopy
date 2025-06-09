@@ -430,6 +430,7 @@ text-decoration: none;
 .stoetKlubben img{
     width: 60%;
     align-content: center;
+    padding-top: 20px;
     
 }
 .stoetKlubben {
@@ -439,15 +440,28 @@ text-decoration: none;
     margin-top: 40px;
     line-height: 1.6rem;
 }
+.stoetKlubben a{
+    background-color: var(--lightBlue);
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    
+}
 .OKSponsor img{
 padding-bottom: 10%;
 }
+.sponsorSektion {
+margin-left: 40px;
+padding-top: 20px;
+}
 .alleSponsorer{
     display: grid;
-    grid-template-rows: (3fr);
+    grid-template-columns: repeat(2, 9fr);
+    
 }
 .alleSponsorer img {
-    width: 30%;
+    width: 70%;
+    padding-bottom: 20%;
 }
 
 
