@@ -594,10 +594,8 @@ footer{
     background-color: var(--darkBlue);
     margin-top: var(--mSpacer);
     padding-left: var(--mSpacer);
-    
+    padding-top: var(--sSpacer);
 }
-
-
 
 .footerInfo{
    display: flex;
@@ -620,16 +618,6 @@ footer a, footer p{
     padding:0.2rem 1rem;
 }
 
-@media only screen and (max-width: 780px){
-    .footerLogo{
-    width: 3.5rem;
-}
-footer p, footer a{
-    font-size: x-small;
-}
-}
-
-
 hr{
     margin: var(--sSpacer) var(--mSpacer);
 }
@@ -644,6 +632,17 @@ hr{
     align-items: center;
 }
 
+@media only screen and (max-width: 780px){
+    .footerLogo{
+    width: 3.5rem;
+}
+footer p, footer a{
+    font-size: x-small;
+}
+.copPri{
+    justify-content: space-between;
+}
+}
 /*maalsaetninger side*/
 
 .mobil{
