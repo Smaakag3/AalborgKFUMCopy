@@ -428,14 +428,14 @@ text-decoration: none;
     width: 40%;
 }
 .stoetKlubben img{
-    width: 60%;
+    width: 100%;
     align-content: center;
     padding-top: 20px;
     
 }
 .stoetKlubben {
     font-size: 0.9rem;
-    width: 80%;
+    max-width: 70%;
     margin-left: 40px;
     margin-top: 40px;
     line-height: 1.6rem;
@@ -445,14 +445,22 @@ text-decoration: none;
     text-decoration: none;
     color: black;
     padding: 20px;
-    
+    box-shadow:  black;
 }
+
 .OKSponsor img{
-padding-bottom: 10%;
+padding-bottom: 1rem;
+}
+.OKSponsor p{
+    padding-bottom: 20px;
+}
+
+.TommyTeltSponsor p {
+    padding-bottom: 1.25rem;
 }
 .sponsorSektion {
-margin-left: 40px;
-padding-top: 20px;
+margin-left: 2.5rem;
+padding-top: 2.5rem;
 }
 .alleSponsorer{
     display: grid;
@@ -460,7 +468,7 @@ padding-top: 20px;
     
 }
 .alleSponsorer img {
-    width: 70%;
+    max-width: 70%;
     padding-bottom: 20%;
 }
 
