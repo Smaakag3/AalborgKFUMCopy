@@ -807,6 +807,7 @@ hr{
 .udviklingPopup{
     top: 64rem;
 }
+}
 
 
 
@@ -1091,7 +1092,7 @@ padding-top: 2.5rem;
         grid-template-columns: repeat(4, 6fr);
 }
   }
-=======
+
 
 
 /* Arnis CSS */
