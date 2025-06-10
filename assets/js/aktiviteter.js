@@ -6,24 +6,32 @@ const activitySelectorEl = document.querySelector("#activitySelector");
 
 const knapper = document.querySelectorAll(".aabenAktiviteter");
 // Denne linje vælger alle dokumenter med class aabenAktiviteter og gemmer dem som node*, samt holder const kanpper alle de valgte elementer i en konnstant variabel med navnet knapper
-knapper.forEach(function(knap) 
+knapper.forEach(function(knappe) 
 // forEach looper igennem hvert elemenet i knepper (node)
 //(function(knap) definerer en function, der kører for hvert element i knapper men den aktuelle element i loopet bliver gemt/holdt i variablet med navnet knap
  {
-    knap.addEventListener("click",function() {
-        knap.classList.toggle("active");
-        const aktivitetsIndhold = knap.nextElementSibling;
+    knappe.addEventListener("click",function() {
+        knappe.classList.toggle("active");
+
+        const aktivitetsIndhold = knappe.nextElementSibling;
         if(aktivitetsIndhold.style.display === "block"){
             aktivitetsIndhold.style.display = "none";
         }
         else {
             aktivitetsIndhold.style.display = "block"
          }
+         const ikon = knappe.querySelector("i");
+         if (knappe.classList.contains("active")){
+            ikon.classList.remove("fa-chevron-down");
+            ikon.classList.add("fa-chevron-up");
+         } else{
+            ikon.classList.remove("fa-chevron-up");
+            ikon.classList.add("fa-chevron-down");
+         }
   });
 });
 
 //* Node
-
 
 
 function fetchData(){
@@ -52,6 +60,4 @@ function fetchData(){
 
 holdSelectorEl.addEventListener("change", fetchData);
 activitySelectorEl.addEventListener("change", fetchData);
-
-
 

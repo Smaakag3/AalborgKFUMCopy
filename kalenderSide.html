@@ -18,42 +18,46 @@
     <header></header>
     <main>
       <section class="aktivitetsKalenderen">
-        <article class="aktivitetsIndhold">
-          <button class="aabenAktiviteter">Årshjul</button>
-
-          <img
-            src="./assets/pictures/picForside/Aarshjul.jpg"
-            alt=""
-            loading="lazy"
-          />
-        </article>
-
-        <button class="aabenAktiviteter">Kalender</button>
-        <div class="aktivitetsIndhold">
-          <div class="aktivitetKalender">
+        <h2>Aktiviteter</h2>
+        <button class="aabenAktiviteter">
+          Årshjul <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <img
+          src="./assets/pictures/picForside/Aarshjul.jpg"
+          alt=""
+          loading="lazy"
+        />
+        <button class="aabenAktiviteter">
+          Kalender <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="aktivitetsKalenderIndhold">
+          <article class="aktivitetKalender">
             <ul class="moened">
               <li><i class="fa-solid fa-arrow-left"></i></li>
               <li>Juni</li>
               <li><i class="fa-solid fa-arrow-right"></i></li>
             </ul>
-            <select name="hold-Selector" id="holdSelector">
-              <option value="" disabled selected="selected">Hold</option>
-              <option value="66">Børnehold</option>
-              <option value="283">Ungdomshold</option>
-              <option value="125">Seniorhold</option>
-              <option value="66, 283,125">Alle Hold</option>
-            </select>
-            <select name="activity-selector" id="activitySelector">
-              <option value="" disabled selected="selected">
-                Trænings dage
-              </option>
-              <option value="30">Mandag</option>
-              <option value="31">Tirsdag</option>
-              <option value="32">Onsdag</option>
-              <option value="33">Torsdag</option>
-              <option value="34">Fredag</option>
-            </select>
-
+            <div class="selectorGruppe">
+              <select name="hold-Selector" id="holdSelector">
+                <option value="" disabled selected="selected">Hold</option>
+                <option value="66">Børnehold</option>
+                <option value="283">Ungdomshold</option>
+                <option value="125">Seniorhold</option>
+                <option value="66, 283,125">Alle Hold</option>
+              </select>
+            </div>
+            <div class="selectorGruppe">
+              <select name="activity-selector" id="activitySelector">
+                <option value="" disabled selected="selected">
+                  Trænings dage
+                </option>
+                <option value="30">Mandag</option>
+                <option value="31">Tirsdag</option>
+                <option value="32">Onsdag</option>
+                <option value="33">Torsdag</option>
+                <option value="34">Fredag</option>
+              </select>
+            </div>
             <ul class="dage">
               <li>Søn. 1</li>
               <li>Man. 2</li>
@@ -91,8 +95,7 @@
               <li>Fre. 4</li>
               <li>Lør. 5</li>
             </ul>
-            <section class="aktivitetsKalender"></section>
-          </div>
+          </article>
         </div>
       </section>
     </main>
