@@ -5,7 +5,11 @@ const holdSelectorEl = document.querySelector("#holdSelector");
 const activitySelectorEl = document.querySelector("#activitySelector");
 
 const knapper = document.querySelectorAll(".aabenAktiviteter");
-knapper.forEach(function(knap) {
+// Denne linje vælger alle dokumenter med class aabenAktiviteter og gemmer dem som node*, samt holder const kanpper alle de valgte elementer i en konnstant variabel med navnet knapper
+knapper.forEach(function(knap) 
+// forEach looper igennem hvert elemenet i knepper (node)
+//(function(knap) definerer en function, der kører for hvert element i knapper men den aktuelle element i loopet bliver gemt/holdt i variablet med navnet knap
+ {
     knap.addEventListener("click",function() {
         knap.classList.toggle("active");
         const aktivitetsIndhold = knap.nextElementSibling;
@@ -18,7 +22,7 @@ knapper.forEach(function(knap) {
   });
 });
 
-
+//* Node
 
 
 

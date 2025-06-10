@@ -234,11 +234,12 @@ nav ul {
     background-color: #D9D9D9;
     border: none;
     padding: 20px;
-    width: 40%;
+    width: 30%;
     text-align: center;
     transition: 0.2s;
     gap: 10%;
     margin-left: 40px;
+    display: inline-block;
     
 }
 .active, .aabenAktiviteter:hover {
