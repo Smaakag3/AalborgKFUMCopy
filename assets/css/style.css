@@ -340,6 +340,7 @@ nav ul {
         width: 100%;
         height: 25rem;
         object-fit: cover;
+        object-position: 30% 40%;
     }
 
     /*kamp*/
