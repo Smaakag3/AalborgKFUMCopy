@@ -410,7 +410,7 @@ nav ul {
         height: 20rem;
         position: relative;
         border: 0.1rem solid black;
-        box-shadow: 0.5rem 0.5rem;
+        box-shadow: 5px 5px 6px gray;
     }
     .effekte{
         position: absolute;
@@ -436,7 +436,7 @@ nav ul {
         padding: 7rem 3rem;
         background-image: linear-gradient(to bottom, rgba(205,244,206,1), rgba(255,255,255,1));
         border: 0.1rem solid black;
-        box-shadow: 0.5rem 0.5rem;
+        box-shadow: 5px 5px 6px gray;
     }
 
     .flerenyhederKort h3{
@@ -450,7 +450,7 @@ nav ul {
         color: black;
         padding: 0.5rem 1rem ;
         background-color: var(--lightBlue);
-        box-shadow: 0.3rem 0.3rem;
+        box-shadow:5px 5px 6px gray ;
         margin: 1.5rem 30rem;
         text-align: center;
         display: block;
@@ -694,7 +694,7 @@ hr{
   height: 20rem;
   position: relative;
   border: 0.1rem solid black;
-  box-shadow: 0.5rem 0.5rem;
+  box-shadow: 5px 5px 6px gray;
 }
 .faellesskab{
     margin-bottom: 2.5rem;
@@ -706,9 +706,10 @@ hr{
 }
 .cardMaal p {
   position: absolute;
+  font-weight: bolder;
   font-size: 1.1rem;
-  bottom: 1%;
-  left: 2%;
+  bottom: 5%;
+  left: 4%;
 }
 .ordenlighedIndhold{
     position: relative;
@@ -744,7 +745,7 @@ hr{
   height: 24rem;
   position: relative;
   border: 0.1rem solid black;
-  box-shadow: 0.5rem 0.5rem;
+  box-shadow: 5px 5px 6px gray;
 }
 
 .faellesskabIndhold{
@@ -767,7 +768,7 @@ hr{
     background-color: var(--pink);
     padding: 0.1rem 0.8rem;
     font-size: small;
-    box-shadow: 0.1rem 0.1rem ;
+    box-shadow: 5px 5px 6px gray;
 }
 
 .lukKnap:hover{
