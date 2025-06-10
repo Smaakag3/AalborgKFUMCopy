@@ -831,15 +831,16 @@ text-decoration: none;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
-    margin: 0 100px;
+    margin: 0 100px 100px 100px;
 }
 
 .holdBillede{
-    grid-column: -1 / span 4;
+    grid-column: 9 / span 3;
+    max-width: 100%;
 }
 
 .TraeningsTider{
-    grid-column: -1/ span 4;
+    grid-column: 9/ span 3;
     background-color: hsl(330, 85%, 67%);
     padding: 1rem;
 }
@@ -849,7 +850,9 @@ text-decoration: none;
 }
 
 .Kontigent{
-    grid-column: -1/ span 4;
+    /* grid-column: -1 / span 4; */
+    grid-column: 9 / span 3;
+    /* grid-row: 5; */
     background-color: #E1F5FA;
     padding: 1rem;
 }
@@ -869,6 +872,6 @@ text-decoration: none;
 }
 
 .holdIntroBox{
-    grid-column: 1 / span 7;
+    grid-column: 2 / span 6;
     grid-row: 1 / 4;
 }
