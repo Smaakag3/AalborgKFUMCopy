@@ -293,13 +293,46 @@ img {
     border: solid black 0.01rem;
     background-color: white;
     display: flex;
+    position: relative;
+}
+.prikker {
+    display: flex;
+    padding-top: 3rem;
+    gap: 4px;
+    position: absolute;
 }
 
+.traeningSenioKvinder {
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    background-color: lightcoral;
+}
+.traeningSeniorMand {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkblue;
+    padding-left: 10px;
+}
+.traeningUngdom{
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: orange;
+        
+}
+.traeningBoern{
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: lightblue;
+        padding-left: 5px;
+}
 .moened {
     display: flex;
     gap: 5%;
 }
-
 #holdSelector,
 #activitySelector {
     background-color: #D9D9D9;
@@ -307,11 +340,96 @@ img {
     padding-bottom: 20px;
     text-align: center;
     margin-left: 40px;
+    width: 15rem;
 }
 
 /* Medie queiries*/
+@media screen and (max-width: 780px) {
+.aabenAktiviteter {
+        background-color: #D9D9D9;
+        border: none;
+        padding: 20px;
+        width: 10rem;
+        text-align: center;
+        transition: 0.2s;
+        gap: 5rem;
+        display: inline-block;
+        margin-left: 40px;
+    }
+     #holdSelector,
+        #activitySelector {
+            gap: 10%;
+            width: 9rem;
+        }
+}
 
+@media screen and (min-width: 780px) {
+    .aabenAktiviteter {
+        width: 15rem;
+        gap: 10rem;
+        display: inline-block;
+        margin-left: 70px;
+    }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 8rem;
+        }
+        .traeningSenioKvinder {
+    width: 15px;
+        height: 15px;
+}
+.traeningSeniorMand {
+    width: 15px;
+    height: 15px;
+    
+}
+.traeningUngdom {
+    width: 15px;
+        height: 15px;
 
+}
+.traeningBoern{
+    width: 15px;
+        height: 15px;
+      
+}
+
+}
+
+@media screen and (min-width: 1100px) {
+    #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+         .traeningSenioKvinder {
+    width: 20px;
+        height: 20px;
+}
+.traeningSeniorMand {
+    width: 20px;
+    height: 20px;
+    
+}
+.traeningUngdom {
+    width: 20px;
+        height: 20px;
+
+}
+.traeningBoern{
+width: 20px;
+    height: 20px;
+}
+}
 
 
 
