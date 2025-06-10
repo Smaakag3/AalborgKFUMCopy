@@ -10,6 +10,43 @@ const holdEl = document.querySelector(".holdSektion");
 const genderSelectorEl = document.querySelector("#genderSelector");
 const yearSelectorEl = document.querySelector("#yearSelector");
 const removeFilterEl = document.querySelector("#removeFilter");
+const holdAnsvarligEl = document.querySelector(".holdAnsvarlig");
+
+// En fetch request hvor vi specifikt søger efter post med ID'et 230, som i dette tilfælde er ungdomsafdelingen. Dette skal bruges for at tilføje formanden for denne afdeling til siden
+fetch(domain + "wp-json/wp/v2/posts/230")
+.then(res => res.json())
+.then(data => renderResponsable(data))
+.catch(err => console.log(err))
+
+// En funktion som modtager data fra tiligere fetch request. Den tidligere fetch request modtog data fra "ungdomsafdeling" indlæget, men vi er kun interesseret i at finde formanden for afdelingen.
+function renderResponsable(data){
+    // Vi laver et forEach loop da det vi leder efter er inde i et Array. Heri ønsker vi at finde og bruge ID'et som formanden har fået tildelt
+    data.acf.ansvarlig.forEach(holdAnsvarlig => {
+        // Vi laver endnu en fetch request med formandens ID til at finde deres indlæg fra WordPress
+        fetch(domain + "wp-json/wp/v2/posts/" + holdAnsvarlig + "?acf_format=standard")
+        .then(res => res.json())
+        // Vi laver en funktion med det data vi har fået som har til formål at generere indhold på vores side 
+        .then(data => responseable(data))
+        .catch(err => console.log(err))
+    })
+
+    // Funktionen som skal generere indhold om formandens indformation på siden
+    function responseable(data){
+        holdAnsvarligEl.innerHTML += `
+        <img src="${data.acf.billede_af_personen.sizes.large}" alt="Billede af afdelingsansvarlig">
+        <h2>${data.acf.stillingsbetegnelse}</h2>
+        <h3>${data.acf.fulde_navn}</h3>
+        <div class="mailSektion">
+        <img src="./assets/pictures/envelope.svg" alt="E-mail ikon" class="kontaktIkon">
+        <p>${data.acf.mail}</p>
+        </div>
+        <div class="telefonSektion">
+        <img src="./assets/pictures/phone.svg" alt="Telefon ikon" class="kontaktIkon">
+        <p>${data.acf.telefonnummer}</p>
+        </div>
+        `   
+    }
+}
 
 // En funktion som har til opgave at hente vores data gennem fetch, samt at tage valuen fra vores selectors på vores HTML side og tilføje det til vores query parameter.
 function fetchData(){
@@ -66,11 +103,14 @@ function renderData(data){
     
     data.forEach(team => {
         holdEl.innerHTML += `
-        <article>
+        <article class="holdCard">
         <a href="holdSide.html?slug=${team.slug}">
         <img src="${team.acf.holdbillede.sizes.large}" alt="Billede af ${team.acf.hold_navn}">
         <h2>${team.acf.hold_navn}</h2>
+        <div class="holdAlderOgPris">
+        <p>${team.acf.aargang.name}</p>
         <p>${team.acf.kontigentsats},- pr. 1/2 år</p>
+        </div>
         </a>
         </article>
         `
