@@ -1106,14 +1106,12 @@ padding-top: 2.5rem;
         grid-template-columns: repeat(4, 6fr);
 }
   }
-=======
-
 
 /* Arnis CSS */
 
 .kontaktIkon{
-    height: 25px;
     width: 25px;
+    height: 25px;
     margin: 0.5rem;
 }
 
@@ -1247,7 +1245,7 @@ padding-top: 2.5rem;
     padding: 1rem;
 }
 
-.holdAnsvarlig img{
+.holdAnsvarlig > img{
     border-radius: 50%;
 }
 
