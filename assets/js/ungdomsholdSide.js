@@ -12,21 +12,26 @@ const yearSelectorEl = document.querySelector("#yearSelector");
 const removeFilterEl = document.querySelector("#removeFilter");
 const holdAnsvarligEl = document.querySelector(".holdAnsvarlig");
 
+// En fetch request hvor vi specifikt søger efter post med ID'et 230, som i dette tilfælde er ungdomsafdelingen. Dette skal bruges for at tilføje formanden for denne afdeling til siden
 fetch(domain + "wp-json/wp/v2/posts/230")
 .then(res => res.json())
 .then(data => renderResponsable(data))
 .catch(err => console.log(err))
 
+// En funktion som modtager data fra tiligere fetch request. Den tidligere fetch request modtog data fra "ungdomsafdeling" indlæget, men vi er kun interesseret i at finde formanden for afdelingen.
 function renderResponsable(data){
+    // Vi laver et forEach loop da det vi leder efter er inde i et Array. Heri ønsker vi at finde og bruge ID'et som formanden har fået tildelt
     data.acf.ansvarlig.forEach(holdAnsvarlig => {
+        // Vi laver endnu en fetch request med formandens ID til at finde deres indlæg fra WordPress
         fetch(domain + "wp-json/wp/v2/posts/" + holdAnsvarlig + "?acf_format=standard")
         .then(res => res.json())
+        // Vi laver en funktion med det data vi har fået som har til formål at generere indhold på vores side 
         .then(data => responseable(data))
         .catch(err => console.log(err))
     })
 
+    // Funktionen som skal generere indhold om formandens indformation på siden
     function responseable(data){
-        console.log(data);
         holdAnsvarligEl.innerHTML += `
         <img src="${data.acf.billede_af_personen.sizes.large}" alt="Billede af afdelingsansvarlig">
         <h2>${data.acf.stillingsbetegnelse}</h2>
@@ -41,7 +46,6 @@ function renderResponsable(data){
         </div>
         `   
     }
-
 }
 
 // En funktion som har til opgave at hente vores data gennem fetch, samt at tage valuen fra vores selectors på vores HTML side og tilføje det til vores query parameter.
