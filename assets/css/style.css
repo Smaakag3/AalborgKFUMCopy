@@ -521,6 +521,7 @@ margin: 1.5rem 20rem;
 }
 }
 
+
 @media only screen and (max-width: 780px){
     .mobil{
         display: inline;
@@ -596,6 +597,8 @@ footer{
     
 }
 
+
+
 .footerInfo{
    display: flex;
     flex-direction: row;
@@ -614,8 +617,15 @@ footer a, footer p{
 .footerNav a{
     display: flex;
     flex-direction: column;
-    padding: var(--xsSpacer) var(--mSpacer);
+    padding:0.2rem 1rem;
 }
+
+@media only screen and (max-width: 780px){
+    .footerLogo{
+    width: 3.5rem;
+}
+}
+
 
 hr{
     margin: var(--sSpacer) var(--mSpacer);
