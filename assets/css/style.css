@@ -1129,7 +1129,7 @@ padding-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
-    margin: 0 100px 100px 100px;
+    /* margin: 0 100px 100px 100px; */
 }
 
 .holdBillede{
@@ -1175,3 +1175,70 @@ padding-top: 2.5rem;
     grid-column: 2 / span 6;
     grid-row: 1 / 4;
 }
+
+
+.holdCard h2, p{
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.holdCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.holdCard{
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.holdSektion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0 100px;
+}
+
+.holdCard a > img{
+    width: 100%;
+}
+
+.holdAlderOgPris{
+    display: flex;
+    justify-content: space-between;
+}
+
+.afdeling{
+    margin: 0 100px;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.afdelingBeskrivelse{
+    padding: 1rem;
+    grid-column: 1 / span 2;
+}
+
+.afdelingBeskrivelse p, h2, h3{
+    margin: 1rem 0;
+}
+
+.holdAnsvarlig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.holdAnsvarlig img{
+    border-radius: 50%;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+

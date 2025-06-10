@@ -44,11 +44,14 @@ function renderData(data){
     
     data.forEach(team => {
         holdEl.innerHTML += `
-        <article>
+        <article class="holdCard">
         <a href="holdSide.html?slug=${team.slug}">
         <img src="${team.acf.holdbillede.sizes.large}" alt="Billede af ${team.acf.hold_navn}">
         <h2>${team.acf.hold_navn}</h2>
+        <div class="holdAlderOgPris">
+        <p>${team.acf.alder.name}</p>
         <p>${team.acf.kontigentsats},- pr. 1/2 år</p>
+        </div>
         </a>
         </article>
         `
