@@ -630,7 +630,8 @@ hr{
     display: flex;
     align-items: center;
 }
-/*maalsaetninger*/
+
+/*maalsaetninger side*/
 
 .mobil{
     display: none;
@@ -667,11 +668,11 @@ hr{
     height: 5rem;
 }
 
-/*Maalsaetninger*/
+/*Maalsaetninger kort*/
 .allKortMaalsaetninger{
     display: flex;
-    justify-content: center;
 }
+
 .allKortMaalsaetninger img {
   width: 10rem;
 }
@@ -724,7 +725,7 @@ hr{
 .popupCardMaal { /*dette card kan ikke ses for man cliker paa det*/
   display: none;
   position: absolute;
-  top: 145px;
+  top: 140px;
 }
 
 .udviklingPopup img{
@@ -806,6 +807,7 @@ hr{
 
 .udviklingPopup{
     top: 64rem;
+}
 }
 
 
