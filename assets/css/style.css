@@ -624,6 +624,9 @@ footer a, footer p{
     .footerLogo{
     width: 3.5rem;
 }
+footer p, footer a{
+    font-size: x-small;
+}
 }
 
 
