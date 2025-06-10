@@ -868,45 +868,65 @@ footer p, footer a{
 
 
 
-
 /* Samantas CSS */
 
 /* Aktiviteter */
-.aktivitetsKnapper {
-    gap: 10%;
+ h2 {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+img {
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
 .aabenAktiviteter {
     background-color: #D9D9D9;
     border: none;
     padding: 20px;
-    width: 40%;
+    width: 15rem;
     text-align: center;
-    transition: 0.4s;
+    transition: 0.2s;
     gap: 10%;
-
+    display: inline-block;
+    margin-left: 40px;
 }
-.active, .aabenAktiviteter:hover {
-    background-color:#D9D9D9;
+
+.active,
+.aabenAktiviteter:hover {
+    background-color: #939393;
 }
 
 /*kalender*/
 
-.aktivitetKalender {
+.aktivitetsKalenderIndhold p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.aktivitetKalender ,.dage{
     background-color: #E1F5FA;
     padding-inline-end: 40px;
     padding-bottom: 40px;
+    width: 100%;
 }
-.moened,.dage {
+
+.moened,
+.dage {
     list-style-type: none;
     width: 100%;
-    
 }
-.moened{
+
+.moened {
     padding: 10px 20px;
+    margin-left: 40px;
 }
+
 .dage {
-    font-size: 0.7rem;
+    font-size: 70%;
     text-align: start;
     display: grid;
     grid-template-columns: repeat(7, 5fr);
@@ -914,29 +934,148 @@ footer p, footer a{
 
 .dage li {
     padding-bottom: 40%;
-        padding-left: 40%;
-        padding-right: 30%;
+    padding-left: 40%;
+    padding-right: 30%;
     border: solid black 0.01rem;
     background-color: white;
     display: flex;
+    position: relative;
+}
+.prikker {
+    display: flex;
+    padding-top: 3rem;
+    gap: 4px;
+    position: absolute;
+}
+
+.traeningSenioKvinder {
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    background-color: lightcoral;
+}
+.traeningSeniorMand {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkblue;
+    padding-left: 10px;
+}
+.traeningUngdom{
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: orange;
+        
+}
+.traeningBoern{
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: lightblue;
+        padding-left: 5px;
 }
 .moened {
     display: flex;
     gap: 5%;
 }
-#holdSelector, #activitySelector {
+#holdSelector,
+#activitySelector {
     background-color: #D9D9D9;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    align-items: center;
     margin-left: 40px;
-
+    width: 15rem;
 }
 
 /* Medie queiries*/
+@media screen and (max-width: 780px) {
+.aabenAktiviteter {
+        background-color: #D9D9D9;
+        border: none;
+        padding: 20px;
+        width: 10rem;
+        text-align: center;
+        transition: 0.2s;
+        gap: 5rem;
+        display: inline-block;
+        margin-left: 40px;
+    }
+     #holdSelector,
+        #activitySelector {
+            gap: 10%;
+            width: 9rem;
+        }
+}
 
+@media screen and (min-width: 780px) {
+    .aabenAktiviteter {
+        width: 15rem;
+        gap: 10rem;
+        display: inline-block;
+        margin-left: 70px;
+    }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 8rem;
+        }
+        .traeningSenioKvinder {
+    width: 15px;
+        height: 15px;
+}
+.traeningSeniorMand {
+    width: 15px;
+    height: 15px;
+    
+}
+.traeningUngdom {
+    width: 15px;
+        height: 15px;
 
+}
+.traeningBoern{
+    width: 15px;
+        height: 15px;
+      
+}
+
+}
+
+@media screen and (min-width: 1100px) {
+    #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+         .traeningSenioKvinder {
+    width: 20px;
+        height: 20px;
+}
+.traeningSeniorMand {
+    width: 20px;
+    height: 20px;
+    
+}
+.traeningUngdom {
+    width: 20px;
+        height: 20px;
+
+}
+.traeningBoern{
+width: 20px;
+    height: 20px;
+}
+}
 
 
 
