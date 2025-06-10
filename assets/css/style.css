@@ -949,27 +949,149 @@ hr{
 
 
 /* Sponsor side*/
+.mainSponsor{
+     margin-top: 40px;
+     margin-left: 40px;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+}
 .infoSponsorer h2 {
 font-size: 1rem;
 }
 .infoSponsorer {
-    font-size: 0.9rem;
-    width: 80%;
-    margin-left: 40px;
-    margin-top: 40px;
+    width: 90%;
+    line-height: 1.6rem;
     
 }
 .kontaktInfo {
+    padding-top: 40px;
     font-size: 0.8rem;
     text-align: center;
+    line-height: 1.6rem;
 }
-.kfumLogoCapsule h4 {
+.kontaktInfo h4 {
 text-decoration: none;
 }
+.kontaktInfo img{
+    width: 150px;
+}
+.stoetKlubben img{
+    width: 50%;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+.stoetKlubben {
+    padding-right: 40px;
+}
 
 
+.OKSponsor img{
+padding-bottom: 1rem;
+width: 70%;
+}
+.OKSponsor p{
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.TommyTeltSponsor p {
+    padding-bottom: 1.25rem;
+    width: 90%;
+    margin-right: 40px;
+    
+    
+}
+.sponsorSektion {
+padding-top: 2.5rem;
+}
+.alleSponsorer{
+    display: grid;
+    grid-template-columns: repeat(2, 9fr);
+    
+}
+.alleSponsorer img {
+    max-width: 70%;
+    padding-bottom: 20%;
+}
 
 
+/*Media queries*/
+ @media screen and (min-width: 780px){
+    .mainSponsor {
+        line-height: 1.7rem;
+        font-size: 1rem;
+    }
+    .mainSponsor h2 {
+            font-size: 1.5rem;
+        }
+    .infoSponsorer p{
+        font-size: 1rem;
+    }
+    .kontaktInfo img{
+        width: 150px;
+    }
+    .infoSponsorer{
+        width: 50%;
+    }
+    .kontaktInfo{
+        margin-left: 5rem;
+        padding-bottom: 3rem;
+    }
+.infoSponsorer, .kontaktInfo{
+    display: inline-block;
+}
+.alleSponsorer {
+    display: grid;
+    grid-template-columns: repeat(3, 7fr);
+}
+    
+ }
+  @media screen and (min-width: 1100px) {
+    .mainSponsor {
+            line-height: 1.9rem;
+            font-size: 1.1rem;
+        }
+    .mainSponsor h2 {
+            font-size: 1.7rem;
+        }
+      .kontaktInfo img {
+          width: 170px;
+      }
+          .infoSponsorer p {
+              font-size: 1.1rem;
+          }
+          .kontaktInfo {
+              font-size: 1.1rem;
+          }
+
+         .infoSponsorer,
+         .kontaktInfo {
+             display: inline-block;
+             padding-bottom: 4rem;
+         }
+        .stoetKlubben {
+            display: flex;
+            width: 100%;
+            gap: 40px;
+            font-size: 1.1rem;
+        }
+         .OKSponsor {
+        width: 90%;
+         }
+         .TommyTeltSponsor{
+        width: 90%;
+      }  
+     
+      .kontaktInfo{
+        margin-left: 7rem;
+      }
+         .alleSponsorer {
+        display: grid;
+        grid-template-columns: repeat(4, 6fr);
+}
+  }
+=======
 
 
 /* Arnis CSS */
@@ -1046,6 +1168,7 @@ text-decoration: none;
     margin: 1rem auto;
     width: fit-content;
 }
+
 
 /* Arnis CSS*/
 .holdIntroBox{
