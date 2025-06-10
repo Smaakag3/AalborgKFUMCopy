@@ -19,6 +19,7 @@ body {
     --mSpacer: 1.563rem;
     --lSpacer: 3.125rem;
     --xlSpacer: 6.25rem;
+ 
 }
 
 /* Nav css */
@@ -321,11 +322,491 @@ nav ul {
 
 
 
-/* EMILIAS CSS */
+/* EMILIAS CSS Forside */
+/*Desktop*/
+    .mobil{
+        display: none;
+    }
+    p , h2 , h1{
+        margin: var(--sSpacer) var(--mSpacer) ;
+        max-width: 75ch;
+    }  
+
+    h2{
+        margin-top: var(--lSpacer);
+    }
+
+    .desktopHeader{
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        object-position: 30% 40%;
+    }
+
+    /*kamp*/
+
+    .kampPogram {
+        display: flex;
+        justify-content: center;
+    } 
+
+    .kamp{
+        background-color: #CDF4CE;
+        padding: 0.5rem;
+        margin: 0 0.3rem;
+    }
+    .kamp p{
+        font-size: 0.8rem;
+    }
+
+    .kampIntro{
+        text-align: center;
+        margin: 0;
+    }
+
+    .spillerKamp{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: var(--sSpacer);
+    }
+
+    .spillerKamp img{
+        background-color: white;
+        border-radius: 50%;
+        height: 4rem;
+        object-fit: scale-down;
+    } 
+
+    .kampHold{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .kampHold p{
+        margin: 0.5rem;
+        font-weight: bold;
+    }
+
+    .kampTidspunkt{
+        display: flex;
+        justify-content: center;
+    }
+
+    .kampTidspunkt p{
+        margin: 0.3rem;
+    }
+
+    /*nyheder*/
+    .nyhederKortall{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nyhederKort {
+        text-align: center;
+        margin: var(--mSpacer);
+        width: 25rem;
+        height: 20rem;
+        position: relative;
+        border: 0.1rem solid black;
+        box-shadow: 0.5rem 0.5rem;
+    }
+    .effekte{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,255,255,1));
+    }
+    .nyhederKort img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .nyhederKort h3{
+        position: absolute;
+        font-size: 1.1rem;
+        bottom: 5%;
+        left: 2%;
+        color: black;
+    }
+    
+    .flerenyhederKort {
+
+        padding: 7rem 3rem;
+        background-image: linear-gradient(to bottom, rgba(205,244,206,1), rgba(255,255,255,1));
+        border: 0.1rem solid black;
+        box-shadow: 0.5rem 0.5rem;
+    }
+
+    .flerenyhederKort h3{
+        color: black;
+        font-size: 1.7rem;
+    }
+
+    /*med paa holdet*/
+    .knap{
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 1rem ;
+        background-color: var(--lightBlue);
+        box-shadow: 0.3rem 0.3rem;
+        margin: 1.5rem 30rem;
+        text-align: center;
+        display: block;
+    }
+
+    /*nordjyskebank*/
+    .nordjyskeBankTak{
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--mSpacer);
+    }
+    .nordjyskeBankTak img{
+        margin: var(--sSpacer);
+    }
+
+    /*favbilleder*/
+
+.favoritBillederForside{
+    background-color: #E1F5FA;
+    padding: 0.5rem 0 2rem;
+    }
+
+.favoritBillederForside h2{
+    margin-top: var(--sSpacer);
+}
+
+.favBilleder{
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+    }
+
+.favBilleder img{
+    width: 65%;
+    max-height: 15rem;
+    object-fit:scale-down;
+}
+
+.favDeskPil{
+       background: none;
+        border: none; 
+        align-items: center;
+        margin: var(--xsSpacer);
+    }
+
+.favDeskPil img{
+    width: 1.1rem;
+}
+
+/*kontkter*/
+.klubInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.klubInfo a{
+    color: black;
+}
+@media only screen and (max-width: 1100px){
+/*tilmeld intro*/
+.knap{
+margin: 1.5rem 20rem;
+}
+/*nyhede*/
+.flerenyhederKort {
+
+        padding: 6rem 3rem;
+}
+}
+
+@media only screen and (max-width: 780px){
+    .mobil{
+        display: inline;
+    }
+    .desktop{
+        display: none;
+    }
+    p , h2 , h1{
+        margin: var(--xsSpacer) var(--xsSpacer) ;
+    }  
+
+    .mobilHeader{
+    width: 100%;
+        height: 12rem;
+        object-fit: cover;
+    }
+
+/*kamp*/
+    
+    .spillerKamp img{
+        height: 3rem;
+    } 
+    .kamppil{
+       background: none;
+        border: none; 
+    }
+    .kamppil img{
+        background-color: transparent;
+        height: 1rem;
+    }
+
+/*nyheder*/
+.nyhederKortall{
+    flex-direction: column;
+}
+
+.flerenyhederKort{
+    width: 25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*tilmeld intro*/
+.knap{
+margin: 1.5rem 8rem;
+}
+
+/*favorit billeder*/
+
+.favoritBillederForside img{
+    width: 30%;
+    max-height: 9rem;
+    object-fit:scale-down;
+}
+.favoritPile{
+    display: flex;
+    justify-content: center;
+}
+.favoritPile button{
+       background: none;
+        border: none; 
+        align-items: center;
+        margin: var(--xsSpacer);
+    }
+
+}
+
+/*Footer*/
+footer{
+    background-color: var(--darkBlue);
+    margin-top: var(--mSpacer);
+    padding-left: var(--mSpacer);
+    
+}
+
+.footerInfo{
+   display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.footerletter{
+    background-color: rgb(255, 255, 255);
+}
+
+footer a, footer p{
+    color: white;
+    
+}
+
+.footerNav a{
+    display: flex;
+    flex-direction: column;
+    padding: var(--xsSpacer) var(--mSpacer);
+}
+
+hr{
+    margin: var(--sSpacer) var(--mSpacer);
+}
+
+.copPri{
+    display: flex;
+    justify-content: center;
+}
+
+.politikFooter{
+    display: flex;
+    align-items: center;
+}
+/*maalsaetninger*/
+
+.mobil{
+    display: none;
+}
+
+.breadcrumbs{
+    display: flex;
+    margin: 0.2rem 0.2rem;
+    justify-content: flex-start;
+}
+.breadcrumbs a{
+    color: black;
+}
+.breadcrumbs a, p{
+    margin: 0 0.2rem;
+}
+.sideDuPaa{
+    font-weight: bolder;
+}
+
+/*misson intro*/
+.missionIntro p{
+    max-width: 75ch;
+}
+
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 var(--mSpacer);
+}
+
+.mission img{
+    height: 5rem;
+}
+
+/*Maalsaetninger*/
+.allKortMaalsaetninger{
+    display: flex;
+    justify-content: center;
+}
+.allKortMaalsaetninger img {
+  width: 10rem;
+}
+.effekteMaal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+.cardMaal {
+  text-align: center;
+  margin: var(--mSpacer);
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  border: 0.1rem solid black;
+  box-shadow: 0.5rem 0.5rem;
+}
+.faellesskab{
+    margin-bottom: 2.5rem;
+}
+.cardMaal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardMaal p {
+  position: absolute;
+  font-size: 1.1rem;
+  bottom: 1%;
+  left: 2%;
+}
+.ordenlighedIndhold{
+    position: relative;
+}
+.faellesskabIndhold{
+    position: relative;
+}
+.udvikling{
+    position: relative;
+}
+
+/*maal indhold*/
+
+.popupCardMaal { /*dette card kan ikke ses for man cliker paa det*/
+  display: none;
+  position: absolute;
+  top: 145px;
+}
+
+.udviklingPopup img{
+    object-position: 100% 20%;
+}
+
+.faellesskabPopup img{
+   object-position: 100% 10%; 
+}
+
+.maalIndehold {
+  text-align: center;
+  background-color: #e1f5fa;
+  margin: var(--mSpacer);
+  width: 20rem;
+  height: 24rem;
+  position: relative;
+  border: 0.1rem solid black;
+  box-shadow: 0.5rem 0.5rem;
+}
+
+.faellesskabIndhold{
+    height: 25rem;
+}
+
+.udviklingIndhold{
+    height: 26rem ;
+}
+
+.maalIndehold h3{
+    margin: 0.5rem var(--xsSpacer);
+}
+
+.maalIndehold p{
+    margin: 0.5rem var(--xsSpacer);
+}
+
+.lukKnap{
+    background-color: var(--pink);
+    padding: 0.1rem 0.8rem;
+    font-size: small;
+    box-shadow: 0.1rem 0.1rem ;
+}
+
+.lukKnap:hover{
+    background-color:hsl(328, 77%, 88%) ;
+}
 
 
+@media only screen and (max-width: 1100px){
+    .popupCardMaal {
+    top: 150px;
+}
+
+}
 
 
+@media only screen and (max-width: 780px){
+.desktop{
+    display: none;
+}
+.mobil{
+    display: block;
+}
+.mission{
+    flex-direction: column;
+}
+.allKortMaalsaetninger{
+    flex-direction: column;
+    align-items: center;
+}
+.ordenlighedPopup{
+    top: 19rem;
+}
+
+.faellesskabPopup{
+    top: 41rem;
+}
+
+.udviklingPopup{
+    top: 64rem;
+}
 
 
 
@@ -375,6 +856,70 @@ nav ul {
 
 /* Samantas CSS */
 
+/* Aktiviteter */
+.aktivitetsKnapper {
+    gap: 10%;
+}
+
+.aabenAktiviteter {
+    background-color: #D9D9D9;
+    border: none;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    transition: 0.4s;
+    gap: 10%;
+
+}
+.active, .aabenAktiviteter:hover {
+    background-color:#D9D9D9;
+}
+
+/*kalender*/
+
+.aktivitetKalender {
+    background-color: #E1F5FA;
+    padding-inline-end: 40px;
+    padding-bottom: 40px;
+}
+.moened,.dage {
+    list-style-type: none;
+    width: 100%;
+    
+}
+.moened{
+    padding: 10px 20px;
+}
+.dage {
+    font-size: 0.7rem;
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(7, 5fr);
+}
+
+.dage li {
+    padding-bottom: 40%;
+        padding-left: 40%;
+        padding-right: 30%;
+    border: solid black 0.01rem;
+    background-color: white;
+    display: flex;
+}
+.moened {
+    display: flex;
+    gap: 5%;
+}
+#holdSelector, #activitySelector {
+    background-color: #D9D9D9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    align-items: center;
+    margin-left: 40px;
+
+}
+
+/* Medie queiries*/
 
 
 
@@ -470,6 +1015,7 @@ padding-top: 2.5rem;
     padding-bottom: 20%;
 }
 
+
 /*Media queries*/
  @media screen and (min-width: 780px){
     .mainSponsor {
@@ -545,5 +1091,87 @@ padding-top: 2.5rem;
         grid-template-columns: repeat(4, 6fr);
 }
   }
+=======
+
 
 /* Arnis CSS */
+
+.kontaktIkon{
+    height: 25px;
+    width: 25px;
+    margin: 0.5rem;
+}
+
+.mailSektion, .telefonSektion{
+    display: flex;
+    align-items: center;
+}
+
+.traener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 3;
+}
+
+.traener > img{
+    border-radius: 50%;
+}
+
+.traenerSektion{
+    display: grid;
+    margin: 0 100px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.introSektion{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    margin: 0 100px 100px 100px;
+}
+
+.holdBillede{
+    grid-column: 9 / span 3;
+    max-width: 100%;
+}
+
+.TraeningsTider{
+    grid-column: 9/ span 3;
+    background-color: hsl(330, 85%, 67%);
+    padding: 1rem;
+}
+
+.TraeningsTider p, h4{
+    margin: 0;
+}
+
+.Kontigent{
+    /* grid-column: -1 / span 4; */
+    grid-column: 9 / span 3;
+    /* grid-row: 5; */
+    background-color: #E1F5FA;
+    padding: 1rem;
+}
+
+.Kontigent p{
+    margin: 0;
+}
+
+.Kontigent a{
+    display: block;
+    text-decoration: none;
+    background-color: #6BCBE4;
+    color: black;
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+
+/* Arnis CSS*/
+.holdIntroBox{
+    grid-column: 2 / span 6;
+    grid-row: 1 / 4;
+}

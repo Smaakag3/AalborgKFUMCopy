@@ -46,6 +46,7 @@ function renderData(data){
         holdEl.innerHTML += `
         <article>
         <a href="holdSide.html?slug=${team.slug}">
+        <img src="${team.acf.holdbillede.sizes.large}" alt="Billede af ${team.acf.hold_navn}">
         <h2>${team.acf.hold_navn}</h2>
         <p>${team.acf.kontigentsats},- pr. 1/2 år</p>
         </a>
