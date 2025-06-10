@@ -10,6 +10,39 @@ const holdEl = document.querySelector(".holdSektion");
 const genderSelectorEl = document.querySelector("#genderSelector");
 const yearSelectorEl = document.querySelector("#yearSelector");
 const removeFilterEl = document.querySelector("#removeFilter");
+const holdAnsvarligEl = document.querySelector(".holdAnsvarlig");
+
+fetch(domain + "wp-json/wp/v2/posts/230")
+.then(res => res.json())
+.then(data => renderResponsable(data))
+.catch(err => console.log(err))
+
+function renderResponsable(data){
+    data.acf.ansvarlig.forEach(holdAnsvarlig => {
+        fetch(domain + "wp-json/wp/v2/posts/" + holdAnsvarlig + "?acf_format=standard")
+        .then(res => res.json())
+        .then(data => responseable(data))
+        .catch(err => console.log(err))
+    })
+
+    function responseable(data){
+        console.log(data);
+        holdAnsvarligEl.innerHTML += `
+        <img src="${data.acf.billede_af_personen.sizes.large}" alt="Billede af afdelingsansvarlig">
+        <h2>${data.acf.stillingsbetegnelse}</h2>
+        <h3>${data.acf.fulde_navn}</h3>
+        <div class="mailSektion">
+        <img src="./assets/pictures/envelope.svg" alt="E-mail ikon" class="kontaktIkon">
+        <p>${data.acf.mail}</p>
+        </div>
+        <div class="telefonSektion">
+        <img src="./assets/pictures/phone.svg" alt="Telefon ikon" class="kontaktIkon">
+        <p>${data.acf.telefonnummer}</p>
+        </div>
+        `   
+    }
+
+}
 
 // En funktion som har til opgave at hente vores data gennem fetch, samt at tage valuen fra vores selectors på vores HTML side og tilføje det til vores query parameter.
 function fetchData(){
