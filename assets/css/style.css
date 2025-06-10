@@ -340,6 +340,7 @@ nav ul {
         width: 100%;
         height: 25rem;
         object-fit: cover;
+        object-position: 30% 40%;
     }
 
     /*kamp*/
@@ -354,7 +355,6 @@ nav ul {
         padding: 0.5rem;
         margin: 0 0.3rem;
     }
-
     .kamp p{
         font-size: 0.8rem;
     }
@@ -630,7 +630,183 @@ hr{
     display: flex;
     align-items: center;
 }
+/*maalsaetninger*/
 
+.mobil{
+    display: none;
+}
+
+.breadcrumbs{
+    display: flex;
+    margin: 0.2rem 0.2rem;
+    justify-content: flex-start;
+}
+.breadcrumbs a{
+    color: black;
+}
+.breadcrumbs a, p{
+    margin: 0 0.2rem;
+}
+.sideDuPaa{
+    font-weight: bolder;
+}
+
+/*misson intro*/
+.missionIntro p{
+    max-width: 75ch;
+}
+
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 var(--mSpacer);
+}
+
+.mission img{
+    height: 5rem;
+}
+
+/*Maalsaetninger*/
+.allKortMaalsaetninger{
+    display: flex;
+    justify-content: center;
+}
+.allKortMaalsaetninger img {
+  width: 10rem;
+}
+.effekteMaal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+.cardMaal {
+  text-align: center;
+  margin: var(--mSpacer);
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  border: 0.1rem solid black;
+  box-shadow: 0.5rem 0.5rem;
+}
+.faellesskab{
+    margin-bottom: 2.5rem;
+}
+.cardMaal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardMaal p {
+  position: absolute;
+  font-size: 1.1rem;
+  bottom: 1%;
+  left: 2%;
+}
+.ordenlighedIndhold{
+    position: relative;
+}
+.faellesskabIndhold{
+    position: relative;
+}
+.udvikling{
+    position: relative;
+}
+
+/*maal indhold*/
+
+.popupCardMaal { /*dette card kan ikke ses for man cliker paa det*/
+  display: none;
+  position: absolute;
+  top: 145px;
+}
+
+.udviklingPopup img{
+    object-position: 100% 20%;
+}
+
+.faellesskabPopup img{
+   object-position: 100% 10%; 
+}
+
+.maalIndehold {
+  text-align: center;
+  background-color: #e1f5fa;
+  margin: var(--mSpacer);
+  width: 20rem;
+  height: 24rem;
+  position: relative;
+  border: 0.1rem solid black;
+  box-shadow: 0.5rem 0.5rem;
+}
+
+.faellesskabIndhold{
+    height: 25rem;
+}
+
+.udviklingIndhold{
+    height: 26rem ;
+}
+
+.maalIndehold h3{
+    margin: 0.5rem var(--xsSpacer);
+}
+
+.maalIndehold p{
+    margin: 0.5rem var(--xsSpacer);
+}
+
+.lukKnap{
+    background-color: var(--pink);
+    padding: 0.1rem 0.8rem;
+    font-size: small;
+    box-shadow: 0.1rem 0.1rem ;
+}
+
+.lukKnap:hover{
+    background-color:hsl(328, 77%, 88%) ;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .popupCardMaal {
+    top: 150px;
+}
+
+}
+
+
+@media only screen and (max-width: 780px){
+.desktop{
+    display: none;
+}
+.mobil{
+    display: block;
+}
+.mission{
+    flex-direction: column;
+}
+.allKortMaalsaetninger{
+    flex-direction: column;
+    align-items: center;
+}
+.ordenlighedPopup{
+    top: 19rem;
+}
+
+.faellesskabPopup{
+    top: 41rem;
+}
+
+.udviklingPopup{
+    top: 64rem;
+}
 
 
 
@@ -773,27 +949,149 @@ hr{
 
 
 /* Sponsor side*/
+.mainSponsor{
+     margin-top: 40px;
+     margin-left: 40px;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+}
 .infoSponsorer h2 {
 font-size: 1rem;
 }
 .infoSponsorer {
-    font-size: 0.9rem;
-    width: 80%;
-    margin-left: 40px;
-    margin-top: 40px;
+    width: 90%;
+    line-height: 1.6rem;
     
 }
 .kontaktInfo {
+    padding-top: 40px;
     font-size: 0.8rem;
     text-align: center;
+    line-height: 1.6rem;
 }
-.kfumLogoCapsule h4 {
+.kontaktInfo h4 {
 text-decoration: none;
 }
+.kontaktInfo img{
+    width: 150px;
+}
+.stoetKlubben img{
+    width: 50%;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+.stoetKlubben {
+    padding-right: 40px;
+}
 
 
+.OKSponsor img{
+padding-bottom: 1rem;
+width: 70%;
+}
+.OKSponsor p{
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.TommyTeltSponsor p {
+    padding-bottom: 1.25rem;
+    width: 90%;
+    margin-right: 40px;
+    
+    
+}
+.sponsorSektion {
+padding-top: 2.5rem;
+}
+.alleSponsorer{
+    display: grid;
+    grid-template-columns: repeat(2, 9fr);
+    
+}
+.alleSponsorer img {
+    max-width: 70%;
+    padding-bottom: 20%;
+}
 
 
+/*Media queries*/
+ @media screen and (min-width: 780px){
+    .mainSponsor {
+        line-height: 1.7rem;
+        font-size: 1rem;
+    }
+    .mainSponsor h2 {
+            font-size: 1.5rem;
+        }
+    .infoSponsorer p{
+        font-size: 1rem;
+    }
+    .kontaktInfo img{
+        width: 150px;
+    }
+    .infoSponsorer{
+        width: 50%;
+    }
+    .kontaktInfo{
+        margin-left: 5rem;
+        padding-bottom: 3rem;
+    }
+.infoSponsorer, .kontaktInfo{
+    display: inline-block;
+}
+.alleSponsorer {
+    display: grid;
+    grid-template-columns: repeat(3, 7fr);
+}
+    
+ }
+  @media screen and (min-width: 1100px) {
+    .mainSponsor {
+            line-height: 1.9rem;
+            font-size: 1.1rem;
+        }
+    .mainSponsor h2 {
+            font-size: 1.7rem;
+        }
+      .kontaktInfo img {
+          width: 170px;
+      }
+          .infoSponsorer p {
+              font-size: 1.1rem;
+          }
+          .kontaktInfo {
+              font-size: 1.1rem;
+          }
+
+         .infoSponsorer,
+         .kontaktInfo {
+             display: inline-block;
+             padding-bottom: 4rem;
+         }
+        .stoetKlubben {
+            display: flex;
+            width: 100%;
+            gap: 40px;
+            font-size: 1.1rem;
+        }
+         .OKSponsor {
+        width: 90%;
+         }
+         .TommyTeltSponsor{
+        width: 90%;
+      }  
+     
+      .kontaktInfo{
+        margin-left: 7rem;
+      }
+         .alleSponsorer {
+        display: grid;
+        grid-template-columns: repeat(4, 6fr);
+}
+  }
+=======
 
 
 /* Arnis CSS */
@@ -871,10 +1169,13 @@ text-decoration: none;
     width: fit-content;
 }
 
+
+/* Arnis CSS*/
 .holdIntroBox{
     grid-column: 2 / span 6;
     grid-row: 1 / 4;
 }
+
 
 .holdCard h2, p{
     margin: 0;
@@ -940,3 +1241,4 @@ text-decoration: none;
     justify-content: center;
     margin: 1rem;
 }
+
