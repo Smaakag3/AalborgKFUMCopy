@@ -102,16 +102,12 @@ function renderTeam(data){
         teamSection.classList.add("introSektion");
         teamSection.append(newTeamIntroBox, newTrainingTimes, newPriceSection, newTeamPicture);
 
-        // Laver en ny header som indeholder "Holdets stab".
-        const trainerHeader = document.createElement("h3");
-        trainerHeader.textContent = "Holdets stab"
-
         // En ny sektion bliver lavet og får klassen 'traenerSektion'.
         const trainerSection = document.createElement("section");
         trainerSection.classList.add("traenerSektion");
 
         // Tilføjet headeren til sektionen.
-        trainerSection.append(trainerHeader);
+        // trainerSection.append(trainerHeader);
         
         // Da hvert hold kan have et forskelligt antal trænere, laver vi et forEach loop over Array'et 'traenere' fra ACF feltet. Hver træner har et objekt som blandt andet indeholder et ID som matcher deres indlæg fra vores WordPress. Dette ID bliver brugt i en fetch request som henter detaljeret information omkring den pågældende træner.
         teamInfo.acf.traenere.forEach(trainer => {

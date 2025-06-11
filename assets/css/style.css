@@ -83,7 +83,6 @@ body {
 .kfumLogoCapsule img {
     height: 2.8rem;
     width: auto;
-
 }
 
 .facebookLogoCapsule{
@@ -1237,7 +1236,7 @@ padding-top: 2.5rem;
         }
     
         .facebookLogoCapsule {
-            position: fixed;
+            position: absolute;
             top: 7rem;
             left: 11.5rem;
         }
@@ -1392,6 +1391,7 @@ margin: 1.5rem 20rem;
 p {
     margin: var(--sSpacer) var(--mSpacer);
     max-width:75ch;
+    font-size: 1rem;
 }
 
 .desktopHeader {
@@ -1439,6 +1439,78 @@ p {
 .favDeskPil img {
     width: 1.1rem;
 }
+
+.afdeling{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: var(--xlSpacer);
+}
+
+.afdeling
+
+.afdelingBeskrivelse{
+    grid-column: 1 / span 2;
+}
+
+.holdSektion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-inline: var(--xlSpacer);
+}
+
+.introSektion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: var(--xlSpacer);
+    gap: 1.5rem;
+}
+
+.holdIntroBox{
+    grid-column: 1 / span 2;
+    margin: 0;
+}
+
+.holdIntroBox p{
+    margin: 0;
+}
+
+.holdBillede{
+    grid-column: 3;
+    grid-row: 1;
+    max-width: 400px;
+    justify-self: center;
+    align-self: center;
+}
+
+.TraeningsTider{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.Kontigent{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.stilling{
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.traenerSektion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#traenerSektion h3{
+    margin-left: var(--xlSpacer);
+}
+
+.sponsorSlider h2{
+    margin-left: var(--xlSpacer);
+}
+
 /*maalseatninger*/
 /*maal indhold*/
 
