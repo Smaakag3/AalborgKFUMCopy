@@ -8,29 +8,68 @@
     <script src="./assets/js/boernSide.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <main>
+    <header>
       <a href="/boernHoldSide.html">Børnehold</a>
       <a href="/ungdomsholdSide.html">Ungdomshold</a>
       <a href="/seniorholdSide.html">Seniorhold</a>
-      <h1>Oversigt over børnehold</h1>
-      <select name="year-selector" id="yearSelector">
-        <option value="" disabled selected="selected">Årgang</option>
-        <option value="37">Årgang 2013</option>
-        <option value="38">Årgang 2014</option>
-        <option value="39">Årgang 2015</option>
-        <option value="40">Årgang 2016</option>
-        <option value="41">Årgang 2017</option>
-        <option value="42">Årgang 2018</option>
-        <option value="43">Årgang 2019</option>
-        <option value="44">Årgang 20 - 25</option>
-      </select>
-      <select name="gender-selector" id="genderSelector">
-        <option value="" disabled selected="selected">Køn</option>
-        <option value="45">Drenge</option>
-        <option value="46">Piger</option>
-      </select>
-      <button id="removeFilter">Fjern filter</button>
+    </header>
+    <main>
+      <section class="afdeling">
+        <article class="afdelingBeskrivelse">
+          <h2>Børn U5-U12</h2>
+          <h3>Årgang 2013-2025</h3>
+          <p>Velkommen til børneafdelingen i Aalborg KFUM Fodbold!</p>
+          <p>
+            I børneafdelingen samles passionerede fodboldspillere på tværs af
+            niveauer og baggrunde. Uanset om du er ny på børnebanen eller har
+            mange års erfaring, byder vi dig velkommen i et stærkt og
+            inkluderende fællesskab. Hos Aalborg KFUM Fodbold kombinerer vi
+            sportslig udvikling med et inspirerende miljø, hvor konkurrence,
+            kammeratskab og personlig udvikling går hånd i hånd.
+          </p>
+          <p>Hvad tilbyder vi?</p>
+          <p>
+            <span>Fodbold for alle:</span> Vores børneafdeling omfatter både
+            piger og drenge, og vi tilbyder træningsprogrammer og kampe, der
+            udfordrer dig på dit niveau.
+          </p>
+          <p>
+            <span>Et dynamisk fællesskab:</span> Hos os handler fodbold ikke kun
+            om spillet - det er også en mulighed for at skabe langvarige
+            venskaber og et stærkt sammenhold, både på og udenfor banen.
+          </p>
+          <p>
+            <span>Konkurrence og udvikling:</span> Vi lægger vægt på både den
+            individuelle udvikling og holdets samlede præstation gennem
+            målrettet træning og en sund konkurrenceånd.
+          </p>
+          <p>
+            <span>Sociale arrangementer:</span> Udover træning og kampe
+            arrangerer vi løbende sociale events, ture og andre aktiviteter, der
+            styrker fællesskabet og giver ekstra gode oplevelser.
+          </p>
+        </article>
+        <article class="holdAnsvarlig"></article>
+      </section>
+      <div class="filter">
+        <select name="year-selector" id="yearSelector">
+          <option value="" disabled selected="selected">Årgang</option>
+          <option value="37">Årgang 2013</option>
+          <option value="38">Årgang 2014</option>
+          <option value="39">Årgang 2015</option>
+          <option value="40">Årgang 2016</option>
+          <option value="41">Årgang 2017</option>
+          <option value="42">Årgang 2018</option>
+          <option value="43">Årgang 2019</option>
+          <option value="44">Årgang 20 - 25</option>
+        </select>
+        <select name="gender-selector" id="genderSelector">
+          <option value="" disabled selected="selected">Køn</option>
+          <option value="45">Drenge</option>
+          <option value="46">Piger</option>
+        </select>
+        <button id="removeFilter">Fjern filter</button>
+      </div>
       <section class="holdSektion"></section>
     </main>
     <footer></footer>
