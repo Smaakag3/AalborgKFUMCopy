@@ -749,10 +749,11 @@ footer hr {
 }
 
 .lukKnap {
-    background-color: hsl(328, 77%, 88%);
-    padding: 0.1rem 0.8rem;
+    background-color: hsl(328, 86%, 77%);
+    border: none;
+    padding: 0.2rem 0.9rem;
     font-size: small;
-    box-shadow: 5px 5px 6px gray;
+    box-shadow: 4px 4px 4px gray;
 }
 
 .lukKnap:hover {
@@ -767,7 +768,7 @@ footer hr {
 }
 
 .udviklingPopup{
-    top: 222vw;
+    top: 218vw;
 }
 
 /* Samantas CSS */
@@ -1051,13 +1052,36 @@ padding-top: 2.5rem;
     font-size: 1.1rem;
 }
     
-        .OKSponsor {
-            width: 60%;
-        }
+.OKSponsor {
+      width: 60%;
+}
     
-        .TommyTeltSponsor {
-            width: 60%;
-        }
+.TommyTeltSponsor {
+     width: 60%;
+    }
+    /*maalseatninger*/
+    .mission{
+    justify-content: space-between;
+}
+.sponsor img{
+    width: 9rem;
+}
+.allKortMaalsaetninger{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ordenlighedPopup{
+    top: 17vw;
+}
+
+.faellesskabPopup{
+    top: 17vw;
+}
+
+.udviklingPopup{
+    top: 65vw;
+}
  }
 
 
@@ -1452,6 +1476,7 @@ p {
 }
 /*forside*/
 /*kamp*/
+
 .kamp{
     margin:0 var(--xsSpacer);
 }
@@ -1464,7 +1489,6 @@ p {
 .nyhederKort{
     width: 30vw;
 }
-
 
 /*med paa holdet*/
 
@@ -1491,7 +1515,5 @@ p {
 }
 /*maalseatninger*/
 /*maal indhold*/
-.allKortMaalsaetninger{
-    display: flex;
-}
+
 }
