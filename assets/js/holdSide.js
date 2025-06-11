@@ -11,6 +11,7 @@ const slug = searchParam.get("slug");
 
 // En query selector som udpeger et element med ID'et 'holdSideMain'.
 const holdSideEl = document.querySelector("#holdSideMain");
+const traenerEl = document.querySelector("#traenerSektion");
 
 // En fetch request som bruger slug'en fra den tidligere variabel. Slug'en tilhører det specifikke hold som man har klikket på, dermed henter fetchen data omkring det specifikke hold fra WordPress.
 fetch(domain + endPoint + "&slug=" + slug)
@@ -91,6 +92,7 @@ function renderTeam(data){
         newPriceButton.href = "https://koservice.dbu.dk/ClubSignup?id=41&clubid=5";
         newPriceButton.target = "_blank"
         newPriceButton.classList.add("tilmeldKnap");
+        newPriceButton.classList.add("skygge");
 
         // Kontingenten og tilmeld knappen bliver tilføjet til artiklen 'newPriceSection' som child elementer.
         newPriceSection.append(newPrice, newPriceButton)
@@ -98,11 +100,18 @@ function renderTeam(data){
         // En ny sektion bliver lavet og får klassen 'introSektion'. De tidligere genererede elementer bliver tilføjet til sektionen som child elementer.
         const teamSection = document.createElement("section");
         teamSection.classList.add("introSektion");
-        teamSection.append(newTeamIntroBox, newTeamPicture, newTrainingTimes, newPriceSection);
+        teamSection.append(newTeamIntroBox, newTrainingTimes, newPriceSection, newTeamPicture);
+
+        // Laver en ny header som indeholder "Holdets stab".
+        const trainerHeader = document.createElement("h3");
+        trainerHeader.textContent = "Holdets stab"
 
         // En ny sektion bliver lavet og får klassen 'traenerSektion'.
         const trainerSection = document.createElement("section");
         trainerSection.classList.add("traenerSektion");
+
+        // Tilføjet headeren til sektionen.
+        trainerSection.append(trainerHeader);
         
         // Da hvert hold kan have et forskelligt antal trænere, laver vi et forEach loop over Array'et 'traenere' fra ACF feltet. Hver træner har et objekt som blandt andet indeholder et ID som matcher deres indlæg fra vores WordPress. Dette ID bliver brugt i en fetch request som henter detaljeret information omkring den pågældende træner.
         teamInfo.acf.traenere.forEach(trainer => {
@@ -174,6 +183,7 @@ function renderTeam(data){
 
 
         // Sektionen som indholder information om holdet og trænerne bliver tilføjet på siden som child elementer.
-        holdSideEl.append(teamSection, trainerSection);
+        holdSideEl.append(teamSection);
+        traenerEl.append(trainerSection);
     })
 }

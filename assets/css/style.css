@@ -617,6 +617,13 @@ footer hr {
     height: 10rem;
 }
 
+.holdAnsvarlig{
+    margin-top: var(--mSpacer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mailSektion{
     display: flex;
 }
@@ -625,8 +632,118 @@ footer hr {
     display: flex;
 }
 
+.kontaktIkon{
+    width: 20px;
+    height: auto;
+    margin: 0.5rem;
+}
 
+.afdeling > img{
+    width: 100%
+}
 
+.holdCard {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+    margin: var(--sSpacer);
+
+}
+
+.holdCard a {
+    text-decoration: none;
+    color: black;
+}
+
+.holdCard a>img {
+    width: 100%;
+}
+
+.holdCard h2{
+    margin-left: var(--sSpacer);
+}
+
+.holdAlderOgPris {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: var(--sSpacer);
+    margin-bottom: var(--sSpacer);
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+/*  */
+/*  */
+/*  */
+/* Holdside */
+
+.holdIntroBox{
+    margin: var(--sSpacer);
+}
+
+.TraeningsTider{
+    background-color: var(--green);
+    margin: var(--sSpacer);
+    padding: var(--sSpacer);
+}
+
+.TraeningsTider h4{
+    margin: 0 0 var(--sSpacer) 0;
+}
+
+.Kontigent{
+    background-color: var(--veryLightBlue);
+    margin: var(--sSpacer);
+    padding: var(--sSpacer);
+}
+
+.Kontigent a{
+    display: block;
+    text-decoration: none;
+    background-color: var(--lightBlue);
+    color: black;
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.holdBillede{
+    width: 100%;
+}
+
+.traenerSektion h3{
+    margin: var(--sSpacer);
+}
+
+.traener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: var(--mSpacer);
+}
+
+.traener img{
+    border-radius: 50%;
+}
+
+.mailSektion{
+    display: flex;
+    align-items: center;
+}
+
+.telefonSektion{
+    display: flex;
+    align-items: center;
+}
+
+.traener p{
+    margin-block: 5px;
+    font-size: 0.8rem;
+}
 
 
 
@@ -1397,15 +1514,18 @@ padding-top: 2.5rem;
 
 
 
+.holdCard{
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
 
 .holdCard a{
     text-decoration: none;
     color: black;
 }
 
-.holdCard{
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px gray;
+.holdCard a > img{
+    width: 100%;
 }
 
 .holdSektion{
@@ -1415,9 +1535,6 @@ padding-top: 2.5rem;
     margin: 0 100px;
 }
 
-.holdCard a > img{
-    width: 100%;
-}
 
 .holdAlderOgPris{
     display: flex;
