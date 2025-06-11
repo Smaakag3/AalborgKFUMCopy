@@ -14,6 +14,7 @@ body {
     --darkBlue: hsl(224, 68%, 29%);
     --lightBlue: hsl(186, 79%, 71%);
     --green: hsl(122, 64%, 88%);
+    --veryLightBlue: hsl(192, 71%, 93%);
 
     --xsSpacer: 0.625rem;
     --sSpacer: 0.938rem;
@@ -314,13 +315,13 @@ nav ul {
 
 /* Generel styling mobil layout */
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
     margin-bottom: var(--xsSpacer);
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin: 0;
     margin-bottom: var(--xsSpacer);
     font-weight: 600;
@@ -339,7 +340,20 @@ section {
     margin-block: var(--mSpacer);
 }
 
-/* Skygge */
+.knap {
+    font;
+    display: block;
+    text-decoration: none;
+    background-color: #6BCBE4;
+    color: black;
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.skygge {
+    box-shadow: 5px 5px 6px gray;
+}
 
 /* Styling forside */
 .mobilHeader {
@@ -419,7 +433,7 @@ section {
 
 /*Velkommen sektion*/
 .velkommen{
-    margin: var(--sSpacer);
+    margin-inline: var(--sSpacer);
 }
 
 
@@ -429,7 +443,7 @@ section {
 
 /*Nyheder sektion*/
 .nyhederForside{
-    margin: var(--sSpacer);
+    margin-inline: var(--sSpacer);
 }
 
 .flerenyhederKort {
@@ -464,54 +478,103 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: black;
 }
 
 /*tilmeld intro*/
-
-/*favorit billeder*/
-
-.favoritBillederForside img {
-    width: 30%;
-    max-height: 9rem;
-    object-fit: scale-down;
+.tilmeldIntro {
+    margin-inline: var(--sSpacer);
 }
 
-.favoritPile {
+/* Sponsor sektion */
+.nordjyskeBankTak {
+    margin-inline: var(--sSpacer);
+    display: flex;
+    align-items: center;
+}
+
+.nordjyskeBankTak img {
+    margin: var(--sSpacer);
+}
+
+/*Galleri sektion*/
+.slider {
+background: var(--veryLightBlue);
+overflow: hidden;
+}
+
+.slider h2 {
+    margin-left: var(--sSpacer);
+    margin-top: var(--sSpacer);
+}
+
+.sliderBilleder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.sliderBilleder img {
+    height: 8rem;
+    width: auto;
+    
+}
+
+.mobilSliderPil {
     display: flex;
     justify-content: center;
 }
 
-.favoritPile button {
+
+.mobilSliderPil button {
     background: none;
     border: none;
-    align-items: center;
-    margin: var(--xsSpacer);
+    padding: var(--sSpacer);
 }
+
+.sponsorSlider {
+    background: none;
+}
+
+.sponsorSlider img {
+height: 4rem;
+width: auto;
+}
+
+.mobilSliderPil img {
+    height: 1.5rem;
+    width: auto;
+}
+
 
 /*Footer*/
 footer {
     background-color: var(--darkBlue);
-    margin-top: var(--mSpacer);
-    padding-left: var(--mSpacer);
-    padding-top: var(--sSpacer);
+    margin-top: var(--sSpacer);
 }
 
 .footerInfo {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
+    padding-top: var(--sSpacer);
 }
 
-.footerletter {
-    background-color: rgb(255, 255, 255);
+.footerLogo {
+width: 3.5rem;
 }
 
 footer a,
 footer p {
     color: white;
+    font-size: x-small;
+}
 
+.footerletter {
+    background-color: rgb(255, 255, 255);
+    height: 0.6rem;
 }
 
 .footerNav a {
@@ -520,13 +583,15 @@ footer p {
     padding: 0.2rem 1rem;
 }
 
-hr {
+footer hr {
     margin: var(--sSpacer) var(--mSpacer);
 }
 
 .copPri {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    padding-bottom: var(--sSpacer);
 }
 
 .politikFooter {
@@ -534,24 +599,43 @@ hr {
     align-items: center;
 }
 
-.footerLogo {
-    width: 3.5rem;
+/*  */
+/*  */
+/*  */
+/* Hold afdelinger */
+.afdeling {
+    margin-inline: var(--sSpacer);
 }
 
-footer p,
-footer a {
-    font-size: x-small;
+.afdeling p {
+    margin: 0.5rem 0;
 }
 
-.copPri {
-    justify-content: space-between;
+/* Traner er class og krokodille næbet betyder at billedet er direct child af classen */
+.holdAnsvarlig > img {
+    border-radius: 50%;
+    height: 10rem;
+}
+
+.mailSektion{
+    display: flex;
+}
+
+.telefonSektion{
+    display: flex;
 }
 
 
-/*maalsaetninger side*/
 
 
 
+
+
+
+
+
+
+/*Målstninger side*/
 .breadcrumbs {
     display: flex;
     margin: 0.2rem 0.2rem;
@@ -613,7 +697,6 @@ footer a {
     height: 20rem;
     position: relative;
     border: 0.1rem solid black;
-    box-shadow: 5px 5px 6px gray;
 }
 
 .faellesskab {
@@ -741,43 +824,12 @@ p,
 
 
 /*med paa holdet*/
-.knap {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 1rem;
-    background-color: var(--lightBlue);
-    box-shadow: 5px 5px 6px gray;
-    margin: 1.5rem 30rem;
-    text-align: center;
-    display: block;
-}
+
 
 /*nordjyskebank*/
-.nordjyskeBankTak {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--mSpacer);
-}
 
-.nordjyskeBankTak img {
-    margin: var(--sSpacer);
-}
 
 /*favbilleder*/
-
-.favoritBillederForside {
-    background-color: #E1F5FA;
-    padding: 0.5rem 0 2rem;
-}
-
-
-
-.favBilleder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .favBilleder img {
     width: 65%;
     max-height: 15rem;
@@ -796,15 +848,7 @@ p,
 }
 
 /*kontkter*/
-.klubInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.klubInfo a {
-    color: black;
-}
 }
 
 
@@ -1273,7 +1317,7 @@ padding-top: 2.5rem;
 
 /* Arnis CSS */
 
-.kontaktIkon{
+/* .kontaktIkon{
     width: 25px;
     height: 25px;
     margin: 0.5rem;
@@ -1307,7 +1351,7 @@ padding-top: 2.5rem;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
     /* margin: 0 100px 100px 100px; */
-}
+/* }
 
 .holdBillede{
     grid-column: 9 / span 3;
@@ -1325,9 +1369,7 @@ padding-top: 2.5rem;
 }
 
 .Kontigent{
-    /* grid-column: -1 / span 4; */
     grid-column: 9 / span 3;
-    /* grid-row: 5; */
     background-color: #E1F5FA;
     padding: 1rem;
 }
@@ -1344,11 +1386,11 @@ padding-top: 2.5rem;
     padding: 1rem 3rem;
     margin: 1rem auto;
     width: fit-content;
-}
+} */ */
 
 
 /* Arnis CSS*/
-.holdIntroBox{
+/* .holdIntroBox{
     grid-column: 2 / span 6;
     grid-row: 1 / 4;
 }
@@ -1413,5 +1455,5 @@ padding-top: 2.5rem;
     display: flex;
     justify-content: center;
     margin: 1rem;
-}
+} */
 
