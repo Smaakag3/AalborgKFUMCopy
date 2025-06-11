@@ -12,7 +12,7 @@ body {
 
 :root {
     --darkBlue: hsl(224, 68%, 29%);
-    --lightBlue: hsl(186, 79%, 71%);
+    --lightBlue: hsl(186, 78%, 71%);
     --green: hsl(122, 64%, 88%);
     --veryLightBlue: hsl(192, 71%, 93%);
 
@@ -774,42 +774,28 @@ footer hr {
 /* Samantas CSS */
 
 /* Aktiviteter */
+.aktivitetsKalenderen h1{
+    font-size: 1.25rem;
+        margin: 0;
+        margin-bottom: var(--xsSpacer);
+        margin-left: 2rem;
+}
 
 .aarshjulBillede {
     width: 90%;
-    margin-left: 40px;
-    margin-right: 40px;
-
+    margin-block: var(--sSpacer);
+    margin-inline: var(--sSpacer);
 }
-
-.aabenAktiviteter {
-    background-color: #D9D9D9;
-    border: none;
-    padding: 20px;
-    width: 15rem;
-    text-align: center;
-    transition: 0.2s;
-    gap: 10%;
-    display: inline-block;
-    margin-left: 40px;
-}
-
 .active,
 .aabenAktiviteter:hover {
-    background-color: #939393;
+    background-color:hsl(186, 39%, 55%) ;
 }
 
 /*kalender*/
-
-.aktivitetsKalenderIndhold p {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
 .aktivitetKalender ,.dage{
     background-color: #E1F5FA;
     padding-inline-end: 40px;
-    padding-bottom: 40px;
+    padding-bottom: var(--mSpacer);
     width: 100%;
 }
 
@@ -821,7 +807,7 @@ footer hr {
 
 .moened {
     padding: 10px 20px;
-    margin-left: 40px;
+    margin-left: var(--sSpacer);
 }
 
 .dage {
@@ -842,37 +828,36 @@ footer hr {
 }
 .prikker {
     display: flex;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     gap: 4px;
     position: absolute;
 }
 
 .traeningSenioKvinder {
-    width: 10px;
-        height: 10px;
-        border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     background-color: lightcoral;
 }
 .traeningSeniorMand {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: darkblue;
-    padding-left: 10px;
 }
 .traeningUngdom{
-    width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: orange;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: orange;
         
 }
 .traeningBoern{
-    width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: lightblue;
-        padding-left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: lightseagreen;
+    padding-left: 5px;
 }
 .moened {
     display: flex;
@@ -880,69 +865,13 @@ footer hr {
 }
 #holdSelector,
 #activitySelector {
-    background-color: #D9D9D9;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    margin-left: 40px;
-    width: 15rem;
+    margin-inline: var(--mSpacer);
+    width: 9rem;
 }
-
-/* Medie queiries*/
-@media screen and (max-width: 780px) {
-.aabenAktiviteter {
-        background-color: #D9D9D9;
-        border: none;
-        padding: 20px;
-        width: 10rem;
-        text-align: center;
-        transition: 0.2s;
-        gap: 5rem;
-        display: inline-block;
-        margin-left: 40px;
-    }
-     #holdSelector,
-        #activitySelector {
-            gap: 10%;
-            width: 9rem;
-        }
-}
-
-@media screen and (min-width: 780px) {
-    .aabenAktiviteter {
-        width: 15rem;
-        gap: 10rem;
-        display: inline-block;
-        margin-left: 70px;
-    }
-        #holdSelector,
-        #activitySelector {
-            gap: 10rem;
-            width: 15rem;
-            margin-left: 8rem;
-        }
-        .traeningSenioKvinder {
-    width: 15px;
-        height: 15px;
-}
-.traeningSeniorMand {
-    width: 15px;
-    height: 15px;
-    
-}
-.traeningUngdom {
-    width: 15px;
-        height: 15px;
-
-}
-.traeningBoern{
-    width: 15px;
-        height: 15px;
-      
-}
-
-}
-
 
 /* Sponsor side*/
 .mainSponsor{
@@ -1020,7 +949,26 @@ padding-top: 2.5rem;
 }
 
 /*Media queries*/
+
  @media screen and (min-width: 780px){
+    .aabenAktiviteter {
+            width: 15rem;
+            gap: 10rem;
+            display: inline-block;
+            margin-left: var(--mSpacer);
+        }
+    
+        #holdSelector,
+        #activitySelector {
+            gap: 5rem;
+            width: 10rem;
+            margin-left: 40px;
+        }
+    
+    .traeningSenioKvinder,.traeningSeniorMand,.traeningUngdom,.traeningBoern {
+        width: 12px;
+        height: 12px;
+                }
     .mainSponsor {
         line-height: 1.7rem;
         font-size: 1rem;
@@ -1415,6 +1363,7 @@ padding-top: 2.5rem;
         display: grid;
         grid-template-columns: repeat(4, 6fr);}
 
+/* Aktivitets siden*/
         #holdSelector,
         #activitySelector {
             gap: 10rem;
@@ -1427,23 +1376,9 @@ padding-top: 2.5rem;
             width: 15rem;
             margin-left: 10rem;
         }
-         .traeningSenioKvinder {
-    width: 20px;
-        height: 20px;
-}
-.traeningSeniorMand {
-    width: 20px;
-    height: 20px;
-    
-}
-.traeningUngdom {
-    width: 20px;
-        height: 20px;
-
-}
-.traeningBoern{
-width: 20px;
-    height: 20px;
+         .traeningSenioKvinder, .traeningSeniorMand , .traeningUngdom, .traeningBoern {
+        width: 15px;
+        height: 15px;
 }
 
     .popupCardMaal {
