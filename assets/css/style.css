@@ -1444,16 +1444,26 @@ p {
     max-width:75ch;
 }
 
-
 .desktopHeader {
     width: 100%;
     height: 25rem;
     object-fit: cover;
     object-position: 30% 40%;
 }
-
-
+/*forside*/
+/*kamp*/
+.kamp{
+    margin:0 var(--xsSpacer);
+}
 /*nyheder*/
+.nyhederKortall{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nyhederKort{
+    width: 30vw;
+}
 
 
 /*med paa holdet*/
