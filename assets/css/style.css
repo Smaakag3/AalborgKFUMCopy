@@ -1015,7 +1015,17 @@ padding-top: 2.5rem;
     max-width: 70%;
     padding-bottom: 20%;
 }
-
+.knapper{
+    background-color: var(--lightBlue);
+    text-decoration: none;
+    color: black;
+        border: none;
+        padding: 20px;
+        width: 40%;
+        text-align: center;
+        transition: 0.4s;
+        gap: 10%;
+}
 
 /*Media queries*/
  @media screen and (min-width: 780px){
@@ -1046,7 +1056,20 @@ padding-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(3, 7fr);
 }
+.stoetKlubben {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    font-size: 1.1rem;
+}
     
+        .OKSponsor {
+            width: 60%;
+        }
+    
+        .TommyTeltSponsor {
+            width: 60%;
+        }
  }
   @media screen and (min-width: 1100px) {
     .mainSponsor {
