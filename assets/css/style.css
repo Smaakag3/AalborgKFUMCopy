@@ -168,151 +168,6 @@ nav ul {
 }
 
 
-
-@media screen and (min-width: 1100px) {
-    /* Nav css */
-        .topNav {
-            background: var(--darkBlue);
-            height: 5rem;
-            display: flex;
-            justify-content: flex-end;
-            gap: 2rem;
-        }
-    
-        .topNav a {
-            text-decoration: none;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            padding: 0.5rem;
-        }
-    
-        .topNav a img {
-            color: white;
-            height: 2.5rem;
-        }
-    
-        .topNav p {
-            margin: 0;
-        }
-    
-        .loginCapsule {
-            padding: 0.2rem;
-        }
-    
-        .loginCapsule a {
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            background: var(--lightBlue);
-            height: 4rem;
-            width: 10rem;
-            gap: 1.2rem;
-            border-radius: 50px;
-        }
-    
-        .kfumLogoCapsule {
-            position: fixed;
-            top: 1rem;
-            left: 50px;
-            height: 10rem;
-        }
-    
-        .topNav .kfumLogoCapsule img {
-            height: 10rem;
-            width: auto;
-        }
-    
-        .facebookLogoCapsule {
-            position: fixed;
-            top: 7rem;
-            left: 11.5rem;
-        }
-    
-        /* Her kommer det underste af navigationsbaren */
-        nav a {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            font-size: 1.1rem;
-        }
-    
-        nav ul {
-            list-style: none;
-        }
-    
-        .capsule {
-            display: flex;
-            justify-content: flex-end;
-            gap: 1.3rem;
-            margin: 0;
-            border-bottom-left-radius: 20px;
-            background: hsla(224, 68%, 29%, 0.5);
-            position: absolute;
-            right: 0;
-            padding-inline: 2rem;
-            padding-block: 1rem;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-        }
-    
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-    
-        .dropdown a {
-            font-size: 0.4rem;
-        }
-    
-        .dropdown ul {
-            width: 20rem;
-            padding: 2rem;
-            transform: translate(-76px, 0px)
-        }
-    
-        .dropdown:hover .insideDropdown {
-            display: block;
-        }
-    
-        .insideDropdown {
-            display: none;
-            position: absolute;
-            background: hsla(224, 68%, 29%, 0.5);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-            z-index: 1;
-        }
-    
-        .insideDropdown a {
-            font-size: 1.1rem;
-        }
-    
-    
-        .insideDropdown ul {
-            position: relative;
-            width: 16rem;
-            margin: 0;
-            padding: 0rem;
-            transform: translate(0px, 0px)
-        }
-    
-        .insideDropdownUnder {
-            display: none;
-            border-bottom-left-radius: 0px;
-            background: hsla(224, 68%, 29%, 0.5);
-        }
-    
-        .insideDropdownUnder li {
-            padding-left: 1.5rem;
-        }
-    
-        .insideDropdown li:hover .insideDropdownUnder {
-            display: block;
-        }
-}
-
-
-
-
 /* Generel styling mobil layout */
 h1 {
     font-size: 1.25rem;
@@ -341,7 +196,6 @@ section {
 }
 
 .knap {
-    font;
     display: block;
     text-decoration: none;
     background-color: #6BCBE4;
@@ -355,13 +209,14 @@ section {
     box-shadow: 5px 5px 6px gray;
 }
 
+/* */
 /* Styling forside */
+/* */
 .mobilHeader {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 
 /*Kamp sektion*/
 .kampPogram {
@@ -435,7 +290,6 @@ section {
 .velkommen{
     margin-inline: var(--sSpacer);
 }
-
 
 .velkommen p{
     margin: 0.5rem 0;
@@ -751,7 +605,7 @@ footer hr {
 
 
 
-
+/**/
 /*Målstninger side*/
 .breadcrumbs {
     display: flex;
@@ -780,31 +634,17 @@ footer hr {
 .mission {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     margin: 0 var(--mSpacer);
 }
 
 .mission img {
-    height: 5rem;
+   width: 6rem;
 }
 
 /*Maalsaetninger kort*/
-.allKortMaalsaetninger {
-    display: flex;
-}
 
 .allKortMaalsaetninger img {
     width: 10rem;
-}
-
-.effekteMaal {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom,
-            rgba(255, 0, 0, 0),
-            rgba(255, 0, 0, 0),
-            rgba(255, 255, 255, 1));
 }
 
 .cardMaal {
@@ -868,18 +708,15 @@ footer hr {
     background-color: #e1f5fa;
     margin: var(--mSpacer);
     width: 20rem;
-    height: 24rem;
+    height: 20rem;
     position: relative;
     border: 0.1rem solid black;
     box-shadow: 5px 5px 6px gray;
 }
 
-.faellesskabIndhold {
-    height: 25rem;
-}
 
 .udviklingIndhold {
-    height: 26rem;
+    height: 22rem;
 }
 
 .maalIndehold h3 {
@@ -891,7 +728,7 @@ footer hr {
 }
 
 .lukKnap {
-    background-color: var(--pink);
+    background-color: hsl(328, 77%, 88%);
     padding: 0.1rem 0.8rem;
     font-size: small;
     box-shadow: 5px 5px 6px gray;
@@ -900,148 +737,17 @@ footer hr {
 .lukKnap:hover {
     background-color: hsl(328, 77%, 88%);
 }
-
-
-@media only screen and (min-width: 1100px) {
-    .popupCardMaal {
-        top: 150px;
-    }
-}
-  
-@media only screen and (min-width: 1100px){
-/*tilmeld intro*/
-.knap{
-margin: 1.5rem 20rem;
-}
-/*nyhede*/
-.flerenyhederKort {
-
-        padding: 6rem 3rem;
-}
-.mobil {
-    display: none;
-}
-
-p,
- {
-    margin: var(--sSpacer) var(--mSpacer);
-    max-width: 75ch;
-}
-
-
-.desktopHeader {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    object-position: 30% 40%;
-}
-
-
-/*nyheder*/
-
-
-/*med paa holdet*/
-
-
-/*nordjyskebank*/
-
-
-/*favbilleder*/
-.favBilleder img {
-    width: 65%;
-    max-height: 15rem;
-    object-fit: scale-down;
-}
-
-.favDeskPil {
-    background: none;
-    border: none;
-    align-items: center;
-    margin: var(--xsSpacer);
-}
-
-.favDeskPil img {
-    width: 1.1rem;
-}
-
-/*kontkter*/
-
-}
-
-
-
-@media only screen and (min-width: 780px){
-.desktop{
-    display: none;
-}
-.mobil{
-    display: block;
-}
-.mission{
-    flex-direction: column;
-}
-.allKortMaalsaetninger{
-    flex-direction: column;
-    align-items: center;
-}
 .ordenlighedPopup{
-    top: 19rem;
+    top: 41vw;
 }
 
 .faellesskabPopup{
-    top: 41rem;
+    top: 129.5vw;
 }
 
 .udviklingPopup{
-    top: 64rem;
+    top: 222vw;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Samantas CSS */
 
@@ -1215,63 +921,6 @@ p,
 
 }
 
-@media screen and (min-width: 1100px) {
-    #holdSelector,
-        #activitySelector {
-            gap: 10rem;
-            width: 15rem;
-            margin-left: 10rem;
-        }
-        #holdSelector,
-        #activitySelector {
-            gap: 10rem;
-            width: 15rem;
-            margin-left: 10rem;
-        }
-         .traeningSenioKvinder {
-    width: 20px;
-        height: 20px;
-}
-.traeningSeniorMand {
-    width: 20px;
-    height: 20px;
-    
-}
-.traeningUngdom {
-    width: 20px;
-        height: 20px;
-
-}
-.traeningBoern{
-width: 20px;
-    height: 20px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Sponsor side*/
 .mainSponsor{
@@ -1389,48 +1038,8 @@ padding-top: 2.5rem;
             width: 60%;
         }
  }
-  @media screen and (min-width: 1100px) {
-    .mainSponsor {
-            line-height: 1.9rem;
-            font-size: 1.1rem;
-        }
- 
-      .kontaktInfo img {
-          width: 170px;
-      }
-          .infoSponsorer p {
-              font-size: 1.1rem;
-          }
-          .kontaktInfo {
-              font-size: 1.1rem;
-          }
 
-         .infoSponsorer,
-         .kontaktInfo {
-             display: inline-block;
-             padding-bottom: 4rem;
-         }
-        .stoetKlubben {
-            display: flex;
-            width: 100%;
-            gap: 40px;
-            font-size: 1.1rem;
-        }
-         .OKSponsor {
-        width: 90%;
-         }
-         .TommyTeltSponsor{
-        width: 90%;
-      }  
-     
-      .kontaktInfo{
-        margin-left: 7rem;
-      }
-         .alleSponsorer {
-        display: grid;
-        grid-template-columns: repeat(4, 6fr);
-}
-  }
+
 
 /* Arnis CSS */
 
@@ -1503,7 +1112,7 @@ padding-top: 2.5rem;
     padding: 1rem 3rem;
     margin: 1rem auto;
     width: fit-content;
-} */ */
+} */ 
 
 
 /* Arnis CSS*/
@@ -1573,4 +1182,285 @@ padding-top: 2.5rem;
     justify-content: center;
     margin: 1rem;
 } */
+/*her starter desktop*/
 
+@media screen and (min-width: 1100px) {
+    .mobil{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    /* Nav css */
+        .topNav {
+            background: var(--darkBlue);
+            height: 5rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+    
+        .topNav a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+        }
+    
+        .topNav a img {
+            color: white;
+            height: 2.5rem;
+        }
+    
+        .topNav p {
+            margin: 0;
+        }
+    
+        .loginCapsule {
+            padding: 0.2rem;
+        }
+    
+        .loginCapsule a {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background: var(--lightBlue);
+            height: 4rem;
+            width: 10rem;
+            gap: 1.2rem;
+            border-radius: 50px;
+        }
+    
+        .kfumLogoCapsule {
+            position: fixed;
+            top: 1rem;
+            left: 50px;
+            height: 10rem;
+        }
+    
+        .topNav .kfumLogoCapsule img {
+            height: 10rem;
+            width: auto;
+        }
+    
+        .facebookLogoCapsule {
+            position: fixed;
+            top: 7rem;
+            left: 11.5rem;
+        }
+    
+        /* Her kommer det underste af navigationsbaren */
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1.1rem;
+        }
+    
+        nav ul {
+            list-style: none;
+        }
+    
+        .capsule {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.3rem;
+            margin: 0;
+            border-bottom-left-radius: 20px;
+            background: hsla(224, 68%, 29%, 0.5);
+            position: absolute;
+            right: 0;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+        }
+    
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown a {
+            font-size: 0.4rem;
+        }
+    
+        .dropdown ul {
+            width: 20rem;
+            padding: 2rem;
+            transform: translate(-76px, 0px)
+        }
+    
+        .dropdown:hover .insideDropdown {
+            display: block;
+        }
+    
+        .insideDropdown {
+            display: none;
+            position: absolute;
+            background: hsla(224, 68%, 29%, 0.5);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+    
+        .insideDropdown a {
+            font-size: 1.1rem;
+        }
+    
+    
+        .insideDropdown ul {
+            position: relative;
+            width: 16rem;
+            margin: 0;
+            padding: 0rem;
+            transform: translate(0px, 0px)
+        }
+    
+        .insideDropdownUnder {
+            display: none;
+            border-bottom-left-radius: 0px;
+            background: hsla(224, 68%, 29%, 0.5);
+        }
+    
+        .insideDropdownUnder li {
+            padding-left: 1.5rem;
+        }
+    
+        .insideDropdown li:hover .insideDropdownUnder {
+            display: block;
+        }    .mainSponsor {
+            line-height: 1.9rem;
+            font-size: 1.1rem;
+        }
+
+    /*sponsor side*/
+ 
+      .kontaktInfo img {
+          width: 170px;
+      }
+          .infoSponsorer p {
+              font-size: 1.1rem;
+          }
+          .kontaktInfo {
+              font-size: 1.1rem;
+          }
+
+         .infoSponsorer,
+         .kontaktInfo {
+             display: inline-block;
+             padding-bottom: 4rem;
+         }
+        .stoetKlubben {
+            display: flex;
+            width: 100%;
+            gap: 40px;
+            font-size: 1.1rem;
+        }
+         .OKSponsor {
+        width: 90%;
+         }
+         .TommyTeltSponsor{
+        width: 90%;
+      }  
+     
+      .kontaktInfo{
+        margin-left: 7rem;
+      }
+         .alleSponsorer {
+        display: grid;
+        grid-template-columns: repeat(4, 6fr);}
+
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+         .traeningSenioKvinder {
+    width: 20px;
+        height: 20px;
+}
+.traeningSeniorMand {
+    width: 20px;
+    height: 20px;
+    
+}
+.traeningUngdom {
+    width: 20px;
+        height: 20px;
+
+}
+.traeningBoern{
+width: 20px;
+    height: 20px;
+}
+
+    .popupCardMaal {
+        top: 150px;
+    }
+  
+/*tilmeld intro*/
+.knap{
+margin: 1.5rem 20rem;
+}
+/*nyhede*/
+.flerenyhederKort {
+
+        padding: 6rem 3rem;
+}
+.mobil {
+    display: none;
+}
+
+p {
+    margin: var(--sSpacer) var(--mSpacer);
+    max-width:75ch;
+}
+
+
+.desktopHeader {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: 30% 40%;
+}
+
+
+/*nyheder*/
+
+
+/*med paa holdet*/
+
+
+/*nordjyskebank*/
+
+
+/*favbilleder*/
+.favBilleder img {
+    width: 65%;
+    max-height: 15rem;
+    object-fit: scale-down;
+}
+
+.favDeskPil {
+    background: none;
+    border: none;
+    align-items: center;
+    margin: var(--xsSpacer);
+}
+
+.favDeskPil img {
+    width: 1.1rem;
+}
+/*maalseatninger*/
+/*maal indhold*/
+.allKortMaalsaetninger{
+    display: flex;
+}
+}
