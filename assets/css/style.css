@@ -912,7 +912,7 @@ text-decoration: none;
 padding-bottom: 1rem;
 width: 70%;
 }
-.OKSponsor p{
+.OKSponsor p {
     padding-bottom: 20px;
     width: 90%;
 }
@@ -977,7 +977,7 @@ padding-top: 2.5rem;
         font-size: 1rem;
     }
     .kontaktInfo img{
-        width: 150px;
+        width: 170px;
     }
     .infoSponsorer{
         width: 50%;
@@ -996,17 +996,15 @@ padding-top: 2.5rem;
 .stoetKlubben {
     display: flex;
     width: 100%;
-    gap: 40px;
+    gap: 30px;
     font-size: 1.1rem;
 }
     
-.OKSponsor {
+.OKSponsor,.TommyTeltSponsor{
       width: 60%;
+
 }
     
-.TommyTeltSponsor {
-     width: 60%;
-    }
     /*maalseatninger*/
     .mission{
     justify-content: space-between;
@@ -1327,41 +1325,34 @@ padding-top: 2.5rem;
         }
 
     /*sponsor side*/
- 
-      .kontaktInfo img {
-          width: 170px;
-      }
-          .infoSponsorer p {
-              font-size: 1.1rem;
-          }
-          .kontaktInfo {
-              font-size: 1.1rem;
-          }
+ .mainSponsor {
+     line-height: 1.8rem;
+     font-size: 2rem;
+ }
 
-         .infoSponsorer,
-         .kontaktInfo {
-             display: inline-block;
-             padding-bottom: 4rem;
-         }
-        .stoetKlubben {
-            display: flex;
-            width: 100%;
-            gap: 40px;
-            font-size: 1.1rem;
-        }
-         .OKSponsor {
-        width: 90%;
-         }
-         .TommyTeltSponsor{
-        width: 90%;
-      }  
-     
-      .kontaktInfo{
-        margin-left: 7rem;
-      }
+ .infoSponsorer p {
+     font-size: 1rem;
+ }
+
+ .kontaktInfo img {
+     width: 170px;
+ }
+
+ .infoSponsorer,
+ .kontaktInfo {
+     display: inline-block;
+ }
+
+
+ .stoetKlubben {
+     width: 70%;
+    
+ }
+   
          .alleSponsorer {
         display: grid;
-        grid-template-columns: repeat(4, 6fr);}
+        grid-template-columns: repeat(4, 6fr);
+    }
 
 /* Aktivitets siden*/
         #holdSelector,
