@@ -410,7 +410,7 @@ nav ul {
         height: 20rem;
         position: relative;
         border: 0.1rem solid black;
-        box-shadow: 0.5rem 0.5rem;
+        box-shadow: 5px 5px 6px gray;
     }
     .effekte{
         position: absolute;
@@ -436,7 +436,7 @@ nav ul {
         padding: 7rem 3rem;
         background-image: linear-gradient(to bottom, rgba(205,244,206,1), rgba(255,255,255,1));
         border: 0.1rem solid black;
-        box-shadow: 0.5rem 0.5rem;
+        box-shadow: 5px 5px 6px gray;
     }
 
     .flerenyhederKort h3{
@@ -450,7 +450,7 @@ nav ul {
         color: black;
         padding: 0.5rem 1rem ;
         background-color: var(--lightBlue);
-        box-shadow: 0.3rem 0.3rem;
+        box-shadow:5px 5px 6px gray ;
         margin: 1.5rem 30rem;
         text-align: center;
         display: block;
@@ -520,6 +520,7 @@ margin: 1.5rem 20rem;
         padding: 6rem 3rem;
 }
 }
+
 
 @media only screen and (max-width: 780px){
     .mobil{
@@ -593,7 +594,7 @@ footer{
     background-color: var(--darkBlue);
     margin-top: var(--mSpacer);
     padding-left: var(--mSpacer);
-    
+    padding-top: var(--sSpacer);
 }
 
 .footerInfo{
@@ -614,7 +615,7 @@ footer a, footer p{
 .footerNav a{
     display: flex;
     flex-direction: column;
-    padding: var(--xsSpacer) var(--mSpacer);
+    padding:0.2rem 1rem;
 }
 
 hr{
@@ -630,7 +631,19 @@ hr{
     display: flex;
     align-items: center;
 }
-/*maalsaetninger*/
+
+@media only screen and (max-width: 780px){
+    .footerLogo{
+    width: 3.5rem;
+}
+footer p, footer a{
+    font-size: x-small;
+}
+.copPri{
+    justify-content: space-between;
+}
+}
+/*maalsaetninger side*/
 
 .mobil{
     display: none;
@@ -667,11 +680,11 @@ hr{
     height: 5rem;
 }
 
-/*Maalsaetninger*/
+/*Maalsaetninger kort*/
 .allKortMaalsaetninger{
     display: flex;
-    justify-content: center;
 }
+
 .allKortMaalsaetninger img {
   width: 10rem;
 }
@@ -693,7 +706,7 @@ hr{
   height: 20rem;
   position: relative;
   border: 0.1rem solid black;
-  box-shadow: 0.5rem 0.5rem;
+  box-shadow: 5px 5px 6px gray;
 }
 .faellesskab{
     margin-bottom: 2.5rem;
@@ -705,9 +718,10 @@ hr{
 }
 .cardMaal p {
   position: absolute;
+  font-weight: bolder;
   font-size: 1.1rem;
-  bottom: 1%;
-  left: 2%;
+  bottom: 5%;
+  left: 4%;
 }
 .ordenlighedIndhold{
     position: relative;
@@ -724,7 +738,7 @@ hr{
 .popupCardMaal { /*dette card kan ikke ses for man cliker paa det*/
   display: none;
   position: absolute;
-  top: 145px;
+  top: 140px;
 }
 
 .udviklingPopup img{
@@ -743,7 +757,7 @@ hr{
   height: 24rem;
   position: relative;
   border: 0.1rem solid black;
-  box-shadow: 0.5rem 0.5rem;
+  box-shadow: 5px 5px 6px gray;
 }
 
 .faellesskabIndhold{
@@ -766,7 +780,7 @@ hr{
     background-color: var(--pink);
     padding: 0.1rem 0.8rem;
     font-size: small;
-    box-shadow: 0.1rem 0.1rem ;
+    box-shadow: 5px 5px 6px gray;
 }
 
 .lukKnap:hover{
@@ -858,41 +872,62 @@ hr{
 /* Samantas CSS */
 
 /* Aktiviteter */
-.aktivitetsKnapper {
-    gap: 10%;
+ h2 {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+img {
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
 .aabenAktiviteter {
     background-color: #D9D9D9;
     border: none;
     padding: 20px;
-    width: 40%;
+    width: 15rem;
     text-align: center;
-    transition: 0.4s;
+    transition: 0.2s;
     gap: 10%;
-
+    display: inline-block;
+    margin-left: 40px;
 }
-.active, .aabenAktiviteter:hover {
-    background-color:#D9D9D9;
+
+.active,
+.aabenAktiviteter:hover {
+    background-color: #939393;
 }
 
 /*kalender*/
 
-.aktivitetKalender {
+.aktivitetsKalenderIndhold p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.aktivitetKalender ,.dage{
     background-color: #E1F5FA;
     padding-inline-end: 40px;
     padding-bottom: 40px;
+    width: 100%;
 }
-.moened,.dage {
+
+.moened,
+.dage {
     list-style-type: none;
     width: 100%;
-    
 }
-.moened{
+
+.moened {
     padding: 10px 20px;
+    margin-left: 40px;
 }
+
 .dage {
-    font-size: 0.7rem;
+    font-size: 70%;
     text-align: start;
     display: grid;
     grid-template-columns: repeat(7, 5fr);
@@ -900,29 +935,148 @@ hr{
 
 .dage li {
     padding-bottom: 40%;
-        padding-left: 40%;
-        padding-right: 30%;
+    padding-left: 40%;
+    padding-right: 30%;
     border: solid black 0.01rem;
     background-color: white;
     display: flex;
+    position: relative;
+}
+.prikker {
+    display: flex;
+    padding-top: 3rem;
+    gap: 4px;
+    position: absolute;
+}
+
+.traeningSenioKvinder {
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    background-color: lightcoral;
+}
+.traeningSeniorMand {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkblue;
+    padding-left: 10px;
+}
+.traeningUngdom{
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: orange;
+        
+}
+.traeningBoern{
+    width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: lightblue;
+        padding-left: 5px;
 }
 .moened {
     display: flex;
     gap: 5%;
 }
-#holdSelector, #activitySelector {
+#holdSelector,
+#activitySelector {
     background-color: #D9D9D9;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    align-items: center;
     margin-left: 40px;
-
+    width: 15rem;
 }
 
 /* Medie queiries*/
+@media screen and (max-width: 780px) {
+.aabenAktiviteter {
+        background-color: #D9D9D9;
+        border: none;
+        padding: 20px;
+        width: 10rem;
+        text-align: center;
+        transition: 0.2s;
+        gap: 5rem;
+        display: inline-block;
+        margin-left: 40px;
+    }
+     #holdSelector,
+        #activitySelector {
+            gap: 10%;
+            width: 9rem;
+        }
+}
 
+@media screen and (min-width: 780px) {
+    .aabenAktiviteter {
+        width: 15rem;
+        gap: 10rem;
+        display: inline-block;
+        margin-left: 70px;
+    }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 8rem;
+        }
+        .traeningSenioKvinder {
+    width: 15px;
+        height: 15px;
+}
+.traeningSeniorMand {
+    width: 15px;
+    height: 15px;
+    
+}
+.traeningUngdom {
+    width: 15px;
+        height: 15px;
 
+}
+.traeningBoern{
+    width: 15px;
+        height: 15px;
+      
+}
+
+}
+
+@media screen and (min-width: 1100px) {
+    #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+        #holdSelector,
+        #activitySelector {
+            gap: 10rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+         .traeningSenioKvinder {
+    width: 20px;
+        height: 20px;
+}
+.traeningSeniorMand {
+    width: 20px;
+    height: 20px;
+    
+}
+.traeningUngdom {
+    width: 20px;
+        height: 20px;
+
+}
+.traeningBoern{
+width: 20px;
+    height: 20px;
+}
+}
 
 
 
@@ -1116,13 +1270,11 @@ padding-top: 2.5rem;
 }
   }
 
-
-
 /* Arnis CSS */
 
 .kontaktIkon{
-    height: 25px;
     width: 25px;
+    height: 25px;
     margin: 0.5rem;
 }
 
@@ -1153,7 +1305,7 @@ padding-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
-    margin: 0 100px 100px 100px;
+    /* margin: 0 100px 100px 100px; */
 }
 
 .holdBillede{
@@ -1199,3 +1351,70 @@ padding-top: 2.5rem;
     grid-column: 2 / span 6;
     grid-row: 1 / 4;
 }
+
+
+.holdCard h2, p{
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.holdCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.holdCard{
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.holdSektion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0 100px;
+}
+
+.holdCard a > img{
+    width: 100%;
+}
+
+.holdAlderOgPris{
+    display: flex;
+    justify-content: space-between;
+}
+
+.afdeling{
+    margin: 0 100px;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.afdelingBeskrivelse{
+    padding: 1rem;
+    grid-column: 1 / span 2;
+}
+
+.afdelingBeskrivelse p, h2, h3{
+    margin: 1rem 0;
+}
+
+.holdAnsvarlig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.holdAnsvarlig > img{
+    border-radius: 50%;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+

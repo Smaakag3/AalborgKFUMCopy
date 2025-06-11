@@ -8,28 +8,58 @@
     <script src="./assets/js/seniorholdSide.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <main>
+    <header>
       <a href="/boernHoldSide.html">Børnehold</a>
       <a href="/ungdomsholdSide.html">Ungdomshold</a>
       <a href="/seniorholdSide.html">Seniorhold</a>
-      <h1>Oversigt over seniorhold</h1>
-      <select name="year-selector" id="yearSelector">
-        <option value="" disabled selected="selected">Alder</option>
-        <option value="48">17+år</option>
-        <option value="50">18+år</option>
-        <option value="49">19+år</option>
-        <option value="51">32+år</option>
-        <option value="52">40+år</option>
-        <option value="53">52+år</option>
-        <option value="54">60+år</option>
-      </select>
-      <select name="gender-selector" id="genderSelector">
-        <option value="" disabled selected="selected">Køn</option>
-        <option value="45">Drenge</option>
-        <option value="46">Piger</option>
-      </select>
-      <button id="removeFilter">Fjern filter</button>
+    </header>
+    <main>
+      <section class="afdeling">
+        <article class="afdelingBeskrivelse">
+          <h2>Senior 17+</h2>
+          <p>Velkommen til seniorafdelingen i Aalborg KFUM Fodbold!</p>
+          <p>I seniorafdelingen samles passionerede fodboldspillere på tværs af niveauer og baggrunde. Uanset om du er ny på
+          seniorbanen eller har mange års erfaring, byder vi dig velkommen i et stærkt og inkluderende fællesskab. Hos Aalborg
+          KFUM Fodbold kombinerer vi sportslig udvikling med et inspirerende miljø, hvor konkurrence, kammeratskab og personlig
+          udvikling går hånd i hånd.</p>
+          <p>Hvad tilbyder vi?</p>
+          <p>
+            Fodbold for alle: Vores seniorafdeling omfatter både damesenior og herresenior, og vi tilbyder træningsprogrammer og
+            kampe, der udfordrer dig på dit niveau.
+          </p>
+          <p>
+            Et dynamisk fællesskab: Hos os handler fodbold ikke kun om spillet - det er også en mulighed for at skabe langvarige
+            venskaber og et stærkt sammenhold, både på og udenfor banen.
+          </p>
+          <p>
+            Konkurrence og udvikling: Vi lægger vægt på både den individuelle udvikling og holdets samlede præstation gennem
+            målrettet træning og en sund konkurrenceånd.
+          </p>
+          <p>
+            Sociale arrangementer: Udover træning og kampe arrangerer vi løbende sociale events, ture og andre aktiviteter, der
+            styrker fællesskabet og giver ekstra gode oplevelser.
+          </p>
+        </article>
+        <article class="holdAnsvarlig"></article>
+      </section>
+      <div class="filter">
+        <select name="year-selector" id="yearSelector">
+          <option value="" disabled selected="selected">Alder</option>
+          <option value="48">17+år</option>
+          <option value="50">18+år</option>
+          <option value="49">19+år</option>
+          <option value="51">32+år</option>
+          <option value="52">40+år</option>
+          <option value="53">52+år</option>
+          <option value="54">60+år</option>
+        </select>
+        <select name="gender-selector" id="genderSelector">
+          <option value="" disabled selected="selected">Køn</option>
+          <option value="45">Drenge</option>
+          <option value="46">Piger</option>
+        </select>
+        <button id="removeFilter">Fjern filter</button>
+      </div>
       <section class="holdSektion"></section>
     </main>
     <footer></footer>
