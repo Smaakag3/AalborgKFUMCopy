@@ -599,7 +599,28 @@ footer hr {
     font-size: 0.8rem;
 }
 
+.stilling{
+    background-color: var(--veryLightBlue);
+    padding-top: var(--sSpacer);
+}
 
+.stilling h2{
+    margin-inline: var(--sSpacer);
+}
+
+.stillingsTabel{
+    width: 100%;
+    padding: var(--sSpacer);
+}
+
+.stillingsTabel td{
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.stillingsTabel th{
+    font-size: 0.75rem;
+}
 
 
 
