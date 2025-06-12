@@ -955,6 +955,14 @@ padding-top: 2.5rem;
 /*Media queries*/
 
  @media screen and (min-width: 780px){
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .insideDropdown a {
+        font-size: 0.9rem;
+    }
+
     .aabenAktiviteter {
             width: 15rem;
             gap: 10rem;
@@ -1232,6 +1240,7 @@ padding-top: 2.5rem;
 /*her starter desktop*/
 
 @media screen and (min-width: 1100px) {
+    
     .mobil{
         display: none;
     }
@@ -1326,10 +1335,6 @@ padding-top: 2.5rem;
         .dropdown {
             position: relative;
             display: inline-block;
-        }
-    
-        .dropdown a {
-            font-size: 0.4rem;
         }
     
         .dropdown ul {
