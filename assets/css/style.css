@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+header{
+    margin-bottom: var(--lSpacer);
+}
+
 :root {
     --darkBlue: hsl(224, 68%, 29%);
     --lightBlue: hsl(186, 78%, 71%);
@@ -35,7 +39,7 @@ body {
 }
 
 nav li{
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
     margin-block: 0.5rem;
 }
 
@@ -92,6 +96,7 @@ nav li{
 .kfumLogoCapsule img {
     height: 2.8rem;
     width: auto;
+    top: 0;
 }
 
 .facebookLogoCapsule{
@@ -908,7 +913,7 @@ footer hr {
 .kontaktInfo h4 {
 text-decoration: none;
 }
-.kontaktInfo img{
+.sponsoransvarlig img{
     width: 150px;
 }
 .stoetKlubben img{
@@ -998,7 +1003,7 @@ padding-top: 2.5rem;
     .infoSponsorer p{
         font-size: 1rem;
     }
-    .kontaktInfo img{
+    .sponsoransvarlig{
         width: 170px;
     }
     .infoSponsorer{
@@ -1078,7 +1083,13 @@ padding-top: 2.5rem;
 
 .kampStatus{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: var(--sSpacer);
+    align-items: center;
+}
+
+.kampPogram{
+    grid-column: 1 / span 2;
 }
 
 .stilling{
@@ -1253,12 +1264,52 @@ padding-top: 2.5rem;
 
 @media screen and (min-width: 1100px) {
     
+    h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-bottom: var(--xsSpacer);
+        }
+    
+        h2 {
+            font-size: 1.25rem;
+            margin: 0;
+            margin-bottom: var(--xsSpacer);
+            font-weight: 600;
+        }
+    
+        p {
+            font-size: 1rem;
+            margin: 0;
+            max-width: 75ch;
+        }
+
+    .nyhederForside h2{
+        margin-left: 150px;
+    }
+
+    .nyhederForside{
+        margin: 0;
+    }
+
     .mobil{
         display: none;
     }
     .desktop{
         display: block;
     }
+
+    .velkommen, .tilmeldIntro, .nordjyskeBankTak, .kontaktIntro{
+        margin-inline: 150px;
+    }
+
+    .nyhederKort{
+        margin: 1rem;
+    }
+
+    .knap{
+        justify-self: center;
+    }
+
     /* Nav css */
         .topNav {
             background: var(--darkBlue);
@@ -1303,20 +1354,20 @@ padding-top: 2.5rem;
     
         .kfumLogoCapsule {
             position: absolute;
-            top: 1rem;
-            left: 50px;
+            top: 0px;
+            left: 10px;
             height: 10rem;
         }
     
         .topNav .kfumLogoCapsule img {
-            height: 10rem;
+            height: 7rem;
             width: auto;
         }
     
         .facebookLogoCapsule {
             position: absolute;
-            top: 7rem;
-            left: 11.5rem;
+            /* top: 1rem; */
+            left: 10rem;
         }
     
         /* Her kommer det underste af navigationsbaren */
@@ -1407,7 +1458,7 @@ padding-top: 2.5rem;
      font-size: 1rem;
  }
 
- .kontaktInfo img {
+ .sponsoransvarlig img {
      width: 170px;
  }
 
@@ -1460,11 +1511,7 @@ margin: 1.5rem 20rem;
     display: none;
 }
 
-p {
-    margin: var(--sSpacer) var(--mSpacer);
-    max-width:75ch;
-    font-size: 1rem;
-}
+
 
 .desktopHeader {
     width: 100%;
@@ -1604,8 +1651,11 @@ p {
 }
 
 .maalIndehold{
-        height: 27.5rem;}
+        height: 27.5rem;
+    }
 /*maal indhold*/
+
+
 
 }
 

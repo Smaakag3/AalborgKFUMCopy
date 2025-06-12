@@ -33,7 +33,7 @@ function renderResponsable(data){
     // Funktionen som skal generere indhold om formandens indformation på siden
     function responseable(data){
         holdAnsvarligEl.innerHTML += `
-        <img src="${data.acf.billede_af_personen.sizes.large}" alt="Billede af afdelingsansvarlig">
+        <img src="${data.acf.billede_af_personen.sizes.large}" loading="lazy" alt="Billede af afdelingsansvarlig">
         <h2>${data.acf.stillingsbetegnelse}</h2>
         <h3>${data.acf.fulde_navn}</h3>
         <div class="mailSektion">
@@ -105,7 +105,7 @@ function renderData(data){
         holdEl.innerHTML += `
         <article class="holdCard">
         <a href="holdSide.html?slug=${team.slug}">
-        <img src="${team.acf.holdbillede.sizes.large}" alt="Billede af ${team.acf.hold_navn}">
+        <img src="${team.acf.holdbillede.sizes.large}" loading="lazy" alt="Billede af ${team.acf.hold_navn}">
         <h2>${team.acf.hold_navn}</h2>
         <div class="holdAlderOgPris">
         <p>${team.acf.aargang.name}</p>
