@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seniorhold | Aalborg KFUM Fodbold</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/seniorholdSide.js" defer></script>
+    <script src="./assets/js/medlemsskab.js" defer></script>
   </head>
   <body>
     <header>
@@ -170,54 +170,67 @@
     <main>
       <section class="afdeling">
         <article class="afdelingBeskrivelse">
-          <h2>Senior 17+</h2>
-          <p>Velkommen til <b>seniorafdelingen</b> i Aalborg KFUM Fodbold!</p>
+          <h2>Indmeldelse</h2>
           <p>
-            I <b>seniorafdelingen</b> samles passionerede fodboldspillere på
-            tværs af niveauer og baggrunde. Uanset om du er ny på seniorbanen
-            eller har mange års erfaring, byder vi dig velkommen i et stærkt og
-            inkluderende fællesskab. Hos Aalborg KFUM Fodbold kombinerer vi
-            sportslig udvikling med et inspirerende miljø, hvor konkurrence,
-            kammeratskab og personlig udvikling går hånd i hånd.
-          </p>
-          <p>Hvad tilbyder vi?</p>
-          <p>
-            Fodbold for alle: Vores seniorafdeling omfatter både damesenior og
-            herresenior, og vi tilbyder træningsprogrammer og kampe, der
-            udfordrer dig på dit niveau.
+            Alle interesserede er velkomne til at spille fodbold i Aalborg KFUM
+            Fodbold
           </p>
           <p>
-            Et dynamisk fællesskab: Hos os handler fodbold ikke kun om spillet -
-            det er også en mulighed for at skabe langvarige venskaber og et
-            stærkt sammenhold, både på og udenfor banen.
+            Hvis en ny spiller ønsker at spille fodbold i KFUM, bedes spilleren
+            kontakte årgangens hovedtræner. Det er trænerens ansvar at tage godt
+            imod vedkommende. Nye spillere skal introduceres overfor: ''Gamle''
+            spillere, andre trænere, ledere og afdelingsleder. En ny spiller har
+            en måneds gratis prøvetræning. Nye spillere må IKKE spille kampe
+            medmindre de er indmeldte, aht. forsikring, DBU-regler mv. Husk
+            spillercertifikat, hvis de nye spillere har spillet i en anden klub.
+            Nye medlemmer skal
+            <a
+              href="https://koservice.dbu.dk/ClubSignup?id=41&clubid=5"
+              target="_blank"
+              >indmeldes online</a
+            >.
           </p>
           <p>
-            Konkurrence og udvikling: Vi lægger vægt på både den individuelle
-            udvikling og holdets samlede præstation gennem målrettet træning og
-            en sund konkurrenceånd.
-          </p>
-          <p>
-            Sociale arrangementer: Udover træning og kampe arrangerer vi løbende
-            sociale events, ture og andre aktiviteter, der styrker fællesskabet
-            og giver ekstra gode oplevelser.
+            Det er medlemmets eget ansvar at melde sig ud af klubben inden der
+            trækkes kontingent. Man vil få en notifikationsmail om trækning en
+            uge før trækningen. Kontingent refunderes ikke efter trækningen. Det
+            er ligeledes medlemmets eget ansvar at sørge for at medlemmets
+            mailadresse er opdateret.
           </p>
         </article>
-        <article class="holdAnsvarlig"></article>
-        <img
-          src="./assets/pictures/Sponsorer/Nordjyske-Bank-Logo 1.png"
-          alt="Nordjyske Bank logo"
-        />
+        <article class="holdAnsvarlig">
+          <img
+            src="./assets/pictures/noProfile.png"
+            alt="Billede af afdelingsansvarlig"
+          />
+          <h2>Medlemsregistrering</h2>
+          <h3>Jeanett Marks</h3>
+          <div class="mailSektion">
+            <img
+              src="./assets/pictures/envelope.svg"
+              alt="E-mail ikon"
+              class="kontaktIkon"
+            />
+            <p>medlem@aalborgkfumfodbold.dk</p>
+          </div>
+          <div class="telefonSektion">
+            <img
+              src="./assets/pictures/phone.svg"
+              alt="Telefon ikon"
+              class="kontaktIkon"
+            />
+            <p>42396633</p>
+          </div>
+        </article>
       </section>
       <div class="filter">
         <select name="year-selector" id="yearSelector">
-          <option value="" disabled selected="selected">Alder</option>
-          <option value="48">17+år</option>
-          <option value="50">18+år</option>
-          <option value="49">19+år</option>
-          <option value="51">32+år</option>
-          <option value="52">40+år</option>
-          <option value="53">52+år</option>
-          <option value="54">60+år</option>
+          <option value="" disabled selected="selected">Årgang</option>
+          <option value="">Årgang 2010</option>
+          <option value="">Årgang 2011</option>
+          <option value="">Årgang 2012</option>
+          <option value="">Senior herrer</option>
+          <option value="">Senior kvinder</option>
         </select>
         <select name="gender-selector" id="genderSelector">
           <option value="" disabled selected="selected">Køn</option>
@@ -227,77 +240,7 @@
         <button id="removeFilter">Fjern filter</button>
       </div>
       <section class="holdSektion"></section>
-      <section class="slider sponsorSlider">
-        <h2>Sponsorer:</h2>
-        <div class="sliderBilleder">
-          <button class="desktop favDeskPil">
-            <img src="./assets/pictures/picForside/pilVenstre.svg" />
-          </button>
-          <img
-            src="./assets/pictures/Sponsorer/image 9.png"
-            alt="OK logo"
-            loading="lazy"
-          />
-          <img
-            src="./assets/pictures/Sponsorer/LogoOK.png"
-            alt="hummel logo"
-            loading="lazy"
-          />
-          <img
-            src="./assets/pictures/Sponsorer/LogoSport24.png"
-            alt="to senior holds kvinder de holder en trøje vor der står 50 kampe aalborg kfum fodbold"
-            loading="lazy"
-          /><button class="desktop favDeskPil">
-            <img src="./assets/pictures/picForside/pilHojer.svg" />
-          </button>
-        </div>
-
-        <div class="mobilSliderPil">
-          <button class="mobil">
-            <img src="./assets/pictures/picForside/pilVenstre.svg" />
-          </button>
-          <button class="mobil">
-            <img src="./assets/pictures/picForside/pilHojer.svg" />
-          </button>
-        </div>
-      </section>
     </main>
-    <footer>
-      <section class="footerInfo">
-        <div>
-          <img src="./assets/pictures/footerLogo.png" class="footerLogo" />
-          <p>Aalborg KFUM Fodbold</p>
-          <p>Under Lien 60, 9000 Aalborg</p>
-          <a href="mailto:kontakt@aalborgkfumfodbold.dk"
-            ><img
-              src="./assets/pictures/picForside/brevIcon.svg"
-              class="footerletter"
-            />
-            kontakt@aalborgkfumfodbold.dk</a
-          >
-          <a href="./assets/pictures/facebookLogo.png"></a>
-        </div>
-        <div class="footerNav">
-          <a href="./Maalsaetninger.html">Målsætninger</a>
-          <a href="#">Medlemsskab</a>
-          <a href="#">Klubbens historie</a>
-          <a href="#">Nyheder</a>
-          <a href="#">Sponsorer</a>
-          <a
-            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html?fbclid=IwAR21bVYvT18NbAFwytIH68uBq5YGjk6GdHTuQ8KsSWrFaORyxQ1_Vppb1NU"
-            >Webshop</a
-          >
-        </div>
-      </section>
-      <hr />
-      <div class="copPri">
-        <p>Copyright © Aalborg KFUM Fodbold</p>
-        <div class="politikFooter">
-          <a href="#">Privatlivspolitik</a>
-          <p>|</p>
-          <a href="#">Cookiepolitik</a>
-        </div>
-      </div>
-    </footer>
+    <footer></footer>
   </body>
 </html>
