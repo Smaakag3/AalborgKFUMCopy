@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     margin-bottom: var(--lSpacer);
 }
@@ -26,6 +30,15 @@ header{
     --lSpacer: 3.125rem;
     --xlSpacer: 6.25rem;
  
+}
+
+.breadCrumb{
+    color: black;
+    margin-left: var(--sSpacer);
+}
+
+.breadCrumbSektion{
+    margin-bottom: var(--mSpacer);
 }
 
 /* Nav css */
@@ -967,11 +980,38 @@ padding-top: 2.5rem;
         gap: 10%;
 }
 
+.scrollUpButton{
+    background-color: var(--lightBlue);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+.pilUpTilToppen{
+    height: 50px;
+}
+
 /*Media queries*/
 
  @media screen and (min-width: 780px){
     nav a {
         font-size: 0.9rem;
+    }
+
+    .sliderBilleder img{
+        height: 250px;
+        width: auto;
+    }
+
+    .sponsorSlider img{
+        height: 70px;
+        width: auto;
     }
 
     .insideDropdown a {
@@ -1263,6 +1303,10 @@ padding-top: 2.5rem;
 /*her starter desktop*/
 
 @media screen and (min-width: 1100px) {
+
+    .breadCrumb:nth-of-type(1) {
+            margin-left: 150px;
+            color: black;   }
     
     h1 {
             font-size: 1.5rem;

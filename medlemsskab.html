@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medlemsskab | Aalborg KFUM fodbold</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/pictures/logofavIcon.png"
+    />
     <script src="./assets/js/medlemsskab.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="topNav">
         <a href="https://www.procup.se/cup/38414.htm"
           ><img
@@ -153,7 +158,7 @@
               <li>
                 <ul>
                   <li>
-                    <a href="./kalenderSide.html">Kalender</a>
+                    <a href="./kalenderSide.html">Aktiviteter</a>
                   </li>
                 </ul>
               </li>
@@ -175,6 +180,10 @@
       </nav>
     </header>
     <main>
+      <div class="breadCrumbSektion">
+        <a href="./index.html" class="breadCrumb"><b>Forside /</b></a>
+        <a href="#" class="breadCrumb">Medlemsskab</a>
+      </div>
       <div class="afdeling">
         <article class="afdelingBeskrivelse">
           <h2>Indmeldelse</h2>
@@ -247,6 +256,13 @@
         <button id="removeFilter">Fjern filter</button>
       </div>
       <div class="holdSektion"></div>
+      <a href="#header" class="scrollUpButton skygge">
+        <img
+          src="./assets/pictures/arrow-up-solid.svg"
+          alt="Pil up til toppen"
+          class="pilUpTilToppen"
+        />
+      </a>
     </main>
     <footer>
       <div class="footerInfo">
