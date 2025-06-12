@@ -1027,6 +1027,58 @@ padding-top: 2.5rem;
 .udviklingPopup{
     top: 65vw;
 }
+
+.introSektion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: var(--sSpacer);
+}
+
+.holdBillede{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.TraeningsTider{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Kontigent{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.kampStatus{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stilling{
+    margin: var(--sSpacer);
+}
+
+.traenerSektion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#traenerSektion h3{
+    margin-left: var(--mSpacer);
+}
+
+.afdeling{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.holdSektion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
  }
 
 
@@ -1224,7 +1276,7 @@ padding-top: 2.5rem;
         }
     
         .kfumLogoCapsule {
-            position: fixed;
+            position: absolute;
             top: 1rem;
             left: 50px;
             height: 10rem;
