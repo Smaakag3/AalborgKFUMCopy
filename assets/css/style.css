@@ -727,7 +727,7 @@ footer hr {
     /*dette card kan ikke ses for man cliker paa det*/
     display: none;
     position: absolute;
-    top: 140px;
+    top: 170px;
 }
 
 .udviklingPopup img {
@@ -774,15 +774,15 @@ footer hr {
     background-color: hsl(328, 77%, 88%);
 }
 .ordenlighedPopup{
-    top: 41vw;
+    top: 53.5vw;
 }
 
 .faellesskabPopup{
-    top: 129.5vw;
+    top: 143vw;
 }
 
 .udviklingPopup{
-    top: 218vw;
+    top: 235vw;
 }
 
 /* Samantas CSS */
@@ -1040,15 +1040,17 @@ padding-top: 2.5rem;
     flex-wrap: wrap;
 }
 .ordenlighedPopup{
-    top: 17vw;
+    top: 22vw;
+    left: 2vw;
 }
 
 .faellesskabPopup{
-    top: 17vw;
+    top: 22vw;
+    left: 52vw;
 }
 
 .udviklingPopup{
-    top: 65vw;
+    top: 66vw;
 }
 
 .introSektion{
@@ -1443,9 +1445,7 @@ padding-top: 2.5rem;
         height: 15px;
 }
 
-    .popupCardMaal {
-        top: 150px;
-    }
+   
   
 /*tilmeld intro*/
 .knap{
@@ -1584,6 +1584,27 @@ p {
 }
 
 /*maalseatninger*/
+.ordenlighedPopup{
+    top: 21.5vw;
+    left: 0vw;
+}
+
+.faellesskabPopup{
+    top: 21.5vw;
+    left: 33.5vw;
+}
+
+.udviklingPopup{
+    top: 21.5vw;
+    left: 66.5vw;
+} 
+
+.allKortMaalsaetninger{
+       margin-bottom: 10rem; 
+}
+
+.maalIndehold{
+        height: 27.5rem;}
 /*maal indhold*/
 
 }
