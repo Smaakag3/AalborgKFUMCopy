@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Målsætninger | Aalborg KFUM fodbold</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" type="image/png" href="./assets/pictures/logofavIcon.png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/pictures/logofavIcon.png"
+    />
     <script src="./assets/js/maalsaetninger.js" defer></script>
   </head>
-    <body>
+  <body>
     <header>
       <div class="topNav">
         <a href="https://www.procup.se/cup/38414.htm"
@@ -184,70 +188,131 @@
       <article class="mission">
         <div class="missionIntro">
           <h1>Misson</h1>
-          <p>Vi ønsker gennem fodbolden at skabe et attraktivt miljø for Aalborg-områdets børn, unge og voksne med det formål at fastholde flest mulige længst muligt i fodbolden</p>
+          <p>
+            Vi ønsker gennem fodbolden at skabe et attraktivt miljø for
+            Aalborg-områdets børn, unge og voksne med det formål at fastholde
+            flest mulige længst muligt i fodbolden
+          </p>
         </div>
-        <a href="https://www.nordjyskebank.dk/?gad_source=1&gad_campaignid=20273606047&gbraid=0AAAAADwwHIE2yt03XNErWDne_BfacyAK1&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH6_VWa0OFWK73jTiQ6kpi5OYZTyvFs-Bz7W32_ycFsZ1kajUFLqi6caAvNHEALw_wcB" class="sponsor desktop"><img src="./assets/pictures/picForside/nordjyskeBankLogoDesktop.png" alt="Nordjyskebank logo"></a>
-        <a href="https://www.nordjyskebank.dk/?gad_source=1&gad_campaignid=20273606047&gbraid=0AAAAADwwHIE2yt03XNErWDne_BfacyAK1&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH6_VWa0OFWK73jTiQ6kpi5OYZTyvFs-Bz7W32_ycFsZ1kajUFLqi6caAvNHEALw_wcB" class="sponsor mobil"><img src="./assets/pictures/picForside/nordjyskeBankLogoMobil.png" alt="Nordjyskebank logo"></a>
+        <a
+          href="https://www.nordjyskebank.dk/?gad_source=1&gad_campaignid=20273606047&gbraid=0AAAAADwwHIE2yt03XNErWDne_BfacyAK1&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH6_VWa0OFWK73jTiQ6kpi5OYZTyvFs-Bz7W32_ycFsZ1kajUFLqi6caAvNHEALw_wcB"
+          class="sponsor desktop"
+          ><img
+            src="./assets/pictures/picForside/nordjyskeBankLogoDesktop.png"
+            alt="Nordjyskebank logo"
+        /></a>
+        <a
+          href="https://www.nordjyskebank.dk/?gad_source=1&gad_campaignid=20273606047&gbraid=0AAAAADwwHIE2yt03XNErWDne_BfacyAK1&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH6_VWa0OFWK73jTiQ6kpi5OYZTyvFs-Bz7W32_ycFsZ1kajUFLqi6caAvNHEALw_wcB"
+          class="sponsor mobil"
+          ><img
+            src="./assets/pictures/picForside/nordjyskeBankLogoMobil.png"
+            alt="Nordjyskebank logo"
+        /></a>
       </article>
 
-      <section class="allKortMaalsaetninger">
+      <div class="allKortMaalsaetninger">
         <!--Det card man kan se paa siden-->
         <div class="ordenlighedCard">
-      <article class="ordenlighed cardMaal" onclick="aabenOrdenlighed()"><!--Det kort man med onclick henter det underlaegende information-->
-  <div class="effekte"></div>
-  <img src="./assets/pictures/picMaalsaetninger/ordenlighedBillede.png" alt="Ordenlighed billede">
-  <p>Ordenlighed</p>
-</article>
-</div>
+          <div class="ordenlighed cardMaal" onclick="aabenOrdenlighed()">
+            <!--Det kort man med onclick henter det underlaegende information-->
+            <div class="effekte"></div>
+            <img
+              src="./assets/pictures/picMaalsaetninger/ordenlighedBillede.png"
+              alt="Ordenlighed billede"
+            />
+            <p>Ordenlighed</p>
+          </div>
+        </div>
 
-<!--Det card der skal foldes ud-->
-<div class="ordenlighedPopup popupCardMaal" id="ordenlighedinfo"><!--ordenlighedinfo er det der skal hentes-->
-  <article class="ordenlighedIndhold maalIndehold">
-    <img src="./assets/pictures/picMaalsaetninger/ordenlighedBillede.png" alt="Ordenlighed billede">
-    <h3>Ordenlighed</h3>
-    <p>Vi respekterer hinanden, medspillere som modspillere samt dommere, så fodbold bliver en god oplevelse. Vi forventer at alle forældre overholder DBU’s forældreråd, og trænerne overholder “Den gode træner” (se “Den blå tråd”) og altid husker på, at vi repræsenterer Aalborg KFUM i træning og kamp.</p>
-    <button class="lukKnap" onclick="lukOrdenlighed()">Luk</button><!--Naar man cliker paa denne knap bilver korted igen lukkede-->
-</div>
-</article>
+        <!--Det card der skal foldes ud-->
+        <div class="ordenlighedPopup popupCardMaal" id="ordenlighedinfo">
+          <!--ordenlighedinfo er det der skal hentes-->
+          <article class="ordenlighedIndhold maalIndehold">
+            <img
+              src="./assets/pictures/picMaalsaetninger/ordenlighedBillede.png"
+              alt="Ordenlighed billede"
+            />
+            <h3>Ordenlighed</h3>
+            <p>
+              Vi respekterer hinanden, medspillere som modspillere samt dommere,
+              så fodbold bliver en god oplevelse. Vi forventer at alle forældre
+              overholder DBU’s forældreråd, og trænerne overholder “Den gode
+              træner” (se “Den blå tråd”) og altid husker på, at vi
+              repræsenterer Aalborg KFUM i træning og kamp.
+            </p>
+            <button class="lukKnap" onclick="lukOrdenlighed()">Luk</button
+            ><!--Naar man cliker paa denne knap bilver korted igen lukkede-->
+          </article>
+        </div>
 
-<div class="faellesskabCard">
-<article class="faellesskab cardMaal" onclick="aabenFaellesskab()">
-  <div class="effekte"></div>
-  <img src="./assets/pictures/picMaalsaetninger/faellesskabBillede.png" alt="Fællesskab billede">
-  <p>Fællesskab</p>
-</article>
-</div>
+        <div class="faellesskabCard">
+          <div class="faellesskab cardMaal" onclick="aabenFaellesskab()">
+            <div class="effekte"></div>
+            <img
+              src="./assets/pictures/picMaalsaetninger/faellesskabBillede.png"
+              alt="Fællesskab billede"
+            />
+            <p>Fællesskab</p>
+          </div>
+        </div>
 
-<div class="faellesskabPopup popupCardMaal" id="faellesskabinfo">
-  <article class="faellesskabIndhold maalIndehold">
-    <img src="./assets/pictures/picMaalsaetninger/faellesskabBillede.png" alt="Fællesskab billede">
-    <h3>Fællesskab</h3>
-    <p>Vi lægger vægt på kammeratskab og sammenhold, og vi har fokus på at skabe et godt sportsligt og socialt miljø. Foreningen er i sig selv et fællesskab. Alle yder selv en aktiv indsats for at styrke foreningen og fællesskabet og engagerer sig som frivillig i at få fællesskabet til at vokse. Foreningen er større end holdet – og holdet er større end individet.</p>
-    <button class="lukKnap" onclick="lukFaellesskab()">Luk</button>
-  </article>
-</div>
+        <div class="faellesskabPopup popupCardMaal" id="faellesskabinfo">
+          <article class="faellesskabIndhold maalIndehold">
+            <img
+              src="./assets/pictures/picMaalsaetninger/faellesskabBillede.png"
+              alt="Fællesskab billede"
+            />
+            <h3>Fællesskab</h3>
+            <p>
+              Vi lægger vægt på kammeratskab og sammenhold, og vi har fokus på
+              at skabe et godt sportsligt og socialt miljø. Foreningen er i sig
+              selv et fællesskab. Alle yder selv en aktiv indsats for at styrke
+              foreningen og fællesskabet og engagerer sig som frivillig i at få
+              fællesskabet til at vokse. Foreningen er større end holdet – og
+              holdet er større end individet.
+            </p>
+            <button class="lukKnap" onclick="lukFaellesskab()">Luk</button>
+          </article>
+        </div>
 
-<div class="udviklingCard">
-<article class="udvikling cardMaal" onclick="aabenUdvikling()">
-  <div class="effekte"></div>
-  <img src="./assets/pictures/picMaalsaetninger/udviklingBillede.png" alt="Udvikling billede">
-  <p>Udvikling</p>
-</article>
-</div>
-<div class="udviklingPopup popupCardMaal" id="udviklinginfo">
-  <article class="udviklingIndhold maalIndehold">
-    <img src="./assets/pictures/picMaalsaetninger/udviklingBillede.png" alt="Udvikling billede">
-    <h3>Udvikling</h3>
-    <p>Vi tilstræber et miljø, hvor vi udfordrer hinanden – menneskeligt og sportsligt – og yder alle en fair behandling. Vi har fokus på det mentale (trivsel, glæde, motivation og kompetence) i forhold til udvikling af holdet, den enkelte spiller, samt fokus på, at vi kontinuerligt udvikler klubben med det formål at fastholde flest muligt i fodbolden.</p>
-    <button class="lukKnap" onclick="lukUdvikling()">Luk</button>
-  </article>
-</div>
-</section>
+        <div class="udviklingCard">
+          <div class="udvikling cardMaal" onclick="aabenUdvikling()">
+            <div class="effekte"></div>
+            <img
+              src="./assets/pictures/picMaalsaetninger/udviklingBillede.png"
+              alt="Udvikling billede"
+            />
+            <p>Udvikling</p>
+          </div>
+        </div>
+        <div class="udviklingPopup popupCardMaal" id="udviklinginfo">
+          <article class="udviklingIndhold maalIndehold">
+            <img
+              src="./assets/pictures/picMaalsaetninger/udviklingBillede.png"
+              alt="Udvikling billede"
+            />
+            <h3>Udvikling</h3>
+            <p>
+              Vi tilstræber et miljø, hvor vi udfordrer hinanden – menneskeligt
+              og sportsligt – og yder alle en fair behandling. Vi har fokus på
+              det mentale (trivsel, glæde, motivation og kompetence) i forhold
+              til udvikling af holdet, den enkelte spiller, samt fokus på, at vi
+              kontinuerligt udvikler klubben med det formål at fastholde flest
+              muligt i fodbolden.
+            </p>
+            <button class="lukKnap" onclick="lukUdvikling()">Luk</button>
+          </article>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footerInfo">
         <div>
-          <img src="./assets/pictures/footerLogo.png" class="footerLogo" alt="Aalborg KFUM fodbold logo"/>
+          <img
+            src="./assets/pictures/footerLogo.png"
+            class="footerLogo"
+            alt="Aalborg KFUM fodbold logo"
+          />
           <p>Aalborg KFUM Fodbold</p>
           <p>Under Lien 60, 9000 Aalborg</p>
           <a href="mailto:kontakt@aalborgkfumfodbold.dk"
@@ -271,7 +336,7 @@
             >Webshop</a
           >
         </div>
-    </div>
+      </div>
       <hr />
       <div class="copPri">
         <p>Copyright © Aalborg KFUM Fodbold</p>
@@ -282,5 +347,5 @@
         </div>
       </div>
     </footer>
-    </body>
-    </html>
+  </body>
+</html>
