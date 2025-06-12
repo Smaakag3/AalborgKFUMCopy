@@ -204,6 +204,11 @@ section {
     width: fit-content;
 }
 
+.knap:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
 .skygge {
     box-shadow: 5px 5px 6px gray;
 }
@@ -1566,4 +1571,18 @@ p {
 /*maalseatninger*/
 /*maal indhold*/
 
+}
+
+@media screen and (min-width: 2000px){
+    main{
+        margin-inline: 300px;
+    }
+
+    .nyhederKortall{
+        margin: var(--sSpacer);
+    }
+
+    .nyhederKort{
+        margin: var(--sSpacer);
+    }
 }

@@ -86,12 +86,12 @@ function renderTeam(data){
         const newPrice = document.createElement("p");
         newPrice.textContent = "Kontingent: " + teamInfo.acf.kontigentsats + ",- pr. 1/2år";
 
-        // Et nyt link bliver lavet og får tekst indholdet 'Tilmeld'. Linket fører til Aalborg KFUM Fodbolds eksterne tilmeldingsside. Linket får target="_black" så en ny fane bliver åbnet og brugeren ikke efterlader vores side. Linket får klassen 'tilmeldKnap'
+        // Et nyt link bliver lavet og får tekst indholdet 'Tilmeld'. Linket fører til Aalborg KFUM Fodbolds eksterne tilmeldingsside. Linket får target="_black" så en ny fane bliver åbnet og brugeren ikke efterlader vores side. Linket får klassen 'knap'
         const newPriceButton = document.createElement("a");
         newPriceButton.textContent = "Tilmeld";
         newPriceButton.href = "https://koservice.dbu.dk/ClubSignup?id=41&clubid=5";
         newPriceButton.target = "_blank"
-        newPriceButton.classList.add("tilmeldKnap");
+        newPriceButton.classList.add("knap");
         newPriceButton.classList.add("skygge");
 
         // Kontingenten og tilmeld knappen bliver tilføjet til artiklen 'newPriceSection' som child elementer.
