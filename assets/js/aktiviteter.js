@@ -10,54 +10,36 @@ knapper.forEach(function(knappe)
 // forEach looper igennem hvert elemenet i knepper (node)
 //(function(knap) definerer en function, der kører for hvert element i knapper men den aktuelle element i loopet bliver gemt/holdt i variablet med navnet knap
  {
+    // Tilføjer click event listener til hver knappe, hvilket betyder at når der trykkes på knappen udføres funktionen 
     knappe.addEventListener("click",function() {
         knappe.classList.toggle("active");
-
+//Det næste element (efter knappen i dom) findes. Det definerer om der er indhold der skal vises eller skjules 
         const aktivitetsIndhold = knappe.nextElementSibling;
+        // Der tjekkes om aktivitetIndhold er synligt (display =block)
+// Hvis ja så skjules det (display =none)
+
         if(aktivitetsIndhold.style.display === "block"){
             aktivitetsIndhold.style.display = "none";
         }
+        //Hvis nej så vise det (Display = block)
         else {
             aktivitetsIndhold.style.display = "block"
          }
+         // her under findes <i> element inde i knappen (som er ikon fra font awesome )
          const ikon = knappe.querySelector("i");
+         //Der tjekkes om Knappen har klassen active
+// Hvis ja (if) så ændres der til ikon der peger ned af 
+//Hvis nej, skifter ikon til pil op af 
+
          if (knappe.classList.contains("active")){
             ikon.classList.remove("fa-chevron-down");
             ikon.classList.add("fa-chevron-up");
          } else{
+            // Hvis det samme her bare omvendt 
             ikon.classList.remove("fa-chevron-up");
             ikon.classList.add("fa-chevron-down");
          }
   });
 });
 
-//* Node
-
-
-function fetchData(){
-    let endPoint = baseEndPoint;
-
-    const userSelectedTeam = holdSelectorEl.value;
-    const userSelectedActivity = activitySelectorEl.value;
-
-    if(userSelectedTeam) {
-        endPoint += `&kon=${userSelectedTeam}`;
-    }
-    if(userSelectedActivity) {
-        endPoint += `&aargang=${userSelectedActivity}`;
-    }
-
-    fetch(domain + endPoint)
-    .then(res => res.json())
-    .then(data => {
-    console.log(data);
-    renderData(data);
-})
-.catch(err => console.log(err))
-}
-
- fetchData()
-
-holdSelectorEl.addEventListener("change", fetchData);
-activitySelectorEl.addEventListener("change", fetchData);
 
