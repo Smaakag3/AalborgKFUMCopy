@@ -37,7 +37,7 @@ function renderTeam(data){
     // Tekstfeltet som indeholder årgang/alder kigger efter om 'aargang' eller 'alder' eksisterer, herefter bliver teksten tilføjet i et tekstfelt. || betyder at den vælger det felt som har en værdi.
     medlemssideHoldEl.innerHTML += `
     <article class="holdCard">
-        <a href="holdSide.html?slug=${data.slug}">
+        <a href="/holdSide.html?slug=${data.slug}">
         <img src="${data.acf.holdbillede.sizes.large}" alt="Billede af ${data.acf.hold_navn}">
         <h2>${data.acf.hold_navn}</h2>
         <div class="holdAlderOgPris">
