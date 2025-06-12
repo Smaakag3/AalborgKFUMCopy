@@ -18,7 +18,7 @@ fetch(domain + "wp-json/wp/v2/posts/230")
 .then(data => renderResponsable(data))
 .catch(err => console.log(err))
 
-// En funktion som modtager data fra tiligere fetch request. Den tidligere fetch request modtog data fra "ungdomsafdeling" indlæget, men vi er kun interesseret i at finde formanden for afdelingen.
+// En funktion som modtager data fra tiligere fetch request. Den tidligere fetch request modtog data fra "Ungdomsafdeling u13-u17" indlæget, men vi er kun interesseret i at finde formanden for afdelingen.
 function renderResponsable(data){
     // Vi laver et forEach loop da det vi leder efter er inde i et Array. Heri ønsker vi at finde og bruge ID'et som formanden har fået tildelt
     data.acf.ansvarlig.forEach(holdAnsvarlig => {
