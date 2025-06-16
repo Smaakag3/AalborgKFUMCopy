@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    font-family: "Noto Sans", sans-serif;
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
     line-height: 150%;
 }
 
@@ -14,17 +14,13 @@ html{
     scroll-behavior: smooth;
 }
 
-header{
-    margin-bottom: var(--lSpacer);
-}
-
 :root {
     --darkBlue: hsl(224, 68%, 29%);
     --lightBlue: hsl(186, 78%, 71%);
     --green: hsl(122, 64%, 88%);
     --veryLightBlue: hsl(192, 72%, 93%);
 
-    --xsSpacer: 0.625rem;
+    --xsSpacer: 10px;
     --sSpacer: 0.938rem;
     --mSpacer: 1.563rem;
     --lSpacer: 3.125rem;
@@ -211,6 +207,7 @@ h2 {
 p {
     font-size: 0.75rem;
     margin: 0;
+    max-width: 75ch;
 }
 
 .desktop {
@@ -218,7 +215,7 @@ p {
 }
 
 section {
-    margin-block: var(--mSpacer);
+    margin-block: var(--sSpacer);
 }
 
 .knap {
@@ -240,9 +237,15 @@ section {
     box-shadow: 5px 5px 6px gray;
 }
 
+.sectionMargin {
+    margin-inline: var(--sSpacer);
+}
+
 /* */
 /* Styling forside */
 /* */
+
+/* Header */
 .mobilHeader {
     width: 100%;
     height: auto;
@@ -250,47 +253,51 @@ section {
 }
 
 /*Kamp sektion*/
-.kampPogram {
+.kommendeKampe {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.kamp {
+.kommendeKampe .fa-solid {
+    padding: 1rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .35);
+}
+
+.kommendeKampe .fa-solid:hover {
+    cursor: pointer;
+    transform: scale(1.15)
+}
+
+.kommendeKampeInfo {
     background-color: var(--green);
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
-.kamp p {
+.kommendeKampeInfo p {
     font-size: 10px;
 }
 
-.kamp h3 {
-    font-size: 12px;
-}
-.kampIntro {
-    text-align: center;
-}
-
-.spillerKamp {
+.kommendeKampeOpstilling {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
-.spillerKamp img {
+.kommendeKampeOpstilling img {
     background-color: white;
     border-radius: 50%;
-    height: 4rem;
-    object-fit: scale-down;
+    height: 3rem;
 }
 
-.kampHold {
+.kommendeKampeHold{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 }
 
-.kampHold p {
+.kommendeKampeHold p {
     font-weight: bold;
 }
 
@@ -303,69 +310,60 @@ section {
     margin: 0.3rem;
 }
 
-.spillerKamp img {
-    height: 3rem;
-}
-
-.kamppil {
-    background: none;
-    border: none;
-}
-
-.kamppil img {
-    background-color: transparent;
-    height: 1rem;
-}
-
-/*Velkommen sektion*/
-.velkommen{
-    margin-inline: var(--sSpacer);
-}
-
-.velkommen p{
-    margin: 0.5rem 0;
-}
-
 /*Nyheder sektion*/
-.nyhederForside{
-    margin-inline: var(--sSpacer);
-}
-
-.flerenyhederKort {
-    width: 10vw;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.nyhederKort {
+.nyhedskort {
     margin-bottom: var(--mSpacer);
-    height: 20rem;
+    height: 15rem;
+    max-width: 100%;
     position: relative;
     border: 0.1rem solid black;
 }
 
-.effekte {
+.effekt {
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
 }
 
-.nyhederKort img {
+.nyhedskort a {
+    
+}
+
+.nyhedskort img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.nyhederKort h3 {
+.nyhedskort h3 {
+    font-size: 0.9rem;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1rem;
     color: black;
 }
+
+.nyhedskort .fa-solid {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    animation: glide-left 2s ease-in-out infinite;
+}
+
+@keyframes glide-left {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    } }
 
 /*tilmeld intro*/
 .tilmeldIntro {
@@ -999,7 +997,7 @@ padding-top: 2.5rem;
 
 /*Media queries*/
 
- @media screen and (min-width: 780px){
+ @media screen and (min-width: 540px){
     nav a {
         font-size: 0.9rem;
     }
@@ -1128,7 +1126,7 @@ padding-top: 2.5rem;
     align-items: center;
 }
 
-.kampPogram{
+.kommendeKampe{
     grid-column: 1 / span 2;
 }
 
@@ -1157,150 +1155,6 @@ padding-top: 2.5rem;
 
  }
 
-
-
-/* Arnis CSS */
-
-/* .kontaktIkon{
-    width: 25px;
-    height: 25px;
-    margin: 0.5rem;
-}
-
-.mailSektion, .telefonSektion{
-    display: flex;
-    align-items: center;
-}
-
-.traener{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-column: span 3;
-}
-
-.traener > img{
-    border-radius: 50%;
-}
-
-.traenerSektion{
-    display: grid;
-    margin: 0 100px;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-}
-
-.introSektion{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-    /* margin: 0 100px 100px 100px; */
-/* }
-
-.holdBillede{
-    grid-column: 9 / span 3;
-    max-width: 100%;
-}
-
-.TraeningsTider{
-    grid-column: 9/ span 3;
-    background-color: hsl(330, 85%, 67%);
-    padding: 1rem;
-}
-
-.TraeningsTider p, h4{
-    margin: 0;
-}
-
-.Kontigent{
-    grid-column: 9 / span 3;
-    background-color: #E1F5FA;
-    padding: 1rem;
-}
-
-.Kontigent p{
-    margin: 0;
-}
-
-.Kontigent a{
-    display: block;
-    text-decoration: none;
-    background-color: #6BCBE4;
-    color: black;
-    padding: 1rem 3rem;
-    margin: 1rem auto;
-    width: fit-content;
-} */ 
-
-
-/* Arnis CSS*/
-/* .holdIntroBox{
-    grid-column: 2 / span 6;
-    grid-row: 1 / 4;
-}
-
-
-
-.holdCard{
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px gray;
-}
-
-.holdCard a{
-    text-decoration: none;
-    color: black;
-}
-
-.holdCard a > img{
-    width: 100%;
-}
-
-.holdSektion{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin: 0 100px;
-}
-
-
-.holdAlderOgPris{
-    display: flex;
-    justify-content: space-between;
-}
-
-.afdeling{
-    margin: 0 100px;
-    gap: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.afdelingBeskrivelse{
-    padding: 1rem;
-    grid-column: 1 / span 2;
-}
-
-.afdelingBeskrivelse p{
-    margin: 1rem 0;
-}
-
-.holdAnsvarlig{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-
-.holdAnsvarlig > img{
-    border-radius: 50%;
-}
-
-.filter{
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-} */
-/*her starter desktop*/
 
 @media screen and (min-width: 1100px) {
 
@@ -1331,10 +1185,6 @@ padding-top: 2.5rem;
         margin-left: 150px;
     }
 
-    .nyhederForside{
-        margin: 0;
-    }
-
     .mobil{
         display: none;
     }
@@ -1346,7 +1196,7 @@ padding-top: 2.5rem;
         margin-inline: 150px;
     }
 
-    .nyhederKort{
+    .nyhedskort{
         margin: 1rem;
     }
 
@@ -1559,23 +1409,23 @@ margin: 1.5rem 20rem;
 
 .desktopHeader {
     width: 100%;
-    height: 25rem;
+    height: auto;
     object-fit: cover;
     object-position: 30% 40%;
 }
 /*forside*/
 /*kamp*/
 
-.kamp{
+.kommendeKampeInfo{
     margin:0 var(--xsSpacer);
 }
 /*nyheder*/
-.nyhederKortall{
+.nyhedskortAll{
     display: flex;
     justify-content: space-between;
 }
 
-.nyhederKort{
+.nyhedskort{
     width: 30vw;
 }
 
@@ -1708,11 +1558,11 @@ margin: 1.5rem 20rem;
         margin-inline: 300px;
     }
 
-    .nyhederKortall{
+    .nyhedskortAll{
         margin: var(--sSpacer);
     }
 
-    .nyhederKort{
+    .nyhedskort{
         margin: var(--sSpacer);
     }
 }
