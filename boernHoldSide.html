@@ -180,50 +180,52 @@
       </nav>
     </header>
     <main>
-      <div class="breadCrumbSektion">
-        <a href="./index.html" class="breadCrumb"><b>Forside /</b></a>
-        <a href="#" class="breadCrumb">Afdeling</a>
+      <div class="breadcrumbs">
+        <a href="./index.html"><b>Forside</b></a>
+        <p>></p>
+        <a href="#">Afdeling</a>
       </div>
-      <div class="afdeling">
+      <section class="sectionMargin afdeling">
         <article class="afdelingBeskrivelse">
-          <h2>Børn U5-U12</h2>
-          <h3>Årgang 2013-2025</h3>
-          <p>Velkommen til børneafdelingen i Aalborg KFUM Fodbold!</p>
+          <h1>Børn U5-U12</h1>
+          <h2>Årgang 2013-2025</h2>
+          <p>Velkommen til <b>børneafdelingen</b> i Aalborg KFUM Fodbold!</p>
           <p>
-            I børneafdelingen samles passionerede fodboldspillere på tværs af
-            niveauer og baggrunde. Uanset om du er ny på børnebanen eller har
-            mange års erfaring, byder vi dig velkommen i et stærkt og
+            I <b>børneafdelingen</b> samles passionerede fodboldspillere på
+            tværs af niveauer og baggrunde. Uanset om du er ny på <b>børnebanen</b>
+            eller har mange års erfaring, byder vi dig velkommen i et stærkt og
             inkluderende fællesskab. Hos Aalborg KFUM Fodbold kombinerer vi
             sportslig udvikling med et inspirerende miljø, hvor konkurrence,
             kammeratskab og personlig udvikling går hånd i hånd.
           </p>
-          <p>Hvad tilbyder vi?</p>
+          <p><b>Hvad tilbyder vi?</b></p>
           <p>
-            <span>Fodbold for alle:</span> Vores børneafdeling omfatter både
-            piger og drenge, og vi tilbyder træningsprogrammer og kampe, der
+            <b>Fodbold for alle:</b> Vores <b>børneafdeling</b> omfatter både
+            <b>piger</b> og <b>drenge</b>, og vi tilbyder træningsprogrammer og kampe, der
             udfordrer dig på dit niveau.
           </p>
+
           <p>
-            <span>Et dynamisk fællesskab:</span> Hos os handler fodbold ikke kun
-            om spillet - det er også en mulighed for at skabe langvarige
-            venskaber og et stærkt sammenhold, både på og udenfor banen.
+            <b>Et dynamisk fællesskab:</b> Hos os handler fodbold ikke kun om
+            spillet - det er også en mulighed for at skabe langvarige venskaber
+            og et stærkt sammenhold, både på og udenfor banen.
           </p>
           <p>
-            <span>Konkurrence og udvikling:</span> Vi lægger vægt på både den
+            <b>Konkurrence og udvikling:</b> Vi lægger vægt på både den
             individuelle udvikling og holdets samlede præstation gennem
             målrettet træning og en sund konkurrenceånd.
           </p>
           <p>
-            <span>Sociale arrangementer:</span> Udover træning og kampe
-            arrangerer vi løbende sociale events, ture og andre aktiviteter, der
-            styrker fællesskabet og giver ekstra gode oplevelser.
+            <b>Sociale arrangementer:</b> Udover træning og kampe arrangerer vi
+            løbende sociale events, ture og andre aktiviteter, der styrker
+            fællesskabet og giver ekstra gode oplevelser.
           </p>
         </article>
         <div class="holdAnsvarlig"></div>
-      </div>
+      </section>
       <div class="filter">
-        <select name="year-selector" id="yearSelector">
-          <option value="" disabled selected="selected">Årgang</option>
+        <select name="year-selector" id="yearSelector" class="skygge">
+          <option value="" disabled selected="selected">Årgang </option>
           <option value="37">Årgang 2013</option>
           <option value="38">Årgang 2014</option>
           <option value="39">Årgang 2015</option>
@@ -233,87 +235,71 @@
           <option value="43">Årgang 2019</option>
           <option value="44">Årgang 20 - 25</option>
         </select>
-        <select name="gender-selector" id="genderSelector">
+        <select name="gender-selector" id="genderSelector" class="skygge">
           <option value="" disabled selected="selected">Køn</option>
           <option value="45">Drenge</option>
           <option value="46">Piger</option>
         </select>
-        <button id="removeFilter">Fjern filter</button>
+        <button id="removeFilter" class="skygge">Fjern filter</button>
       </div>
       <div class="holdSektion"></div>
-      <section class="slider sponsorSlider">
-        <h2>Sponsorer:</h2>
-        <div class="sliderBilleder">
-          <button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
+      <section class="galleri sponsorGalleri">
+        <h2>Sponsorer</h2>
+        <div class="galleriBilleder">
           <img
             src="./assets/pictures/Sponsorer/image9.png"
             alt="OK logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoOK.png"
             alt="hummel logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoSport24.png"
             alt="to senior holds kvinder de holder en trøje vor der står 50 kampe aalborg kfum fodbold"
             loading="lazy"
-          /><button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+            class="item"
+          />
         </div>
-
-        <div class="mobilSliderPil">
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+        <div class="galleriPile">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </section>
-      <a href="#header" class="scrollUpButton skygge">
-        <img
-          src="./assets/pictures/arrow-up-solid.svg"
-          alt="Pil up til toppen"
-          class="pilUpTilToppen"
-        />
-      </a>
+      <section class="sectionMargin tilToppen">
+        <a href="#header" class="tilToppenKnap skygge">
+          Tilbage til toppen<i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </section>
     </main>
     <footer>
+      <div class="footerBilleder">
+        <img
+          src="./assets/pictures/footerLogo.png"
+          alt="Aalborg KFUM fodbold logo"
+          class="footerLogo"
+        />
+
+        <a href="https://www.facebook.com/AalborgKFUMfodbold"
+          ><img src="./assets/pictures/picForside/facebooklogo.png" alt=""
+        /></a>
+      </div>
       <div class="footerInfo">
         <div>
-          <img
-            src="./assets/pictures/footerLogo.png"
-            class="footerLogo"
-            alt="Aalborg KFUM fodbold logo"
-          />
           <p>Aalborg KFUM Fodbold</p>
           <p>Under Lien 60, 9000 Aalborg</p>
           <a href="mailto:kontakt@aalborgkfumfodbold.dk"
             ><img
               src="./assets/pictures/envelope.svg"
-              class="footerletter"
               alt="E-mail ikon"
+              class="footerletter"
             />
             kontakt@aalborgkfumfodbold.dk</a
           >
-          <a href="./assets/pictures/facebookLogo.png"></a>
         </div>
         <div class="footerNav">
           <a href="./Maalsaetninger.html">Målsætninger</a>
@@ -322,11 +308,12 @@
           <a href="#">Nyheder</a>
           <a href="#">Sponsorer</a>
           <a
-            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html?fbclid=IwAR21bVYvT18NbAFwytIH68uBq5YGjk6GdHTuQ8KsSWrFaORyxQ1_Vppb1NU"
+            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html"
             >Webshop</a
           >
         </div>
       </div>
+      <hr />
       <div class="copPri">
         <p>Copyright © Aalborg KFUM Fodbold</p>
         <div class="politikFooter">
