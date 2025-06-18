@@ -185,43 +185,30 @@
           <li><a href="./sponsor.html">Sponsorer</a></li>
         </ul>
       </nav>
-      <img
-        src="./assets/pictures/picForside/headerbilledeDesktop.png"
-        alt="Hero billede"
-        class="desktop desktopHeader"
-      />
-      <img
-        src="./assets/pictures/picForside/headerbilledeMobil.png"
-        alt="Hero billede"
-        class="mobil mobilHeader"
-      />
     </header>
     <main>
-      <div class="breadCrumbSektion">
-        <a href="./index.html" class="breadCrumb"><b>Forside /</b></a>
-        <a href="#" class="breadCrumb">Medlemsskab</a>
+      <div class="breadcrumbs">
+        <a href="./index.html"><b>Forside</b></a>
+        <p>></p>
+        <a href="#">Aktiviteter</a>
       </div>
-      <section class="aktivitetsKalenderen">
+      <section class="aktivitetsKalenderen sectionMargin">
         <h1>Aktiviteter</h1>
-        <button class="aabenAktiviteter knapper skygge">
-          Årshjul <i class="fa-solid fa-chevron-up"></i>
-        </button>
+        <button class="aabenAktiviteter knap skygge">Årshjul ▼</button>
         <img
           class="aarshjulBillede"
           src="./assets/pictures/picForside/Aarshjul.jpg"
           alt=""
           loading="lazy"
         />
-        <button class="aabenAktiviteter knapper skygge">
-          Kalender <i class="fa-solid fa-chevron-up"></i>
-        </button>
+        <button class="aabenAktiviteter knap skygge">Kalender ▼</button>
         <div class="aktivitetsKalenderIndhold">
           <div class="aktivitetKalender">
-            <ul class="moened">
-              <li><i class="fa-solid fa-arrow-left"></i></li>
-              <li>Juni</li>
-              <li><i class="fa-solid fa-arrow-right"></i></li>
-            </ul>
+            <div class="month">
+              <i class="fa-solid fa-arrow-left"></i>
+              <p>Juni</p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
             <div class="selectorGruppe">
               <select name="hold-Selector" id="holdSelector" class="skygge">
                 <option value="" disabled selected="selected">Hold</option>
@@ -251,38 +238,38 @@
               <li>
                 Man. 2
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningSeniorMand"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningSeniorMand prik"></span>
                 </div>
               </li>
               <li>Tir. 3</li>
               <li>
                 Ons. 4
                 <div class="prikker">
-                  <span class="traeningUngdom"></span>
+                  <span class="traeningUngdom prik"></span>
                 </div>
               </li>
               <li>
                 Tor. 5
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningSenioKvinder"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningSenioKvinder prik"></span>
                 </div>
               </li>
               <li>Fre. 6</li>
               <li>
                 Lør. 7
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningSenioKvinder"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningSenioKvinder prik"></span>
                 </div>
               </li>
               <li>Søn. 8</li>
               <li>
                 Man. 9
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningSeniorMand"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningSeniorMand prik"></span>
                 </div>
               </li>
               <li>Tir. 10</li>
@@ -290,15 +277,15 @@
               <li>
                 Tor. 12
                 <div class="prikker">
-                  <span class="traeningSenioKvinder"></span>
-                  <span class="traeningSeniorMand"></span>
-                  <span class="traeningUngdom"></span>
+                  <span class="traeningSenioKvinder prik"></span>
+                  <span class="traeningSeniorMand prik"></span>
+                  <span class="traeningUngdom prik"></span>
                 </div>
               </li>
               <li>
                 Fre. 13
                 <div class="prikker">
-                  <span class="traeningSenioKvinder"></span>
+                  <span class="traeningSenioKvinder prik"></span>
                 </div>
               </li>
               <li>Lør. 14</li>
@@ -308,8 +295,8 @@
               <li>
                 Ons. 18
                 <div class="prikker">
-                  <span class="traeningSenioKvinder"></span>
-                  <span class="traeningUngdom"></span>
+                  <span class="traeningSenioKvinder prik"></span>
+                  <span class="traeningUngdom prik"></span>
                 </div>
               </li>
               <li>Tor. 19</li>
@@ -318,8 +305,8 @@
               <li>
                 Søn. 22
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningUngdom"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningUngdom prik"></span>
                 </div>
               </li>
               <li>Man. 23</li>
@@ -327,16 +314,16 @@
               <li>
                 Ons. 25
                 <div class="prikker">
-                  <span class="traeningSenioKvinder"></span>
-                  <span class="traeningSeniorMand"></span>
+                  <span class="traeningSenioKvinder prik"></span>
+                  <span class="traeningSeniorMand prik"></span>
                 </div>
               </li>
               <li>Tor. 26</li>
               <li>
                 Fre. 27
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningUngdom"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningUngdom prik"></span>
                 </div>
               </li>
               <li>Lør. 28</li>
@@ -344,8 +331,8 @@
               <li>
                 Man. 30
                 <div class="prikker">
-                  <span class="traeningBoern"></span>
-                  <span class="traeningSeniorMand"></span>
+                  <span class="traeningBoern prik"></span>
+                  <span class="traeningSeniorMand prik"></span>
                 </div>
               </li>
               <li>Tir. 1</li>
@@ -357,69 +344,63 @@
           </div>
         </div>
       </section>
-      <section class="slider sponsorSlider">
-        <h2>Sponsorer:</h2>
-        <div class="sliderBilleder">
-          <button class="desktop favDeskPil">
-            <img src="./assets/pictures/picForside/pilVenstre.svg" alt="Pil" />
-          </button>
+      <section class="galleri sponsorGalleri">
+        <h2>Sponsorer</h2>
+        <div class="galleriBilleder">
           <img
             src="./assets/pictures/Sponsorer/image9.png"
             alt="OK logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoOK.png"
             alt="hummel logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoSport24.png"
             alt="to senior holds kvinder de holder en trøje vor der står 50 kampe aalborg kfum fodbold"
             loading="lazy"
-          /><button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+            class="item"
+          />
         </div>
-
-        <div class="mobilSliderPil">
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+        <div class="galleriPile">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
+      </section>
+      <section class="sectionMargin tilToppen">
+        <a href="#header" class="tilToppenKnap skygge">
+          Tilbage til toppen<i class="fa-solid fa-arrow-up"></i>
+        </a>
       </section>
     </main>
     <footer>
+      <div class="footerBilleder">
+        <img
+          src="./assets/pictures/footerLogo.png"
+          alt="Aalborg KFUM fodbold logo"
+          class="footerLogo"
+        />
+
+        <a href="https://www.facebook.com/AalborgKFUMfodbold"
+          ><img src="./assets/pictures/picForside/facebooklogo.png" alt=""
+        /></a>
+      </div>
       <div class="footerInfo">
         <div>
-          <img
-            src="./assets/pictures/footerLogo.png"
-            class="footerLogo"
-            alt="Aalborg KFUM fodbold logo"
-          />
           <p>Aalborg KFUM Fodbold</p>
           <p>Under Lien 60, 9000 Aalborg</p>
           <a href="mailto:kontakt@aalborgkfumfodbold.dk"
             ><img
               src="./assets/pictures/envelope.svg"
-              class="footerletter"
               alt="E-mail ikon"
+              class="footerletter"
             />
             kontakt@aalborgkfumfodbold.dk</a
           >
-          <a href="./assets/pictures/facebookLogo.png"></a>
         </div>
         <div class="footerNav">
           <a href="./Maalsaetninger.html">Målsætninger</a>
@@ -428,7 +409,7 @@
           <a href="#">Nyheder</a>
           <a href="#">Sponsorer</a>
           <a
-            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html?fbclid=IwAR21bVYvT18NbAFwytIH68uBq5YGjk6GdHTuQ8KsSWrFaORyxQ1_Vppb1NU"
+            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html"
             >Webshop</a
           >
         </div>

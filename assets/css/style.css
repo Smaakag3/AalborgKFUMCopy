@@ -212,18 +212,16 @@ p {
     display: none;
 }
 
-section {
-    margin-block: var(--sSpacer);
-}
-
 .knap {
     display: block;
     text-decoration: none;
     background-color: var(--green);
     color: black;
-    padding: 0.5rem 6rem;
+    padding: 0.5rem 3rem;
+    width: 250px;
     margin: 1rem auto;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
 }
 
 .knap:hover{
@@ -275,6 +273,7 @@ section {
 
 .kommendeKampeInfo p {
     font-size: 10px;
+    justify-self: center;
 }
 
 .kommendeKampeOpstilling {
@@ -367,7 +366,7 @@ section {
 
 /*Galleri sektion*/
 .galleri {
-background: var(--green);
+background: var(--veryLightBlue);
 }
 
 .galleri h2 {
@@ -576,10 +575,11 @@ footer hr {
     margin: 1rem;
 }
 
-#yearSelector, #genderSelector {
+#yearSelector, #genderSelector, #holdSelector, #activitySelector{
     background-color: var(--green);
     border: none;
     width: 6rem;
+    padding: 0.5rem 0.5rem;
 }
 
 button {
@@ -590,43 +590,30 @@ button {
 }
 
 /*  */
-/*  */
-/*  */
 /* Holdside */
-
-.holdIntroBox{
-    margin: var(--sSpacer);
-}
-
-.TraeningsTider{
-    background-color: var(--green);
-    margin: var(--sSpacer);
-    padding: var(--sSpacer);
-}
-
-.TraeningsTider h4{
-    margin: 0 0 var(--sSpacer) 0;
+/*  */
+.TraeningsTider h3 {
+margin-top: var(--sSpacer);
+margin-bottom: 0;
+font-weight: 600;
 }
 
 .Kontigent{
-    background-color: var(--veryLightBlue);
-    margin: var(--sSpacer);
-    padding: var(--sSpacer);
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.3rem;
 }
 
-.Kontigent a{
-    display: block;
-    text-decoration: none;
-    background-color: var(--lightBlue);
-    color: black;
-    padding: 1rem 3rem;
-    margin: 1rem auto;
-    width: fit-content;
+.Kontigent h3 {
+    margin: 0;
 }
 
-.holdBillede{
-    width: 100%;
+.holdIntro img{
+display: block;
+justify-self: center;
 }
+
 
 .traenerSektion h3{
     margin: var(--sSpacer);
@@ -706,14 +693,9 @@ button {
 }
 
 /*misson intro*/
-.missionIntro p {
-    max-width: 75ch;
-}
-
 .mission {
     display: flex;
     align-items: center;
-    margin: 0 var(--mSpacer);
 }
 
 .mission img {
@@ -721,22 +703,18 @@ button {
 }
 
 /*Maalsaetninger kort*/
-
 .allKortMaalsaetninger img {
     width: 10rem;
+    box-shadow: 3px 3px 10px gray;
 }
 
 .cardMaal {
-    text-align: center;
-    margin: var(--mSpacer);
+    display: block;
+    justify-self: center;
     width: 20rem;
     height: 20rem;
     position: relative;
-    border: 0.1rem solid black;
-}
-
-.faellesskab {
-    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 .cardMaal img {
@@ -749,8 +727,8 @@ button {
     position: absolute;
     font-weight: bolder;
     font-size: 1.1rem;
-    bottom: 5%;
-    left: 4%;
+    bottom: 15%;
+    left: 35%;
 }
 
 .ordenlighedIndhold {
@@ -774,25 +752,15 @@ button {
     top: 170px;
 }
 
-.udviklingPopup img {
-    object-position: 100% 20%;
-}
-
-.faellesskabPopup img {
-    object-position: 100% 10%;
-}
-
 .maalIndehold {
+    background: var(--veryLightBlue);
     text-align: center;
-    background-color: #e1f5fa;
     margin: var(--mSpacer);
     width: 20rem;
     height: 20rem;
     position: relative;
-    border: 0.1rem solid black;
-    box-shadow: 5px 5px 6px gray;
+    box-shadow: 3px 3px 10px gray;
 }
-
 
 .udviklingIndhold {
     height: 22rem;
@@ -817,211 +785,119 @@ button {
 .lukKnap:hover {
     background-color: hsl(328, 77%, 88%);
 }
+
 .ordenlighedPopup{
-    top: 53.5vw;
+    top: 50vw;
 }
 
 .faellesskabPopup{
-    top: 143vw;
+    top: 132vw;
 }
 
 .udviklingPopup{
-    top: 235vw;
+    top: 205vw;
 }
 
-/* Samantas CSS */
-
+/*  */
 /* Aktiviteter */
-.aktivitetsKalenderen h1{
-    font-size: 1.25rem;
-        margin: 0;
-        margin-bottom: var(--xsSpacer);
-        margin-left: 2rem;
-}
-
+/*  */
 .aarshjulBillede {
-    width: 90%;
+    display: block;
+    justify-self: center;
+    width: 100%;
     margin-block: var(--sSpacer);
-    margin-inline: var(--sSpacer);
-}
-.active,
-.aabenAktiviteter:hover {
-    background-color:hsl(186, 39%, 55%) ;
 }
 
 /*kalender*/
 .aktivitetKalender ,.dage{
     background-color: #E1F5FA;
-    padding-inline-end: 40px;
+    padding-inline-end:1.5rem;
     padding-bottom: var(--mSpacer);
     width: 100%;
 }
 
-.moened,
+.month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.selectorGruppe {
+display: flex;
+justify-content: center;
+gap: 2rem;
+}
+
 .dage {
     list-style-type: none;
     width: 100%;
-}
-
-.moened {
-    padding: 10px 20px;
-    margin-left: var(--sSpacer);
-}
-
-.dage {
     font-size: 70%;
-    text-align: start;
     display: grid;
     grid-template-columns: repeat(7, 5fr);
 }
 
 .dage li {
-    padding-bottom: 40%;
-    padding-left: 40%;
-    padding-right: 30%;
+    padding-bottom: 0.1rem;
     border: solid black 0.01rem;
     background-color: white;
-    display: flex;
-    position: relative;
 }
+
 .prikker {
     display: flex;
-    padding-top: 2.5rem;
-    gap: 4px;
-    position: absolute;
+    padding-top: 1rem;
+    gap: 0.2rem;
+}
+
+.prik {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }
 
 .traeningSenioKvinder {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
     background-color: lightcoral;
 }
+
 .traeningSeniorMand {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
     background-color: darkblue;
 }
 .traeningUngdom{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
     background-color: orange;
         
 }
 .traeningBoern{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
     background-color: lightseagreen;
-    padding-left: 5px;
-}
-.moened {
-    display: flex;
-    gap: 5%;
-}
-#holdSelector,
-#activitySelector {
-    background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-inline: var(--mSpacer);
-    width: 9rem;
 }
 
 /* Sponsor side*/
-.mainSponsor{
-     margin-top: 40px;
-     margin-left: 40px;
-    line-height: 1.6rem;
-    font-size: 0.9rem;
-}
 .infoSponsorer {
     width: 90%;
     line-height: 1.6rem;
-    
 }
-.kontaktInfo {
-    padding-top: 40px;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 1.6rem;
+
+.infoSponsorer p {
+    margin-bottom: var(--xsSpacer);
 }
-.kontaktInfo h4 {
-text-decoration: none;
-}
-.sponsoransvarlig img{
-    width: 150px;
-}
+
 .stoetKlubben img{
-    width: 50%;
-    align-content: center;
-    padding-top: 20px;
-    
-}
-.stoetKlubben {
-    padding-right: 40px;
-}
-
-
-.OKSponsor img{
+    display: block;
 padding-bottom: 1rem;
-width: 70%;
-}
-.OKSponsor p {
-    padding-bottom: 20px;
-    width: 90%;
+height: 10rem;
+justify-self: center;
 }
 
-.TommyTeltSponsor p {
-    padding-bottom: 1.25rem;
-    width: 90%;
-    margin-right: 40px;
-    
-    
-}
-.sponsorSektion {
-padding-top: 2.5rem;
-}
 .alleSponsorer{
     display: grid;
     grid-template-columns: repeat(2, 9fr);
+    justify-items: center;
     
 }
 .alleSponsorer img {
-    max-width: 70%;
-    padding-bottom: 20%;
-}
-.knapper{
-    background-color: var(--lightBlue);
-    text-decoration: none;
-    color: black;
-        border: none;
-        padding: 20px;
-        width: 40%;
-        text-align: center;
-        transition: 0.4s;
-        gap: 10%;
+    width: 6rem;
+    padding-bottom: 2rem;
 }
 
-.scrollUpButton{
-    background-color: var(--lightBlue);
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-inline: auto;
-    margin-block: 1rem;
-}
-
-.pilUpTilToppen{
-    height: 50px;
-}
 
 /*Media queries*/
 
