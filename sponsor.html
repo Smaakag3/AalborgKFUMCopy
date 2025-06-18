@@ -178,8 +178,13 @@
         </ul>
       </nav>
     </header>
-    <main class="mainSponsor">
-      <section class="infoSponsorer">
+    <main>
+      <div class="breadcrumbs">
+        <a href="./index.html"><b>Forside</b></a>
+        <p>></p>
+        <a href="#">Sponser</a>
+      </div>
+      <section class="infoSponsorer sectionMargin">
         <h1>Tak til alle vores sponsorer</h1>
         <p>
           Der skal lyde en kæmpe tak til alle vores sponsorere, uden jer var vi
@@ -201,33 +206,33 @@
           gør en forskel.
         </p>
       </section>
-      <section class="kontaktInfo">
+      <section class="holdAnsvarlig kontaktInfo">
         <img
           src="./assets/pictures/Sponsorer/Signin.png"
           alt="Billedeaf sponsoransvarlig"
           loading="lazy"
           class="sponsoransvarlig"
         />
-        <h3>Sponsoransvarlig</h3>
-        <h4>Michal Gregersen</h4>
-
-        <p>
+        <h2>Sponsoransvarlig</h2>
+        <h3>Michal Gregersen</h3>
+        <div class="mailSektion">
           <img
             src="./assets/pictures/envelope.svg"
             alt="E-mail ikon"
             class="kontaktIkon"
-          />michal@aalborgkfumfodbold.dk
-        </p>
-
-        <p>
+          />
+          <p>michal@aalborgkfumfodbold.dk</p>
+        </div>
+        <div class="telefonSektion">
           <img
             src="./assets/pictures/phone.svg"
             alt="Telefon ikon"
             class="kontaktIkon"
-          />+45 31 59 90 02
-        </p>
+          />
+          <p>+45 31 59 90 02</p>
+        </div>
       </section>
-      <section>
+      <section class="sectionMargin">
         <h2>Støt klubben</h2>
         <div class="stoetKlubben">
           <div class="OKSponsor">
@@ -254,7 +259,7 @@
           <div class="TommyTeltSponsor">
             <img
               src="./assets/pictures/Sponsorer/logoTommyTelt.png"
-              alt=""
+              alt="Tommy Telt Logo"
               loading="lazy"
             />
             <p>
@@ -282,7 +287,7 @@
           </div>
         </div>
       </section>
-      <section class="sponsorSektion">
+      <section class="sponsorSektion sectionMargin">
         <h2>Alle sponsorer</h2>
         <div class="alleSponsorer">
           <img
@@ -392,33 +397,36 @@
           />
         </div>
       </section>
-      <a href="#header" class="scrollUpButton skygge">
-        <img
-          src="./assets/pictures/arrow-up-solid.svg"
-          alt="Pil up til toppen"
-          class="pilUpTilToppen"
-        />
-      </a>
+      <section class="sectionMargin tilToppen">
+        <a href="#header" class="tilToppenKnap skygge">
+          Tilbage til toppen<i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </section>
     </main>
     <footer>
+      <div class="footerBilleder">
+        <img
+          src="./assets/pictures/footerLogo.png"
+          alt="Aalborg KFUM fodbold logo"
+          class="footerLogo"
+        />
+
+        <a href="https://www.facebook.com/AalborgKFUMfodbold"
+          ><img src="./assets/pictures/picForside/facebooklogo.png" alt=""
+        /></a>
+      </div>
       <div class="footerInfo">
         <div>
-          <img
-            src="./assets/pictures/footerLogo.png"
-            class="footerLogo"
-            alt="Aalborg KFUM fodbold logo"
-          />
           <p>Aalborg KFUM Fodbold</p>
           <p>Under Lien 60, 9000 Aalborg</p>
           <a href="mailto:kontakt@aalborgkfumfodbold.dk"
             ><img
               src="./assets/pictures/envelope.svg"
-              class="footerletter"
               alt="E-mail ikon"
+              class="footerletter"
             />
             kontakt@aalborgkfumfodbold.dk</a
           >
-          <a href="./assets/pictures/facebookLogo.png"></a>
         </div>
         <div class="footerNav">
           <a href="./Maalsaetninger.html">Målsætninger</a>
@@ -427,7 +435,7 @@
           <a href="#">Nyheder</a>
           <a href="#">Sponsorer</a>
           <a
-            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html?fbclid=IwAR21bVYvT18NbAFwytIH68uBq5YGjk6GdHTuQ8KsSWrFaORyxQ1_Vppb1NU"
+            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html"
             >Webshop</a
           >
         </div>
@@ -442,5 +450,3 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
