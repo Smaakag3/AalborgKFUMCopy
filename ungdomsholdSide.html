@@ -180,49 +180,50 @@
       </nav>
     </header>
     <main>
-      <div class="breadCrumbSektion">
-        <a href="./index.html" class="breadCrumb"><b>Forside /</b></a>
-        <a href="#" class="breadCrumb">Afdeling</a>
+      <div class="breadcrumbs">
+        <a href="./index.html"><b>Forside</b></a>
+        <p>></p>
+        <a href="#">Afdeling</a>
       </div>
-      <div class="afdeling">
+      <section class="sectionMargin afdeling">
         <article class="afdelingBeskrivelse">
-          <h2>Ungdom U13-U17</h2>
-          <h3>Årgang 2008-2012</h3>
-          <p>Velkommen til ungdomsafdelingen i Aalborg KFUM Fodbold!</p>
+          <h1>Ungdom U13-U17</h1>
+          <h2>Årgang 2008-2012</h2>
+          <p>Velkommen til <b>ungdomsafdelingen</b> i Aalborg KFUM Fodbold!</p>
           <p>
-            I ungdomsafdelingen samles passionerede fodboldspillere på tværs af
-            niveauer og baggrunde. Uanset om du er ny på ungdomsbanen eller har
-            mange års erfaring, byder vi dig velkommen i et stærkt og
+            I <b>ungdomsafdelingen</b> samles passionerede fodboldspillere på
+            tværs af niveauer og baggrunde. Uanset om du er ny på ungdomsbanen
+            eller har mange års erfaring, byder vi dig velkommen i et stærkt og
             inkluderende fællesskab. Hos Aalborg KFUM Fodbold kombinerer vi
             sportslig udvikling med et inspirerende miljø, hvor konkurrence,
             kammeratskab og personlig udvikling går hånd i hånd.
           </p>
-          <p>Hvad tilbyder vi?</p>
+          <p><b>Hvad tilbyder vi?</b></p>
           <p>
-            Fodbold for alle: Vores ungdomsafdeling omfatter både pigeungdom og
-            drengeungdom, og vi tilbyder træningsprogrammer og kampe, der
-            udfordrer dig på dit niveau.
+            <b>Fodbold for alle:</b> Vores <b>ungdomsafdeling</b> omfatter både
+            <b>pigeungdom</b> og <b>drengeungdom</b>, og vi tilbyder
+            træningsprogrammer og kampe, der udfordrer dig på dit niveau.
           </p>
           <p>
-            Et dynamisk fællesskab: Hos os handler fodbold ikke kun om spillet -
-            det er også en mulighed for at skabe langvarige venskaber og et
-            stærkt sammenhold, både på og udenfor banen.
+            <b>Et dynamisk fællesskab</b>: Hos os handler fodbold ikke kun om
+            spillet - det er også en mulighed for at skabe langvarige venskaber
+            og et stærkt sammenhold, både på og udenfor banen.
           </p>
           <p>
-            Konkurrence og udvikling: Vi lægger vægt på både den individuelle
-            udvikling og holdets samlede præstation gennem målrettet træning og
-            en sund konkurrenceånd.
+            <b>Konkurrence og udvikling:</b> Vi lægger vægt på både den
+            individuelle udvikling og holdets samlede præstation gennem
+            målrettet træning og en sund konkurrenceånd.
           </p>
           <p>
-            Sociale arrangementer: Udover træning og kampe arrangerer vi løbende
-            sociale events, ture og andre aktiviteter, der styrker fællesskabet
-            og giver ekstra gode oplevelser.
+            <b>Sociale arrangementer:</b> Udover træning og kampe arrangerer vi
+            løbende sociale events, ture og andre aktiviteter, der styrker
+            fællesskabet og giver ekstra gode oplevelser.
           </p>
         </article>
         <div class="holdAnsvarlig"></div>
-      </div>
+      </section>
       <div class="filter">
-        <select name="year-selector" id="yearSelector">
+        <select name="year-selector" id="yearSelector" class="skygge">
           <option value="" disabled selected="selected">Årgang</option>
           <option value="56">Årgang 08+09+10</option>
           <option value="26">Årgang 2008</option>
@@ -231,67 +232,46 @@
           <option value="35">Årgang 2011</option>
           <option value="36">Årgang 2012</option>
         </select>
-        <select name="gender-selector" id="genderSelector">
+        <select name="gender-selector" id="genderSelector" class="skygge">
           <option value="" disabled selected="selected">Køn</option>
           <option value="45">Drenge</option>
           <option value="46">Piger</option>
         </select>
-        <button id="removeFilter">Fjern filter</button>
+        <button id="removeFilter" class="skygge">Fjern filter</button>
       </div>
       <div class="holdSektion"></div>
-      <section class="slider sponsorSlider">
-        <h2>Sponsorer:</h2>
-        <div class="sliderBilleder">
-          <button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
+      <section class="galleri sponsorGalleri">
+        <h2>Sponsorer</h2>
+        <div class="galleriBilleder">
           <img
             src="./assets/pictures/Sponsorer/image9.png"
             alt="OK logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoOK.png"
             alt="hummel logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoSport24.png"
             alt="to senior holds kvinder de holder en trøje vor der står 50 kampe aalborg kfum fodbold"
             loading="lazy"
-          /><button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+            class="item"
+          />
         </div>
-
-        <div class="mobilSliderPil">
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+        <div class="galleriPile">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </section>
-      <a href="#header" class="scrollUpButton skygge">
-        <img
-          src="./assets/pictures/arrow-up-solid.svg"
-          alt="Pil up til toppen"
-          class="pilUpTilToppen"
-        />
-      </a>
+      <section class="sectionMargin tilToppen">
+        <a href="#header" class="tilToppenKnap skygge">
+          Tilbage til toppen<i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </section>
     </main>
     <footer>
       <div class="footerInfo">

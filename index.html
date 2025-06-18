@@ -367,7 +367,7 @@
         </div>
       </section>
 
-      <section class="tilmeldIntro">
+      <section class="sectionMargin">
         <h2>Skal du med på holdet?</h2>
         <p>
           Vi glæder os allerede til at byde dig velkommen. Hos os er du ikke
@@ -379,7 +379,7 @@
         <a href="#" class="knap skygge">Tilmeld</a>
       </section>
 
-      <section class="nordjyskeBankTak">
+      <section class="nordjyskeBankTak sectionMargin">
         <div class="nordjyskeBankTekst">
           <h2>Tak til Nordjyske Bank</h2>
           <p>
@@ -402,54 +402,35 @@
         /></a>
       </section>
 
-      <section class="slider">
+      <section class="galleri">
         <h2>Her er nogle af vores favorit billeder</h2>
-        <div class="sliderBilleder">
-          <button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
+        <div class="galleriBilleder">
           <img
             src="./assets/pictures/picForside/drengDerSpiller.png"
             alt="en lille dreng der spiller fodbold"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/picForside/pigeHoldBillede.png"
             alt="et af klubbens pigehold de smiler foran et mål"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/picForside/spillerMedTrojer.png"
             alt="to senior holds kvinder de holder en trøje vor der står 50 kampe aalborg kfum fodbold"
             loading="lazy"
-          /><button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+            class="item"
+          />
         </div>
-
-        <div class="mobilSliderPil">
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+        <div class="galleriPile">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </section>
 
-      <section class="kontaktIntro sectionMargin">
+      <section class="sectionMargin">
         <h2>Kontakt</h2>
         <p>
           Ramte vi ikke målet? Bolden er nu på din banehalvdel og vi står klar
@@ -462,69 +443,53 @@
         <a href="#" class="knap skygge">Kontakter</a>
       </section>
 
-      <section class="slider sponsorSlider">
-        <h2>Sponsorer:</h2>
-        <div class="sliderBilleder">
-          <button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
+      <section class="galleri sponsorGalleri">
+        <h2>Sponsorer</h2>
+        <div class="galleriBilleder">
           <img
             src="./assets/pictures/Sponsorer/image9.png"
             alt="OK logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoOK.png"
             alt="hummel logo"
             loading="lazy"
+            class="item"
           />
           <img
             src="./assets/pictures/Sponsorer/LogoSport24.png"
             alt="to senior holds kvinder de holder en trøje vor der står 50 kampe aalborg kfum fodbold"
             loading="lazy"
-          /><button class="desktop favDeskPil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+            class="item"
+          />
         </div>
-
-        <div class="mobilSliderPil">
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilVenstre.svg"
-              alt="Pil venstre"
-            />
-          </button>
-          <button class="mobil">
-            <img
-              src="./assets/pictures/picForside/pilHojer.svg"
-              alt="Pil højre"
-            />
-          </button>
+        <div class="galleriPile">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </section>
-      <a href="#header" class="scrollUpButton skygge">
-        <img
-          src="./assets/pictures/arrow-up-solid.svg"
-          alt="Pil up til toppen"
-          class="pilUpTilToppen"
-        />
-      </a>
+      <section class="sectionMargin tilToppen">
+        <a href="#header" class="tilToppenKnap skygge">
+          Tilbage til toppen<i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </section>
     </main>
-
     <footer>
+      <div class="footerBilleder">
+        <img
+          src="./assets/pictures/footerLogo.png"
+          alt="Aalborg KFUM fodbold logo"
+          class="footerLogo"
+        />
+
+        <a href="https://www.facebook.com/AalborgKFUMfodbold"
+          ><img src="./assets/pictures/picForside/facebooklogo.png" alt=""
+        /></a>
+      </div>
       <div class="footerInfo">
         <div>
-          <img
-            src="./assets/pictures/footerLogo.png"
-            alt="Aalborg KFUM fodbold logo"
-            class="footerLogo"
-          />
           <p>Aalborg KFUM Fodbold</p>
           <p>Under Lien 60, 9000 Aalborg</p>
           <a href="mailto:kontakt@aalborgkfumfodbold.dk"
@@ -535,7 +500,6 @@
             />
             kontakt@aalborgkfumfodbold.dk</a
           >
-          <a href="./assets/pictures/facebookLogo.png"></a>
         </div>
         <div class="footerNav">
           <a href="./Maalsaetninger.html">Målsætninger</a>
@@ -544,11 +508,12 @@
           <a href="#">Nyheder</a>
           <a href="#">Sponsorer</a>
           <a
-            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html?fbclid=IwAR21bVYvT18NbAFwytIH68uBq5YGjk6GdHTuQ8KsSWrFaORyxQ1_Vppb1NU"
+            href="https://aalborgcity.sport24klubshops.dk/shop/aalborg-kfum-7c1.html"
             >Webshop</a
           >
         </div>
       </div>
+      <hr />
       <div class="copPri">
         <p>Copyright © Aalborg KFUM Fodbold</p>
         <div class="politikFooter">

@@ -28,15 +28,6 @@ html{
  
 }
 
-.breadCrumb{
-    color: black;
-    margin-left: var(--sSpacer);
-}
-
-.breadCrumbSektion{
-    margin-bottom: var(--mSpacer);
-}
-
 /* Nav css */
 .topNav {
     background: var(--darkBlue);
@@ -204,6 +195,13 @@ h2 {
     font-weight: 600;
 }
 
+h3 {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-bottom: var(--xsSpacer);
+    font-weight: 400;
+}
+
 p {
     font-size: 0.75rem;
     margin: 0;
@@ -221,9 +219,9 @@ section {
 .knap {
     display: block;
     text-decoration: none;
-    background-color: #6BCBE4;
+    background-color: var(--green);
     color: black;
-    padding: 1rem 3rem;
+    padding: 0.5rem 6rem;
     margin: 1rem auto;
     width: fit-content;
 }
@@ -234,11 +232,12 @@ section {
 }
 
 .skygge {
-    box-shadow: 5px 5px 6px gray;
+    box-shadow: 3px 3px 10px gray;
 }
 
 .sectionMargin {
     margin-inline: var(--sSpacer);
+    margin-block: var(--mSpacer);
 }
 
 /* */
@@ -259,12 +258,12 @@ section {
     align-items: center;
 }
 
-.kommendeKampe .fa-solid {
+ .fa-solid {
     padding: 1rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, .35);
 }
 
-.kommendeKampe .fa-solid:hover {
+ .fa-solid:hover {
     cursor: pointer;
     transform: scale(1.15)
 }
@@ -316,7 +315,6 @@ section {
     height: 15rem;
     max-width: 100%;
     position: relative;
-    border: 0.1rem solid black;
 }
 
 .effekt {
@@ -324,10 +322,6 @@ section {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
-}
-
-.nyhedskort a {
-    
 }
 
 .nyhedskort img {
@@ -339,7 +333,7 @@ section {
 .nyhedskort h3 {
     font-size: 0.9rem;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -349,10 +343,10 @@ section {
 .nyhedskort .fa-solid {
     font-size: 1.2rem;
     padding: 0.2rem;
-    animation: glide-left 2s ease-in-out infinite;
+    animation: arrowAnimation 2s ease-in-out infinite;
 }
 
-@keyframes glide-left {
+@keyframes arrowAnimation {
     0% {
         transform: translateX(0px);
     }
@@ -365,73 +359,84 @@ section {
         transform: translateX(0px);
     } }
 
-/*tilmeld intro*/
-.tilmeldIntro {
-    margin-inline: var(--sSpacer);
-}
-
 /* Sponsor sektion */
 .nordjyskeBankTak {
-    margin-inline: var(--sSpacer);
     display: flex;
     align-items: center;
-}
-
-.nordjyskeBankTak img {
-    margin: var(--sSpacer);
 }
 
 /*Galleri sektion*/
-.slider {
-background: var(--veryLightBlue);
-overflow: hidden;
+.galleri {
+background: var(--green);
 }
 
-.slider h2 {
-    margin-left: var(--sSpacer);
-    margin-top: var(--sSpacer);
+.galleri h2 {
+    padding-left: var(--sSpacer);
+    padding-top: var(--sSpacer);
 }
 
-.sliderBilleder {
+.galleriBilleder {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0.5rem;
+    gap: 2rem;
 }
 
-.sliderBilleder img {
+.item {
+    animation: animate 10s linear infinite;
+}
+
+.galleriBilleder img {
     height: 8rem;
     width: auto;
-    
 }
 
-.mobilSliderPil {
-    display: flex;
-    justify-content: center;
+@keyframes animate {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-275px, 0, 0);
+    }
 }
 
-
-.mobilSliderPil button {
-    background: none;
-    border: none;
-    padding: var(--sSpacer);
+.sponsorGalleri {
+background: none;
 }
 
-.sponsorSlider {
-    background: none;
-}
-
-.sponsorSlider img {
-height: 4rem;
-width: auto;
-}
-
-.mobilSliderPil img {
-    height: 1.5rem;
+.sponsorGalleri img{
+    height: 4rem;
     width: auto;
 }
 
+.galleriPile {
+    justify-self: center;
+}
+
+.tilToppen {
+display: flex;
+justify-content: center;
+}
+
+.tilToppen a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 0.5rem 1rem;
+    color: black;
+}
+
+.tilToppen .fa-solid {
+    padding: 0.3rem;
+}
+
+.tilToppen a:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
 
 /*Footer*/
 footer {
@@ -439,32 +444,47 @@ footer {
     margin-top: var(--sSpacer);
 }
 
+.footerBilleder {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--sSpacer);
+    padding-inline: var(--sSpacer);
+}
+
+.footerBilleder img {
+    height: 5rem;
+    width: auto;
+}
+
+.footerBilleder a img {
+    height: 3rem;
+}
+
+
 .footerInfo {
     display: flex;
     justify-content: space-around;
-    padding-top: var(--sSpacer);
-}
-
-.footerLogo {
-width: 3.5rem;
 }
 
 footer a,
 footer p {
     color: white;
     font-size: x-small;
+    margin-block: 0.3rem;
 }
 
 .footerletter {
     background-color: rgb(255, 255, 255);
-    height: 0.6rem;
+    height: 0.5rem;
+}
+
+.footerNav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footerNav a {
-    display: flex;
-    flex-direction: column;
-    padding: 0.2rem 1rem;
-    margin-block: 0.5rem;
+    padding-left: 10px;
 }
 
 footer hr {
@@ -473,7 +493,6 @@ footer hr {
 
 .copPri {
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     padding-bottom: var(--sSpacer);
 }
@@ -484,21 +503,20 @@ footer hr {
 }
 
 /*  */
-/*  */
-/*  */
 /* Hold afdelinger */
-.afdeling {
-    margin-inline: var(--sSpacer);
+/*  */
+.afdeling h1{
+    margin-block: var(--xsSpacer);
 }
 
 .afdeling p {
-    margin: 0.5rem 0;
+    margin-bottom: var(--xsSpacer);
 }
 
 /* Traner er class og krokodille næbet betyder at billedet er direct child af classen */
 .holdAnsvarlig > img {
     border-radius: 50%;
-    height: 10rem;
+    height: 8rem;
 }
 
 .holdAnsvarlig{
@@ -522,15 +540,9 @@ footer hr {
     margin: 0.5rem;
 }
 
-.afdeling > img{
-    width: 100%
-}
-
 .holdCard {
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 3px 3px 10px gray;
     margin: var(--sSpacer);
-
 }
 
 .holdCard a {
@@ -538,12 +550,16 @@ footer hr {
     color: black;
 }
 
-.holdCard a>img {
+.holdCard a > img {
     width: 100%;
 }
 
-.holdCard h2{
-    margin-left: var(--sSpacer);
+.holdCard h2 {
+    margin-left: var(--xsSpacer);
+}
+
+.holdCard p {
+    margin-bottom: var(--xsSpacer);
 }
 
 .holdAlderOgPris {
@@ -558,6 +574,19 @@ footer hr {
     justify-content: center;
     gap: 1rem;
     margin: 1rem;
+}
+
+#yearSelector, #genderSelector {
+    background-color: var(--green);
+    border: none;
+    width: 6rem;
+}
+
+button {
+        border: none;
+        background-color: var(--green);
+        padding: 0.5rem 1rem;
+        width: fit-content;
 }
 
 /*  */
@@ -652,27 +681,26 @@ footer hr {
     font-size: 0.75rem;
 }
 
-
-
-
-
 /**/
 /*Målstninger side*/
 .breadcrumbs {
     display: flex;
-    margin: 0.2rem 0.2rem;
+    margin-top: 3rem;
+    margin-left: var(--sSpacer);
     justify-content: flex-start;
 }
 
 .breadcrumbs a {
     color: black;
+    font-size: 0.5rem;
+    padding-right: 0.2rem;
 }
 
-.breadcrumbs a, .breadcrumbs p
-{
-    margin: 0 0.2rem;
+.breadcrumbs p {
+    color: black;
+    font-size: 0.5rem;
+    padding-right: 0.2rem;
 }
-
 .sideDuPaa {
     font-weight: bolder;
 }
